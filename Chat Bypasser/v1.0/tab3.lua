@@ -1,8 +1,3 @@
-local tab3 = gui:tab{
-    Icon = "rbxassetid://15538455191",
-    Name = "Sentences w Insults"
-}
-
 tab3:button({
     Name = "Chat Bypasser v1.0",
     Description = "Information about this script",
