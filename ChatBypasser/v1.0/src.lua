@@ -7,17 +7,17 @@ local gui = Library:create{
 gui:set_status("Status | Bypassing chat... LoL")
 
 local tab = gui:tab{
-    Icon = "rbxassetid://15538450360",
+    Icon = "rbxassetid://2005276185",
     Name = "Simple Insults"
 }
 
 local tab2 = gui:tab{
-    Icon = "rbxassetid://15538453145",
+    Icon = "rbxassetid://2005276185",
     Name = "Advanced Insults"
 }
 
 local tab3 = gui:tab{
-    Icon = "rbxassetid://15538455191",
+    Icon = "rbxassetid://2005276185",
     Name = "Sentences"
 }
 
