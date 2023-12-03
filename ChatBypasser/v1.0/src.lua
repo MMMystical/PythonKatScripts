@@ -18,7 +18,7 @@ local tab2 = gui:tab{
 
 local tab3 = gui:tab{
     Icon = "rbxassetid://15538455191",
-    Name = "About"
+    Name = "Sentences"
 }
 
 tab:button({
