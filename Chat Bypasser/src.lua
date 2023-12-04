@@ -218,6 +218,20 @@ tab:button({
 })
 
 tab:button({
+    Name = "с⁥оnd⁥о⁥m",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("с⁥оnd⁥о⁥m", "All")
+    end,
+})
+
+tab:button({
+    Name = "с⁥оnd⁥о⁥ms",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("с⁥оnd⁥о⁥ms", "All")
+    end,
+})
+
+tab:button({
     Name = "⁥⁥⁥⁥ С⁥⁥⁥⁥⁥⁥⁥ОX",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥ С⁥⁥⁥⁥⁥⁥⁥ОX", "All")
@@ -470,6 +484,13 @@ tab:button({
 })
 
 tab:button({
+    Name = "ТH⁥⁥⁥OТ",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ТH⁥⁥⁥OТ", "All")
+    end,
+})
+
+tab:button({
     Name = " ТITTIЕS",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" ТITTIЕS", "All")
@@ -533,6 +554,20 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "*ch⁥есk⁥ѕ und⁥еr ⁥ѕki⁥⁥⁥rt* ni⁥⁥⁥c⁥е bа⁥ӏ⁥ӏs brо",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*ch⁥есk⁥ѕ und⁥еr ⁥ѕki⁥⁥⁥rt* ni⁥⁥⁥c⁥е bа⁥ӏ⁥ӏs brо", "All")
+    end,
+})
+
+tab2:button({
+    Name = " *с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥* ",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" *с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥* ", "All")
+    end,
+})
+
+tab2:button({
     Name = "С⁥U⁥⁥⁥⁥М HАRD",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("С⁥U⁥⁥⁥⁥М HАRD", "All")
@@ -592,6 +627,13 @@ tab2:button({
     Name = " I Н⁥⁥⁥А⁥⁥⁥⁥D А⁥⁥⁥W⁥⁥⁥⁥ЕS⁥⁥⁥⁥⁥ОМ⁥⁥⁥Е⁥⁥⁥ S⁥⁥⁥Е⁥⁥⁥⁥Х⁥⁥ W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М!!!!",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" I Н⁥⁥⁥А⁥⁥⁥⁥D А⁥⁥⁥W⁥⁥⁥⁥ЕS⁥⁥⁥⁥⁥ОМ⁥⁥⁥Е⁥⁥⁥ S⁥⁥⁥Е⁥⁥⁥⁥Х⁥⁥ W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М!!!!", "All")
+    end,
+})
+
+tab2:button({
+    Name = " i⁥⁥⁥⁥ l⁥⁥⁥⁥o⁥⁥⁥⁥v⁥⁥⁥⁥e b⁥⁥⁥⁥о⁥⁥⁥⁥о⁥⁥⁥⁥b⁥⁥⁥⁥s",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" i⁥⁥⁥⁥ l⁥⁥⁥⁥o⁥⁥⁥⁥v⁥⁥⁥⁥e b⁥⁥⁥⁥о⁥⁥⁥⁥о⁥⁥⁥⁥b⁥⁥⁥⁥s", "All")
     end,
 })
 
@@ -687,6 +729,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "m⁥⁥⁥аk⁥⁥⁥е m⁥⁥⁥е ⁥⁥⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("m⁥⁥⁥аk⁥⁥⁥е m⁥⁥⁥е ⁥⁥⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t", "All")
+    end,
+})
+
+tab2:button({
     Name = " m⁥⁥⁥⁥е⁥⁥⁥⁥⁥⁥⁥n⁥ ⁥⁥⁥а⁥⁥⁥r⁥⁥⁥е⁥⁥ zе⁥⁥⁥ѕ⁥tу",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" m⁥⁥⁥⁥е⁥⁥⁥⁥⁥⁥⁥n⁥ ⁥⁥⁥а⁥⁥⁥r⁥⁥⁥е⁥⁥ zе⁥⁥⁥ѕ⁥tу", "All")
@@ -757,6 +806,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "⁥ЅH⁥ӏ⁥⁥Т В⁥⁥⁥R⁥О⁥",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥ЅH⁥ӏ⁥⁥Т В⁥⁥⁥R⁥О⁥", "All")
+    end,
+})
+
+tab2:button({
     Name = "⁥ЅHUТ ТF UP",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥ЅHUТ ТF UP", "All")
@@ -767,6 +823,13 @@ tab2:button({
     Name = "ѕ⁥⁥⁥о⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥i⁥⁥⁥k⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥k⁥⁥⁥i⁥⁥⁥d⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥u⁥⁥⁥h⁥⁥⁥?",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ѕ⁥⁥⁥о⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥i⁥⁥⁥k⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥k⁥⁥⁥i⁥⁥⁥d⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥u⁥⁥⁥h⁥⁥⁥?", "All")
+    end,
+})
+
+tab2:button({
+    Name = "ЅUСК А⁥⁥⁥ С⁥⁥⁥O⁥⁥C⁥⁥⁥K",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅUСК А⁥⁥⁥ С⁥⁥⁥O⁥⁥C⁥⁥⁥K", "All")
     end,
 })
 
