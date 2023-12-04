@@ -9,7 +9,7 @@ gui:set_scriptdisplay("Chat Bypasser v1.3 | PythonKat v0.11 ❄")
 
 gui:notification{
 	Title = "Chat Bypasser v1.3",
-	Text = "Script has been loaded.\nThanks for using PythonKat!",
+	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
 }
@@ -35,7 +35,7 @@ tab3:button({
     Callback = function()
         tab:prompt{
             Title = "Chat Bypasser v1.3",
-            Text = "it's self explanatory what this does lmao... tons of bypasses on list",
+            Text = "it's self explanatory what this does lmao... tons of bypasses on list\nenjoy 😈",
             Buttons = {
                 Cool = function()
                 end,
@@ -65,7 +65,7 @@ tab3:button({
     Callback = function()
         tab:prompt{
             Title = "v1.3",
-            Text = "-added a lot more bypasses\nenjoy! 🔥",
+            Text = "-added a lot more bypasses\n-small reorganizations 🔨\nenjoy! 🔥",
             Buttons = {
                 Ok = function()
                 end,
@@ -95,7 +95,7 @@ tab3:button({
     Callback = function()
         tab:prompt{
             Title = "v1.1",
-            Text = "-added tons of new bypasses ⭐",
+            Text = "-added tons of new bypasses ⭐\n-removed non working bypasses 👋",
             Buttons = {
                 Ok = function()
                 end,
