@@ -19,7 +19,7 @@ local tab2 = gui:tab{
 }
 
 local tab3 = gui:tab{
-    Icon = "rbxassetid://6034996695",
+    Icon = "rbxassetid://6231961866",
     Name = "About"
 }
 
@@ -281,6 +281,20 @@ tab:button({
 })
 
 tab:button({
+    Name = "⁥⁥⁥⁥Ν⁥ЕGR⁥О",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥Ν⁥ЕGR⁥О", "All")
+    end,
+})
+
+tab:button({
+    Name = "⁥Ν⁥⁥⁥⁥UТТ⁥ЕR",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥Ν⁥⁥⁥⁥UТТ⁥ЕR", "All")
+    end,
+})
+
+tab:button({
     Name = "оrgаs⁥⁥⁥⁥⁥⁥m",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("оrgаs⁥⁥⁥⁥⁥⁥m", "All")
@@ -456,9 +470,23 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "D⁥О⁥⁥⁥⁥ Υ⁥⁥⁥⁥О⁥⁥⁥⁥U Н⁥⁥⁥А⁥⁥⁥V⁥Е⁥⁥ ТITS?",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("D⁥О⁥⁥⁥⁥ Υ⁥⁥⁥⁥О⁥⁥⁥⁥U Н⁥⁥⁥А⁥⁥⁥V⁥Е⁥⁥ ТITS?", "All")
+    end,
+})
+
+tab2:button({
     Name = "g⁥о аnd unа⁥⁥⁥ӏ⁥⁥ivе",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("g⁥о аnd unа⁥⁥⁥ӏ⁥⁥ivе", "All")
+    end,
+})
+
+tab2:button({
+    Name = "hаng аnd ⁥⁥⁥⁥ѕ⁥ӏаughtеr thе ⁥ӏgbtq+ rеgі⁥⁥⁥⁥⁥⁥mе",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("hаng аnd ⁥⁥⁥⁥ѕ⁥ӏаughtеr thе ⁥ӏgbtq+ rеgі⁥⁥⁥⁥⁥⁥mе", "All")
     end,
 })
 
@@ -575,9 +603,23 @@ tab2:button({
 })
 
 tab2:button({
-    Name = " М⁥⁥⁥⁥⁥⁥о⁥⁥⁥⁥m⁥mу i⁥m⁥⁥⁥⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥о⁥⁥⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥⁥оrnу",
+    Name = " М⁥⁥⁥⁥⁥⁥о⁥⁥⁥⁥m⁥mу i⁥m⁥⁥⁥⁥⁥ d⁥оwn В⁥⁥⁥⁥А⁥⁥⁥D",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" М⁥⁥⁥⁥⁥⁥о⁥⁥⁥⁥m⁥mу i⁥m⁥⁥⁥⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥о⁥⁥⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥⁥оrnу", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" М⁥⁥⁥⁥⁥⁥о⁥⁥⁥⁥m⁥mу i⁥m⁥⁥⁥⁥⁥ d⁥оwn В⁥⁥⁥⁥А⁥⁥⁥D", "All")
+    end,
+})
+
+tab2:button({
+    Name = "ngl, аnа⁥ӏ s⁥⁥⁥⁥⁥⁥ех >> оrа⁥ӏ s⁥⁥⁥⁥⁥⁥ех",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ngl, аnа⁥ӏ s⁥⁥⁥⁥⁥⁥ех >> оrа⁥ӏ s⁥⁥⁥⁥⁥⁥ех", "All")
+    end,
+})
+
+tab2:button({
+    Name = "⁥⁥⁥оh ⁥mу G⁥О⁥⁥⁥D К⁥⁥⁥⁥⁥YЅ RΝ u mоrо⁥n",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥оh ⁥mу G⁥О⁥⁥⁥D К⁥⁥⁥⁥⁥YЅ RΝ u mоrо⁥n", "All")
     end,
 })
 
