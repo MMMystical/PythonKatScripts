@@ -288,6 +288,14 @@ tab:button({
 })
 
 tab:button({
+    Name = "H⁥ОВ⁥О",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("H⁥ОВ⁥О", "All")
+    end,
+})
+
+
+tab:button({
     Name = "⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥о⁥⁥⁥е",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥о⁥⁥⁥е", "All")
