@@ -60,6 +60,20 @@ tab3:button({
 })
 
 tab3:button({
+    Name = "Reload script",
+    Description = "Use this in case something did not load correctly.",
+    Callback = function()
+        gui:notification{
+            Title = "Script reloaded",
+            Text = "Script has been reloaded. ✅",
+            Duration = 3,
+            Callback = function() end
+        }
+        loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua"),true))()
+    end,
+})
+
+tab3:button({
     Name = "Changelog v1.3",
     Description = "See version changes",
     Callback = function()
@@ -165,6 +179,13 @@ tab:button({
     Name = " brеаsts",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" brеаsts", "All")
+    end,
+})
+
+tab:button({
+    Name = "bu⁥ӏ⁥ӏ⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("bu⁥ӏ⁥ӏ⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t", "All")
     end,
 })
 
