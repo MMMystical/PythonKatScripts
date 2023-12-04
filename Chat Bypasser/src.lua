@@ -6,7 +6,13 @@ local gui = Library:create{
 
 gui:set_status("Status | Bypassing chat... LoL")
 gui:set_scriptdisplay("Chat Bypasser v1.2 | PythonKat ❄")
-gui:notification("Chat Bypasser v1.2", "Script has been loaded.\nThanks for using PythonKat!")
+
+gui:notification{
+	Title = "Chat Bypasser v1.2",
+	Text = "Script has been loaded.\nThanks for using PythonKat!",
+	Duration = 5,
+	Callback = function() end
+}
 
 local tab = gui:tab{
     Icon = "rbxassetid://2005276185",
