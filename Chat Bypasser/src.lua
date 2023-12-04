@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKat-Lib/main/ui.lua"))()
 
 local gui = Library:create{
-    Theme = Library.Themes["❄ Kat"]
+    Theme = Library.Themes.Christmas
 }
 
 gui:set_status("Status | Bypassing chat... LoL")
