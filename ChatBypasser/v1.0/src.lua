@@ -22,12 +22,12 @@ local tab3 = gui:tab{
 }
 
 tab:button({
-    Name = "Chat Bypasser v1.0",
+    Name = "Chat Bypasser v1.1",
     Description = "Information about this script",
     Callback = function()
         tab:prompt{
-            Title = "Chat Bypasser v1.0",
-            Text = "it's self explanatory what this does lmao\n Changelog:  v1.0 - release",
+            Title = "Chat Bypasser v1.1",
+            Text = "it's self explanatory what this does lmao\n Changelog:  v1.1 - added ton of new bypasses",
             Buttons = {
                 Cool = function()
                 end,
@@ -227,12 +227,12 @@ tab:button({
 })
 
 tab2:button({
-    Name = "Chat Bypasser v1.0",
+    Name = "Chat Bypasser v1.1",
     Description = "Information about this script",
     Callback = function()
         tab:prompt{
-            Title = "Chat Bypasser v1.0",
-            Text = "it's self explanatory what this does lmao\n Changelog:  v1.0 - release",
+            Title = "Chat Bypasser v1.1",
+            Text = "it's self explanatory what this does lmao\n Changelog:  v1.1 - added ton of new bypasses",
             Buttons = {
                 Cool = function()
                 end,
@@ -404,12 +404,12 @@ tab2:button({
 })
 
 tab3:button({
-    Name = "Chat Bypasser v1.0",
+    Name = "Chat Bypasser v1.1",
     Description = "Information about this script",
     Callback = function()
         tab:prompt{
-            Title = "Chat Bypasser v1.0",
-            Text = "it's self explanatory what this does lmao\n Changelog:  v1.0 - release",
+            Title = "Chat Bypasser v1.1",
+            Text = "it's self explanatory what this does lmao\n Changelog:  v1.1 - added ton of new bypasses",
             Buttons = {
                 Cool = function()
                 end,
