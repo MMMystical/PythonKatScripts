@@ -10,7 +10,7 @@ gui:set_scriptdisplay("Chat Bypasser v1.2 | PythonKat ❄")
 gui:notification{
 	Title = "Chat Bypasser v1.2",
 	Text = "Script has been loaded.\nThanks for using PythonKat!",
-	Duration = 5,
+	Duration = 7.5,
 	Callback = function() end
 }
 
