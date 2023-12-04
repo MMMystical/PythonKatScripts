@@ -89,7 +89,7 @@ tab:button({
 tab:button({
     Name = "⁥⁥⁥⁥ С⁥⁥⁥⁥⁥⁥⁥ОX",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("сосk", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥ С⁥⁥⁥⁥⁥⁥⁥ОX", "All")
     end,
 })
 
