@@ -28,7 +28,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones too)
 
 ### Prerequisites
-- 13+ account ❕
+- 13+ account ❕ (optional)
   - Some bypasses might tag on accounts under 13.
 
 ### Notes
