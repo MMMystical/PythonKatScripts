@@ -6,7 +6,7 @@ Here's all the scripts made by PythonKat.
 
 Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
-## Features
+###Features
 - Ton of bypasses 📃
   - Normal insults
   - Sentences with insults
@@ -18,14 +18,14 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 - Funny bypasses 🤫
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones too)
 
-## Prerequisites
+### Prerequisites
 - 13+ account ❕
   - Some bypasses might tag on accounts under 13.
 
-## Notes
+### Notes
 - This script only works in games that use the old chat as the new one doesn't have some things the old chat uses that are required to send the messages. ❕
 
-## Authors
+### Authors
 
 👤 **PythonKat** (main developer)
 
@@ -40,3 +40,5 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 ```
 
 Copy the loadstring and enjoy using Chat Bypasser!
+
+# That's all the script as of right now. More to come soon!
