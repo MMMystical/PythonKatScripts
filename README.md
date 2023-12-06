@@ -41,7 +41,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 * Github: [@MMMystical](https://github.com/MMMystical)
 * Discord: mmmystical
 
-### Chat Bypasser v1.4 uses a slick and nice browser-like ui for a cool experience. (PythonKat Lib)
+### Chat Bypasser v1.4 uses a slick and nice browser-like ui for a cool experience. ([PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main))
 
 ## Loadstring
 ```lua
