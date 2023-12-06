@@ -27,12 +27,9 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 - Funny bypasses 🤫
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones too)
 
-### Prerequisites
-- 13+ account ❕ (optional)
-  - Some bypasses might tag on accounts under 13.
-
 ### Notes
-- This script only works in games that use the old chat as the new one doesn't have some things the old chat uses that are required to send the messages. ❕
+- If you want all bypasses to work it's recommended to have a 13+ account, but you can use a <13 account too (some bypasses might just tag) ❕
+- This script only works in games that use the old chat as the new one doesn't have some things the old chat uses that are required to send the messages. ❗
 
 ### Authors
 
