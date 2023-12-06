@@ -1,6 +1,6 @@
 <h1 align="center">PythonKat Scripts</h1>
 
-Here's all the scripts by PythonKat.
+Here's all the scripts made by PythonKat.
 
 # Chat Bypasser v1.4
 
@@ -32,7 +32,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 * Github: [@MMMystical](https://github.com/MMMystical)
 * Discord: mmmystical
 
-## Chat Bypasser v1.4 uses a slick and nice browser-like ui for a cool experience. (PythonKat Lib)
+### Chat Bypasser v1.4 uses a slick and nice browser-like ui for a cool experience. (PythonKat Lib)
 
 ## Loadstring
 ```lua
