@@ -41,4 +41,4 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 
 Copy the loadstring and enjoy using Chat Bypasser!
 
-# That's all the script as of right now. More to come soon!
+# That's all the scripts as of right now. More to come soon!
