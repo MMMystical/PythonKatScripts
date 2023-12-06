@@ -6,7 +6,7 @@ Here's all the scripts made by PythonKat.
 
 Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
-###Features
+### Features
 - Ton of bypasses 📃
   - Normal insults
   - Sentences with insults
