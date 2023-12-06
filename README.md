@@ -11,7 +11,7 @@
 
 Here's all the scripts made by PythonKat.
 
-# Chat Bypasser v1.4
+# Chat Bypasser v1.5
 
 Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
@@ -38,13 +38,18 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 * Github: [@MMMystical](https://github.com/MMMystical)
 * Discord: mmmystical
 
-### Chat Bypasser v1.4 uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+👤 **Kevin** (co developer)
+
+* Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
+* Discord: kevinjky7555
+
+### Chat Bypasser v1.5 uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua"),true))()
 ```
 
-Copy the loadstring and enjoy using Chat Bypasser!
+Copy the loadstring and enjoy using the Chat Bypasser!
 
 # That's all the scripts as of right now. More to come soon!
