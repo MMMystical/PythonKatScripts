@@ -11,7 +11,7 @@
 
 Here's all the scripts made by PythonKat.
 
-# Chat Bypasser v1.5
+# Chat Bypasser v1.6
 
 Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
