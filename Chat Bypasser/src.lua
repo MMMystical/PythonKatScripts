@@ -947,6 +947,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "fly like a butterfly sting like a bee i ѕ⁥ӏept W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М now it hurtѕ to P⁥ЕE⁥⁥",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("fly like a butterfly sting like a bee i ѕ⁥ӏept W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М now it hurtѕ to P⁥ЕE⁥⁥", "All")
+    end,
+})
+
+tab2:button({
     Name = "g⁥о аnd unа⁥⁥⁥ӏ⁥⁥ivе",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("g⁥о аnd unа⁥⁥⁥ӏ⁥⁥ivе", "All")
