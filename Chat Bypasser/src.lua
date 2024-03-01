@@ -1210,9 +1210,9 @@ tab2:button({
 })
 
 tab2:button({
-    Name = "I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR С⁥⁥⁥⁥⁥ООСHIЕ",
+    Name = "I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR СОOСHE",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR С⁥⁥⁥⁥⁥ООСHIЕ", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR СОOСHE", "All")
     end,
 })
 
