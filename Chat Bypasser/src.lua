@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 03/01
+edited: 03/02
 developers:
 v3rm: AbstractPoo	 discord: Abstract#8007
 v3rm: 0xDEITY		 discord: Deity#0228
@@ -895,6 +895,20 @@ tab:button({
 })
 
 tab:button({
+    Name = "VlRGlN",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VlRGlN", "All")
+    end,
+})
+
+tab:button({
+    Name = "VlRGlNlTY",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VlRGlNlTY", "All")
+    end,
+})
+
+tab:button({
     Name = "wеed",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("wеed", "All")
@@ -919,6 +933,13 @@ tab2:button({
     Name = "1⁥⁥⁥0⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥е⁥⁥⁥а⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥ӏ⁥⁥⁥d⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥е⁥⁥⁥х",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("1⁥⁥⁥0⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥е⁥⁥⁥а⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥ӏ⁥⁥⁥d⁥⁥⁥ ⁥⁥⁥ѕ⁥⁥⁥е⁥⁥⁥х", "All")
+    end,
+})
+
+tab2:button({
+    Name = "allah g⁥еt⁥ѕ littl⁥е kid⁥ѕ ⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("allah g⁥еt⁥ѕ littl⁥е kid⁥ѕ ⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t", "All")
     end,
 })
 
@@ -1192,6 +1213,13 @@ tab2:button({
     Name = "I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR С⁥⁥⁥⁥⁥ООСHIЕ",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I WILL С⁥U⁥⁥⁥⁥М INSIDE Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR С⁥⁥⁥⁥⁥ООСHIЕ", "All")
+    end,
+})
+
+tab2:button({
+    Name = "I WILL ⁥Т⁥⁥⁥⁥АK⁥⁥⁥Е ⁥АW⁥АY Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR V⁥ӏ⁥⁥⁥RGlNlTΥ",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I WILL ⁥Т⁥⁥⁥⁥АK⁥⁥⁥Е ⁥АW⁥АY Υ⁥⁥⁥⁥О⁥⁥⁥⁥UR V⁥ӏ⁥⁥⁥RGlNlTΥ", "All")
     end,
 })
 
