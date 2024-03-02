@@ -972,6 +972,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "ar⁥е you d⁥еaf? i said ѕhut u⁥⁥⁥р you с⁥uи⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ar⁥е you d⁥еaf? i said ѕhut u⁥⁥⁥р you с⁥uи⁥t", "All")
+    end,
+})
+
+tab2:button({
     Name = "⁥⁥⁥⁥b⁥⁥⁥е⁥⁥⁥n⁥⁥⁥d⁥⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥v⁥⁥⁥е⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥f⁥⁥⁥о⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥m⁥⁥⁥е",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥b⁥⁥⁥е⁥⁥⁥n⁥⁥⁥d⁥⁥⁥⁥ ⁥⁥⁥о⁥⁥⁥v⁥⁥⁥е⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥f⁥⁥⁥о⁥⁥⁥r⁥⁥⁥ ⁥⁥⁥m⁥⁥⁥е", "All")
@@ -1437,6 +1444,20 @@ tab2:button({
     Name = "rаре а⁥ӏ⁥ӏ dау",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("rаре а⁥ӏ⁥ӏ dау", "All")
+    end,
+})
+
+tab2:button({
+    Name = "R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE СОСK",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE СОСK", "All")
+    end,
+})
+
+tab2:button({
+    Name = "report my сосk for b⁥еing tоо long fоr you",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("report my сосk for b⁥еing tоо long fоr you", "All")
     end,
 })
 
