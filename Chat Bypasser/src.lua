@@ -23,10 +23,10 @@ local gui = Library:create{
 }
 
 gui:set_status("Status | Bypassing chat... LoL")
-gui:set_scriptdisplay("Chat Bypasser v1.91 | PythonKat v0.14 🍀")
+gui:set_scriptdisplay("Chat Bypasser v1.91 🍀" .. libVersion)
 
 gui:notification{
-	Title = "Chat Bypasser v1.91",
+	Title = "Chat Bypasser v1.91 🍀",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
