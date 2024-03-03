@@ -106,7 +106,7 @@ tab6:button({
     Callback = function()
         tab:prompt{
             Title = "v1.91",
-            Text = "-added a lot of new bypasses (few r racist) 🙃\n-new tab (multiple bypasses at once!) 😁\nnow have fun 🤫",
+            Text = "-added a lot of new bypasses 🙃\n-new tab 😁\nnow have fun 🤫",
             Buttons = {
                 Ok = function()
                 end,
@@ -2069,9 +2069,9 @@ tab4:button({
 })
 
 tab4:button({
-    Name = " .с⁥⁥⁥⁥om⁥⁥⁥",
+    Name = ".с⁥⁥⁥⁥om⁥⁥⁥",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(" .с⁥⁥⁥⁥om⁥⁥⁥", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(".с⁥⁥⁥⁥om⁥⁥⁥", "All")
     end,
 })
 
@@ -2195,9 +2195,9 @@ tab4:button({
 })
 
 tab4:button({
-    Name = "⁥⁥⁥ ⁥⁥⁥ѕh⁥⁥⁥ӏ⁥⁥uh⁥⁥⁥а⁥⁥",
+    Name = "s⁥h⁥ӏu⁥ha",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥ ⁥⁥⁥ѕh⁥⁥⁥ӏ⁥⁥uh⁥⁥⁥а⁥⁥", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("s⁥h⁥ӏu⁥ha", "All")
     end,
 })
 
