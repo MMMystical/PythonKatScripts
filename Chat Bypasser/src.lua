@@ -63,11 +63,11 @@ local tab6 = gui:tab{
 }
 
 tab6:button({
-    Name = "Chat Bypasser v1.91",
+    Name = "Chat Bypasser v1.91 🍀",
     Description = "Information about this script",
     Callback = function()
         tab:prompt{
-            Title = "Chat Bypasser v1.91",
+            Title = "Chat Bypasser v1.91 🍀",
             Text = "it's self explanatory what this does lmao... tons of bypasses on list\nenjoy 😈",
             Buttons = {
                 Cool = function()
@@ -101,11 +101,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.91",
+    Name = "Changelog v1.91 🍀",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.91",
+            Title = "v1.91 🍀",
             Text = "-added a lot of new bypasses 🙃\n-new tab 😁\nnow have fun 🤫",
             Buttons = {
                 Ok = function()
@@ -116,11 +116,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.9",
+    Name = "Changelog v1.9 🍀",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.9",
+            Title = "v1.9 🍀",
             Text = "-flooded the tabs of bypasses...\n-❤️\nbully emos now 🙄",
             Buttons = {
                 Ok = function()
@@ -161,11 +161,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.83",
+    Name = "Changelog v1.83 🎆",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.83",
+            Title = "v1.83 🎆",
             Text = "-3 new bypasses 😔\n-idk\n1 of them kinda racist ngl 🧏‍♀️",
             Buttons = {
                 Ok = function()
@@ -176,11 +176,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.82",
+    Name = "Changelog v1.82 🎆",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.82",
+            Title = "v1.82 🎆",
             Text = "-a few bypass additions 👏\n-removed a bypass 💀\n#idkwhattosayagain 😔",
             Buttons = {
                 Ok = function()
@@ -191,11 +191,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.81",
+    Name = "Changelog v1.81 🎆",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.81",
+            Title = "v1.81 🎆",
             Text = "-new bypasses and a new tab 💫\n-fixed a few bypasses tagging 🤦‍♂️\n#idkwhattosay 😔",
             Buttons = {
                 Ok = function()
@@ -206,11 +206,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.8",
+    Name = "Changelog v1.8 🎆",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.8",
+            Title = "v1.8 🎆",
             Text = "-huge ass amount of bypasses 👏\n-no bugs this time 🤯\nwe getting bad now 🗣️🗣️",
             Buttons = {
                 Ok = function()
@@ -221,11 +221,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.7",
+    Name = "Changelog v1.7 ❄",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.7",
+            Title = "v1.7 ❄",
             Text = "-a ton of new bypasses 🐱\n-bug fix 🧏‍♀️\nwish i could add certain words... 💀",
             Buttons = {
                 Ok = function()
@@ -236,11 +236,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.6",
+    Name = "Changelog v1.6 ❄",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.6",
+            Title = "v1.6 ❄",
             Text = "-2 new sentences bypasses 👌\n-bug fix 💫\n#bypass 😍",
             Buttons = {
                 Ok = function()
@@ -251,11 +251,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.5",
+    Name = "Changelog v1.5 ❄",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.5",
+            Title = "v1.5 ❄",
             Text = "-more bypass additions 💀\n-bug fixes ✅\n#kat 😼",
             Buttons = {
                 Ok = function()
@@ -266,11 +266,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.4",
+    Name = "Changelog v1.4 ❄",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.4",
+            Title = "v1.4 ❄",
             Text = "-new bypass additions 😎\n-new bypass category 🤫\nop 😼",
             Buttons = {
                 Ok = function()
@@ -281,11 +281,11 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "Changelog v1.3",
+    Name = "Changelog v1.3 ❄",
     Description = "See version changes",
     Callback = function()
         tab:prompt{
-            Title = "v1.3",
+            Title = "v1.3 ❄",
             Text = "-added a lot more bypasses\n-small reorganizations 🔨\nenjoy! 🔥",
             Buttons = {
                 Ok = function()
