@@ -121,7 +121,7 @@ tab6:button({
     Callback = function()
         tab:prompt{
             Title = "v1.9",
-            Text = "-might have just flooded the tabs of bypasses...\n-❤️\nbully emos now 🙄",
+            Text = "-flooded the tabs of bypasses...\n-❤️\nbully emos now 🙄",
             Buttons = {
                 Ok = function()
                 end,
