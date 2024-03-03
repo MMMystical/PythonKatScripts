@@ -2275,7 +2275,7 @@ tab5:button({
         wait(1)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥ѕ⁥*", "All")
         wait(2)
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅHI⁥T NOOO", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅHI⁥T NO", "All")
     end,
 })
 
