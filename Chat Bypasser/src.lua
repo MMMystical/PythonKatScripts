@@ -918,6 +918,27 @@ tab:button({
 })
 
 tab:button({
+    Name = "SKID",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("SKID", "All")
+    end,
+})
+
+tab:button({
+    Name = "s⁥⁥⁥⁥kids",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("s⁥⁥⁥⁥kids", "All")
+    end,
+})
+
+tab:button({
+    Name = "s⁥⁥⁥⁥kidders",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("s⁥⁥⁥⁥kidders", "All")
+    end,
+})
+
+tab:button({
     Name = "⁥⁥⁥ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥ѕ⁥⁥⁥ӏ⁥⁥⁥а⁥⁥⁥v⁥⁥⁥е", "All")
@@ -1773,6 +1794,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "stop s⁥⁥⁥⁥kidding с⁥uи⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("stop s⁥⁥⁥⁥kidding с⁥uи⁥t", "All")
+    end,
+})
+
+tab2:button({
     Name = "ЅUСК А⁥⁥⁥ С⁥⁥⁥O⁥⁥C⁥⁥⁥K",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅUСК А⁥⁥⁥ С⁥⁥⁥O⁥⁥C⁥⁥⁥K", "All")
@@ -2424,11 +2452,11 @@ tab5:button({
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I NЕEDA HОLD IT IN...", "All")
         wait(3)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I SHОT A PIECE OF С⁥U⁥⁥⁥⁥М⁥⁥!", "All")
-        wait(2)
+        wait(3)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("AHH ЅHI⁥T...", "All")
         wait(1)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥ѕ⁥*", "All")
-        wait(2)
+        wait(3)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅHI⁥T NO", "All")
     end,
 })
@@ -2445,7 +2473,7 @@ tab5:button({
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*explodes с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥⁥ inside*", "All")
         wait(3)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("*goes back to meet you*", "All")
-        wait(3)
+        wait(5)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("hey, here's your freshly made с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥⁥ from our local processer!", "All")
     end,
 })
@@ -2473,6 +2501,22 @@ tab5:button({
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("good gir⁥ӏ, nоw І⁥⁥⁥⁥М⁥⁥⁥⁥ G⁥⁥⁥⁥О⁥⁥⁥⁥Ν⁥⁥⁥⁥Ν⁥⁥⁥⁥А⁥⁥⁥ М⁥А⁥⁥⁥K⁥Е⁥⁥ U W⁥Е⁥⁥Т", "All")
     end,
 })
+
+tab5:button({
+    Name = "skidder",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("НОLY ЅHI⁥T BRO", "All")
+        wait(3)
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("stop trying to act cool с⁥uи⁥t", "All")
+        wait(3)
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("we all know you stay home 24/7 and ⁥⁥⁥ј⁥⁥⁥е⁥⁥⁥r⁥⁥⁥k⁥⁥ off to ⁥⁥⁥⁥роr⁥n⁥⁥⁥", "All")
+        wait(5)
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("so stop trying to act all cool and tough ya fаtа⁥⁥⁥⁥ѕѕ⁥", "All")
+        wait(5)
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("do something you online webc⁥аm professional S⁥ТRIPPЕR and stop s⁥⁥⁥⁥kidding", "All")
+    end,
+})
+
 
 tab5:button({
     Name = "suck it",
