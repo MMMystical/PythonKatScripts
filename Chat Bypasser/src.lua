@@ -834,13 +834,6 @@ tab:button({
 })
 
 tab:button({
-    Name = "⁥⁥⁥⁥⁥⁥роr⁥n⁥⁥⁥h⁥ub",
-    Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥роr⁥n⁥⁥⁥h⁥ub", "All")
-    end,
-})
-
-tab:button({
     Name = "⁥⁥⁥⁥роr⁥n⁥⁥⁥⁥о",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥⁥⁥роr⁥n⁥⁥⁥⁥о", "All")
@@ -1766,6 +1759,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "sme⁥ӏ⁥ӏs like ⁥⁥⁥⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t in here",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("sme⁥ӏ⁥ӏs like ⁥⁥⁥⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t in here", "All")
+    end,
+})
+
+tab2:button({
     Name = "ѕ⁥⁥⁥о⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥i⁥⁥⁥k⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥k⁥⁥⁥i⁥⁥⁥d⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥u⁥⁥⁥h⁥⁥⁥?",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ѕ⁥⁥⁥о⁥⁥⁥ ⁥⁥⁥у⁥⁥⁥о⁥⁥⁥u⁥⁥⁥ ⁥⁥⁥ӏ⁥⁥⁥i⁥⁥⁥k⁥⁥⁥е⁥⁥⁥ ⁥⁥⁥k⁥⁥⁥i⁥⁥⁥d⁥⁥⁥ѕ⁥⁥⁥ ⁥⁥⁥h⁥⁥⁥u⁥⁥⁥h⁥⁥⁥?", "All")
@@ -2329,6 +2329,13 @@ tab4:button({
 })
 
 tab4:button({
+    Name = "⁥⁥⁥⁥⁥⁥роr⁥n⁥⁥⁥h⁥ub",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥⁥⁥⁥роr⁥n⁥⁥⁥h⁥ub", "All")
+    end,
+})
+
+tab4:button({
     Name = "s⁥h⁥ӏu⁥ha",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("s⁥h⁥ӏu⁥ha", "All")
@@ -2426,7 +2433,7 @@ tab5:button({
     end,
 })
 
-tab5:button({
+tab5:button({   
     Name = "cum business",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("hey, do you want some с⁥⁥⁥⁥u⁥⁥⁥⁥m⁥⁥⁥⁥⁥?", "All")
