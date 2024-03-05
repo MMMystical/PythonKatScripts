@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 03/04
+edited: 03/05
 developers:
 v3rm: AbstractPoo	 discord: Abstract#8007
 v3rm: 0xDEITY		 discord: Deity#0228
@@ -2280,6 +2280,13 @@ tab4:button({
 })
 
 tab4:button({
+    Name = "FUTUȚI MОRȚII MĂ-TI",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUTUȚI MОRȚII MĂ-TI", "All")
+    end,
+})
+
+tab4:button({
     Name = "FUTUȚI PІ⁥⁥⁥ZD⁥А MĂ-TI",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("FUTUȚI PІ⁥⁥⁥ZD⁥А MĂ-TI", "All")
@@ -2322,9 +2329,23 @@ tab4:button({
 })
 
 tab4:button({
+    Name = "mi-l sugi? ia-mi pula-n dinți sclavule",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("mi-l sugi? ia-mi pula-n dinți sclavule", "All")
+    end,
+})
+
+tab4:button({
     Name = "m⁥ui⁥е",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("m⁥ui⁥е", "All")
+    end,
+})
+
+tab4:button({
+    Name = "m⁥ui⁥st",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("m⁥ui⁥st", "All")
     end,
 })
 
@@ -2364,6 +2385,20 @@ tab4:button({
 })
 
 tab4:button({
+    Name = "să-mi sorbi spе⁥rmа din coi",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("să-mi sorbi spе⁥rmа din coi", "All")
+    end,
+})
+
+tab4:button({
+    Name = "să-mi suge ți pulа!",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("să-mi suge ți pulа!", "All")
+    end,
+})
+
+tab4:button({
     Name = "s⁥h⁥ӏu⁥ha",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("s⁥h⁥ӏu⁥ha", "All")
@@ -2374,6 +2409,20 @@ tab4:button({
     Name = "ЅUGІ PUL⁥А",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ЅUGІ PUL⁥А", "All")
+    end,
+})
+
+tab4:button({
+    Name = "târfо",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("târfо", "All")
+    end,
+})
+
+tab4:button({
+    Name = "VEZI CĂ DAU CU PULA DE TINE",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("VEZI CĂ DAU CU PULA DE TINE", "All")
     end,
 })
 
