@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 03/05
+edited: 03/08
 developers:
 v3rm: AbstractPoo	 discord: Abstract#8007
 v3rm: 0xDEITY		 discord: Deity#0228
@@ -360,7 +360,7 @@ tab:button({
     Description = "Read me",
     Callback = function()
         tab:prompt{
-            Title = "Warning",
+            Title = "Info",
             Text = "these bypasses are just regular swears, may contain more than 1 word",
             Buttons = {
                 Alright = function()
@@ -1034,7 +1034,7 @@ tab2:button({
     Description = "Read me",
     Callback = function()
         tab:prompt{
-            Title = "Warning",
+            Title = "Info",
             Text = "these bypasses are sentences with more than 2 words",
             Buttons = {
                 Alright = function()
@@ -1994,7 +1994,7 @@ tab3:button({
     Description = "Read me",
     Callback = function()
         tab:prompt{
-            Title = "Warning",
+            Title = "Info",
             Text = "these bypasses are used for roleplaying",
             Buttons = {
                 Alright = function()
@@ -2213,7 +2213,7 @@ tab4:button({
     Description = "Read me",
     Callback = function()
         tab:prompt{
-            Title = "Warning",
+            Title = "Info",
             Text = "these bypasses are some random ones, including other languages, or offensive ones",
             Buttons = {
                 Alright = function()
@@ -2438,7 +2438,7 @@ tab5:button({
     Description = "Read me",
     Callback = function()
         tab:prompt{
-            Title = "Warning",
+            Title = "Info",
             Text = "this sends more than 1 bypasses at once, kind of like a story",
             Buttons = {
                 Alright = function()
