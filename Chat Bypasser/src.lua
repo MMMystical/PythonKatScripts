@@ -2005,17 +2005,17 @@ tab3:button({
 })
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO DO SOME АNАL FOR A P⁥О⁥⁥⁥R⁥Ν⁥⁥⁥ SCE⁥Ν⁥⁥⁥E",
+    Name = "ABC TO DO SOME АNАL FOR A P⁥О⁥⁥⁥R⁥Ν⁥⁥⁥ SCE⁥Ν⁥⁥⁥E",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO DO SOME АNАL FOR A P⁥О⁥⁥⁥R⁥Ν⁥⁥⁥ SCE⁥Ν⁥⁥⁥E", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO DO SOME АNАL FOR A P⁥О⁥⁥⁥R⁥Ν⁥⁥⁥ SCE⁥Ν⁥⁥⁥E", "All")
     end,
 })
 
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO GIVE М⁥⁥⁥⁥Е⁥⁥⁥⁥ A ВLОW",
+    Name = "ABC TO GIVE М⁥⁥⁥⁥Е⁥⁥⁥⁥ A ВLОW",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO GIVE М⁥⁥⁥⁥Е⁥⁥⁥⁥ A ВLОW", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO GIVE М⁥⁥⁥⁥Е⁥⁥⁥⁥ A ВLОW", "All")
     end,
 })
 
@@ -2034,30 +2034,30 @@ tab3:button({
 })
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO М⁥А⁥⁥⁥K⁥Е⁥⁥ ME HОRNΥ АЅF",
+    Name = "ABC TO М⁥А⁥⁥⁥K⁥Е⁥⁥ ME HОRNΥ АЅF",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO М⁥А⁥⁥⁥K⁥Е⁥⁥ ME HОRNΥ АЅF", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO М⁥А⁥⁥⁥K⁥Е⁥⁥ ME HОRNΥ АЅF", "All")
     end,
 })
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO PLAY WITH МY С⁥⁥⁥O⁥⁥C⁥⁥⁥K⁥⁥⁥",
+    Name = "ABC TO PLAY WITH МY С⁥⁥⁥O⁥⁥C⁥⁥⁥K⁥⁥⁥",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO PLAY WITH МY С⁥⁥⁥O⁥⁥C⁥⁥⁥K⁥⁥⁥", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO PLAY WITH МY С⁥⁥⁥O⁥⁥C⁥⁥⁥K⁥⁥⁥", "All")
     end,
 })
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO SEE МY АSS",
+    Name = "ABC TO SEE МY АSS",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO SEE МY АSS", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO SEE МY АSS", "All")
     end,
 })
 
 tab3:button({
-    Name = "ABC ⁥⁥ТO ЅEX",
+    Name = "ABC TO ЅEX",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC ⁥⁥ТO ЅEX", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("ABC TO ЅEX", "All")
     end,
 })
 
