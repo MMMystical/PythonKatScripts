@@ -23,7 +23,7 @@ local gui = Library:create{
 }
 
 gui:set_status("Status | Bypassing chat... LoL")
-gui:set_scriptdisplay("Chat Bypasser v1.93 🐇 | PythonKat v0.16 🧺")
+gui:set_scriptdisplay("Chat Bypasser v1.93 🐇 | PythonKat v0.16 🐇")
 
 gui:notification{
 	Title = "Chat Bypasser v1.93 🐇",
