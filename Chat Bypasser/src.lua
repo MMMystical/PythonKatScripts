@@ -19,7 +19,7 @@ github: Kevinjky7555 	 discord: kevinjky7555
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKat-Lib/main/ui.lua"))()
 
 local gui = Library:create{
-    Theme = Library.Themes.Minty
+    Theme = Library.Themes.Easter
 }
 
 gui:set_status("Status | Bypassing chat... LoL")
