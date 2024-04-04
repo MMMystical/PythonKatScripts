@@ -1270,6 +1270,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "СUМ ОИ МY FAСЕ",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("СUМ ОИ МY FAСЕ", "All")
+    end,
+})
+
+tab2:button({
     Name = "dare to talk back to me and i⁥ӏ⁥ӏ make уоu⁥ ⁥⁥⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t⁥⁥",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dare to talk back to me and i⁥ӏ⁥ӏ make уоu⁥ ⁥⁥⁥р⁥⁥⁥r⁥⁥⁥е⁥⁥⁥g⁥⁥⁥n⁥⁥⁥а⁥⁥⁥n⁥⁥⁥t⁥⁥", "All")
