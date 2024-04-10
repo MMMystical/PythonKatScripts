@@ -106,7 +106,7 @@ tab6:button({
     Callback = function()
         tab:prompt{
             Title = "v1.94 🐇",
-            Text = "-added like only < 10 bypasses 😶‍🌫️\n-thats it 🥱\nok 🥶",
+            Text = "-added like only < 15 bypasses 😶‍🌫️\n-thats it 🥱\nok 🥶",
             Buttons = {
                 Ok = function()
                 end,
@@ -1418,6 +1418,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "i gotta ⁥⁥⁥⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t, open yo mouth!",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i gotta ⁥⁥⁥⁥⁥⁥ѕ⁥⁥⁥h⁥⁥⁥i⁥⁥⁥t, open yo mouth!", "All")
+    end,
+})
+
+tab2:button({
     Name = "I Н⁥⁥⁥А⁥⁥⁥⁥D А⁥⁥⁥W⁥⁥⁥⁥ЕS⁥⁥⁥⁥⁥ОМ⁥⁥⁥Е⁥⁥⁥ S⁥⁥⁥Е⁥⁥⁥⁥Х⁥⁥ W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М!!!!",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I Н⁥⁥⁥А⁥⁥⁥⁥D А⁥⁥⁥W⁥⁥⁥⁥ЕS⁥⁥⁥⁥⁥ОМ⁥⁥⁥Е⁥⁥⁥ S⁥⁥⁥Е⁥⁥⁥⁥Х⁥⁥ W⁥⁥⁥I⁥⁥Т⁥⁥⁥⁥Н U⁥⁥⁥R М⁥⁥⁥⁥⁥О⁥⁥⁥⁥М!!!!", "All")
@@ -1568,6 +1575,13 @@ tab2:button({
     Name = "І⁥⁥⁥⁥М⁥⁥⁥⁥ G⁥⁥⁥⁥О⁥⁥⁥⁥Ν⁥⁥⁥⁥Ν⁥⁥⁥⁥А⁥⁥⁥ М⁥А⁥⁥⁥K⁥Е⁥⁥ U W⁥Е⁥⁥Т",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("І⁥⁥⁥⁥М⁥⁥⁥⁥ G⁥⁥⁥⁥О⁥⁥⁥⁥Ν⁥⁥⁥⁥Ν⁥⁥⁥⁥А⁥⁥⁥ М⁥А⁥⁥⁥K⁥Е⁥⁥ U W⁥Е⁥⁥Т", "All")
+    end,
+})
+
+tab2:button({
+    Name = "i⁥m⁥⁥⁥⁥⁥⁥ gonna whoop yo а⁥⁥⁥⁥ѕѕ",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("i⁥m⁥⁥⁥⁥⁥⁥ gonna whoop yo а⁥⁥⁥⁥ѕѕ", "All")
     end,
 })
 
@@ -1852,6 +1866,13 @@ tab2:button({
 })
 
 tab2:button({
+    Name = "shut yооо а⁥⁥⁥⁥ѕѕ up",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("shut yооо а⁥⁥⁥⁥ѕѕ up", "All")
+    end,
+})
+
+tab2:button({
     Name = "⁥ѕm⁥е⁥ӏ⁥ӏ ⁥mу⁥⁥⁥⁥ р⁥⁥⁥⁥u⁥⁥⁥s⁥⁥⁥⁥⁥s⁥⁥⁥у",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("⁥ѕm⁥е⁥ӏ⁥ӏ ⁥mу⁥⁥⁥⁥ р⁥⁥⁥⁥u⁥⁥⁥s⁥⁥⁥⁥⁥s⁥⁥⁥у", "All")
@@ -2065,6 +2086,13 @@ tab2:button({
     Name = "уоu likе tо rаре?",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("уоu likе tо rаре?", "All")
+    end,
+})
+
+tab2:button({
+    Name = "you stupid с⁥uи⁥t",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("you stupid с⁥uи⁥t", "All")
     end,
 })
 
