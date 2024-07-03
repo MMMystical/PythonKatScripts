@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 04/10
+edited: 07/04
 developers:
 v3rm: AbstractPoo	 discord: Abstract#8007
 v3rm: 0xDEITY		 discord: Deity#0228
@@ -19,14 +19,14 @@ github: Kevinjky7555 	 discord: kevinjky7555
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKat-Lib/main/ui.lua"))()
 
 local gui = Library:create{
-    Theme = Library.Themes.Easter
+    Theme = Library.Themes.Summer
 }
 
 gui:set_status("Status | Bypassing chat... LoL")
-gui:set_scriptdisplay("Chat Bypasser v1.94 🐇 | PythonKat v0.16 🐇")
+gui:set_scriptdisplay("Chat Bypasser v2.0 ☀️⛱️ | PythonKat v0.20 🌊")
 
 gui:notification{
-	Title = "Chat Bypasser v1.94 🐇",
+	Title = "Chat Bypasser v2.0 ☀️⛱️",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
@@ -58,16 +58,21 @@ local tab5 = gui:tab{
 }
 
 local tab6 = gui:tab{
+    Icon = "rbxassetid://2005276185",
+    Name = "Funny"
+}
+
+local tab7 = gui:tab{
     Icon = "rbxassetid://6231961866",
     Name = "About"
 }
 
-tab6:button({
-    Name = "Chat Bypasser v1.94 🐇",
+tab7:button({
+    Name = "Chat Bypasser v2.0 ☀️⛱️",
     Description = "Information about this script",
     Callback = function()
         tab:prompt{
-            Title = "Chat Bypasser v1.94 🐇",
+            Title = "Chat Bypasser v2.0 ☀️⛱️",
             Text = "it's self explanatory what this does lmao... tons of bypasses on list\nenjoy 😈",
             Buttons = {
                 Cool = function()
@@ -77,7 +82,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Warning",
     Description = "Read me",
     Callback = function()
@@ -92,7 +97,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Reload script",
     Description = "Use this in case something did not load correctly",
     Callback = function()
@@ -100,7 +105,22 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
+    Name = "Changelog v2.0 ☀️⛱️",
+    Description = "See version changes",
+    Callback = function()
+        tab:prompt{
+            Title = "v2.0 ☀️⛱️",
+            Text = "-added new category 🙏\n-it contains some funni stuff \najkfdjadfsjk 🥴",
+            Buttons = {
+                Ok = function()
+                end,
+            }
+        }
+    end,
+})
+
+tab7:button({
     Name = "Changelog v1.94 🐇",
     Description = "See version changes",
     Callback = function()
@@ -115,7 +135,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.93 🐇",
     Description = "See version changes",
     Callback = function()
@@ -130,7 +150,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.92 🍀",
     Description = "See version changes",
     Callback = function()
@@ -145,7 +165,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.91 🍀",
     Description = "See version changes",
     Callback = function()
@@ -160,7 +180,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.9 🍀",
     Description = "See version changes",
     Callback = function()
@@ -175,7 +195,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.85",
     Description = "See version changes",
     Callback = function()
@@ -190,7 +210,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.84",
     Description = "See version changes",
     Callback = function()
@@ -205,7 +225,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.83 🎆",
     Description = "See version changes",
     Callback = function()
@@ -220,7 +240,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.82 🎆",
     Description = "See version changes",
     Callback = function()
@@ -235,7 +255,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.81 🎆",
     Description = "See version changes",
     Callback = function()
@@ -250,7 +270,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.8 🎆",
     Description = "See version changes",
     Callback = function()
@@ -265,7 +285,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.7 ❄",
     Description = "See version changes",
     Callback = function()
@@ -280,7 +300,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.6 ❄",
     Description = "See version changes",
     Callback = function()
@@ -295,7 +315,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.5 ❄",
     Description = "See version changes",
     Callback = function()
@@ -310,7 +330,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.4 ❄",
     Description = "See version changes",
     Callback = function()
@@ -325,7 +345,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.3 ❄",
     Description = "See version changes",
     Callback = function()
@@ -340,7 +360,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.2",
     Description = "See version changes",
     Callback = function()
@@ -355,7 +375,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.1",
     Description = "See version changes",
     Callback = function()
@@ -370,7 +390,7 @@ tab6:button({
     end,
 })
 
-tab6:button({
+tab7:button({
     Name = "Changelog v1.0",
     Description = "See version changes",
     Callback = function()
@@ -2730,6 +2750,112 @@ tab5:button({
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("GOOD GIRL... BE A Н⁥О⁥⁥⁥Е⁥⁥⁥ FOR PAPI", "All")
         wait(3)
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("LЕТ MЕ SQUISН THOSE ТITTIЕS NOW!", "All")
+    end,
+})
+
+tab6:button({
+    Name = "What is this?",
+    Description = "Read me",
+    Callback = function()
+        tab:prompt{
+            Title = "Info",
+            Text = "these bypasses are used for funny replies",
+            Buttons = {
+                Alright = function()
+                end,
+            }
+        }
+    end,
+})
+
+tab6:button({
+    Name = "bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬you better gorilla glue those cheeks or i will be ROUGH",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬you better gorilla glue those cheeks or i will be ROUGH", "All")
+    end,
+})
+
+tab6:button({
+    Name = "Careful with whatchu say 🙏🗣️🗣️🙏 the СОСК is watching 🤞🤞🐔🐔 and he ain’t take NO prisoners 🙅‍♂️🙅‍♂️🤫🤫 k⁥⁥⁥е⁥⁥⁥еp th⁥⁥⁥еm ch⁥⁥⁥е⁥⁥⁥еks TIGHT",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Careful with whatchu say 🙏🗣️🗣️🙏 the СОСК is watching 🤞🤞🐔🐔 and he ain’t take NO prisoners 🙅‍♂️🙅‍♂️🤫🤫 k⁥⁥⁥е⁥⁥⁥еp th⁥⁥⁥еm ch⁥⁥⁥е⁥⁥⁥еks TIGHT", "All")
+    end,
+})
+
+tab6:button({
+    Name = "Don't ever disrespect me cus on my dead homies I will swing my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ across your face like a grandfather clock 🕰️ 😭",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Don't ever disrespect me cus on my dead homies I will swing my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ across your face like a grandfather clock 🕰️ 😭", "All")
+    end,
+})
+
+tab6:button({
+    Name = "don’t ever let me catch you in these comment sections again boy 😭😭🔥🙏 before I swing my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ across yo face like a grandfather clock 😭😭😂💰",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("don’t ever let me catch you in these comment sections again boy 😭😭🔥🙏 before I swing my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ across yo face like a grandfather clock 😭😭😂💰", "All")
+    end,
+})
+
+tab6:button({
+    Name = "dont you think your on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dont you think your on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈", "All")
+    end,
+})
+
+tab6:button({
+    Name = "I'm finna CRUSH your streak 👑🙏 like I'm gonna crush my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ ⛹️‍♂️ on yo FACE lil bro 😂💰",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I'm finna CRUSH your streak 👑🙏 like I'm gonna crush my bа⁥ӏ⁥ӏ⁥⁥⁥⁥ѕ ⛹️‍♂️ on yo FACE lil bro 😂💰", "All")
+    end,
+})
+
+tab6:button({
+    Name = "I'm going to fart on your pickle lil bro 🙏🙏🙏",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I'm going to fart on your pickle lil bro 🙏🙏🙏", "All")
+    end,
+})
+
+tab6:button({
+    Name = "I shall sprеаd thy cheеks little boy, It would not be splendid to see you in my comment chamber ever again 🤑🤑🤑🤑😡😤👾",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I shall sprеаd thy cheеks little boy, It would not be splendid to see you in my comment chamber ever again 🤑🤑🤑🤑😡😤👾", "All")
+    end,
+})
+
+tab6:button({
+    Name = "I will ѕpr⁥е⁥аd ur сhееks lil bro 😭🙏🏾🙏🏾I betta not catch you in my comments again or it’s finna gon be OVER for you 👾",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I will ѕpr⁥е⁥аd ur сhееks lil bro 😭🙏🏾🙏🏾I betta not catch you in my comments again or it’s finna gon be OVER for you 👾", "All")
+    end,
+})
+
+tab6:button({
+    Name = "suddenly a word starting with ⁥n just writes itself",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("suddenly a word starting with ⁥n just writes itself", "All")
+    end,
+})
+
+tab6:button({
+    Name = "stop yapping lil bro or imma clap those cheeks next time i catch you lacking🗣️🙏 sleep with one eye 👁️open tonight lil bro💯💯",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("stop yapping lil bro or imma clap those cheeks next time i catch you lacking🗣️🙏 sleep with one eye 👁️open tonight lil bro💯💯", "All")
+    end,
+})
+
+tab6:button({
+    Name = "Waiter! waiter! one ⁥ЅHUТ ТF UP please! 😹😹😹",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Waiter! waiter! one ⁥ЅHUТ ТF UP please! 😹😹😹", "All")
+    end,
+})
+
+tab6:button({
+    Name = "why did you stand there and take it like a good boy 😭🙏",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("why did you stand there and take it like a good boy 😭🙏", "All")
     end,
 })
 
