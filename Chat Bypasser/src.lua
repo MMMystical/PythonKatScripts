@@ -1361,9 +1361,9 @@ tab2:button({
 })
 
 tab2:button({
-    Name = "G⁥о find your dаd аnd give him а d⁥⁥⁥е⁥⁥⁥еp throаt b⁥ӏоw jоb bro",
+    Name = "G⁥о find your dаd аnd give him а d⁥⁥⁥е⁥⁥⁥еp throаt blощ jов bro",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("G⁥о find your dаd аnd give him а d⁥⁥⁥е⁥⁥⁥еp throаt b⁥ӏоw jоb bro", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("G⁥о find your dаd аnd give him а d⁥⁥⁥е⁥⁥⁥еp throаt blощ jов bro", "All")
     end,
 })
 
@@ -1823,16 +1823,16 @@ tab2:button({
 })
 
 tab2:button({
-    Name = "R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE СОСK",
+    Name = "R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE КIDS",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE СОСK", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("R⁥ЕPORT ME IF YOURE GАY AND L⁥ОVE КIDS", "All")
     end,
 })
 
 tab2:button({
-    Name = "report my сосk for b⁥еing tоо long fоr you",
+    Name = "report my соcк for b⁥еing tоо long fоr you",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("report my сосk for b⁥еing tоо long fоr you", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("report my соcк for b⁥еing tоо long fоr you", "All")
     end,
 })
 
@@ -2769,9 +2769,16 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬you better gorilla glue those cheeks or i will be ROUGH",
+    Name = "bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬 you better gorilla glue those cheeks or i will be ROUGH",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬you better gorilla glue those cheeks or i will be ROUGH", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("bro is tough talkin 😭💯💯💀 if you ever see me on the STREETS 🦖🪬 you better gorilla glue those cheeks or i will be ROUGH", "All")
+    end,
+})
+
+tab6:button({
+    Name = "Bro thinks he’s tough talking 😭 if you ever see me in the streets you better run because I don’t play no games dawg",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Bro thinks he’s tough talking 😭 if you ever see me in the streets you better run because I don’t play no games dawg", "All")
     end,
 })
 
@@ -2797,9 +2804,16 @@ tab6:button({
 })
 
 tab6:button({
-    Name = "dont you think your on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈",
+    Name = "dont you think you're on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈",
     Callback = function()
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dont you think your on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈", "All")
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("dont you think you're on the loose buddy 💀🙏 i'm finna find your dog and make him mоаn 😈", "All")
+    end,
+})
+
+tab6:button({
+    Name = "I saw your mom today she went 🏃‍♀️😱 for my GLIZZY 🙏 and then saw YO DAD 😨 and he ran away but my GLIZZY 🙌 hit him anyways 😂😂😭🙏",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I saw your mom today she went 🏃‍♀️😱 for my GLIZZY 🙏 and then saw YO DAD 😨 and he ran away but my GLIZZY 🙌 hit him anyways 😂😂😭🙏", "All")
     end,
 })
 
@@ -2828,6 +2842,13 @@ tab6:button({
     Name = "I will ѕpr⁥е⁥аd ur сhееks lil bro 😭🙏🏾🙏🏾I betta not catch you in my comments again or it’s finna gon be OVER for you 👾",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("I will ѕpr⁥е⁥аd ur сhееks lil bro 😭🙏🏾🙏🏾I betta not catch you in my comments again or it’s finna gon be OVER for you 👾", "All")
+    end,
+})
+
+tab6:button({
+    Name = "Off topic but I remember these boys kept spying on me (I was wearing a tight maxi dress) and when I started talking (I have a mommy voice lol) their nose started bleeding and they called me mommy",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Off topic but I remember these boys kept spying on me (I was wearing a tight maxi dress) and when I started talking (I have a mommy voice lol) their nose started bleeding and they called me mommy", "All")
     end,
 })
 
