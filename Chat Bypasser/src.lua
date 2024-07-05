@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 07/04
+edited: 07/05
 developers:
 v3rm: AbstractPoo	 discord: Abstract#8007
 v3rm: 0xDEITY		 discord: Deity#0228
@@ -111,7 +111,7 @@ tab7:button({
     Callback = function()
         tab:prompt{
             Title = "v2.0 ☀️⛱️",
-            Text = "-added new category 🙏\n-it contains some funni stuff \najkfdjadfsjk 🥴",
+            Text = "-added new category 🙏\n-it contains some funni stuff \nlots of them fixed bc roblox chat 🤬",
             Buttons = {
                 Ok = function()
                 end,
@@ -673,6 +673,13 @@ tab:button({
 })
 
 tab:button({
+    Name = "₣V€К YOU",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("₣V€К YOU", "All")
+    end,
+})
+
+tab:button({
     Name = "F⁥АGG⁥ОТ",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("F⁥АGG⁥ОТ", "All")
@@ -1090,6 +1097,13 @@ tab:button({
     Name = "wеed",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("wеed", "All")
+    end,
+})
+
+tab:button({
+    Name = "womp womp",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("womp womp", "All")
     end,
 })
 
@@ -2050,6 +2064,13 @@ tab2:button({
     Name = "why is ⁥mу сосk itching ⁥ӏm⁥ао",
     Callback = function()
         game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("why is ⁥mу сосk itching ⁥ӏm⁥ао", "All")
+    end,
+})
+
+tab2:button({
+    Name = "womp to the freaking womp В⁥I⁥⁥ТС⁥Н",
+    Callback = function()
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("womp to the freaking womp В⁥I⁥⁥ТС⁥Н", "All")
     end,
 })
 
