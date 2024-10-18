@@ -27,7 +27,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 - Working bypasses ✅
   - All bypasses on the script work and don't tag (after you use certain bypasses some will start to tag, but it's normal)
 - Funny bypasses 🤫
-  - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones too)
+  - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones as well)
 
 ### Notes
 - If you want all bypasses to work it's recommended to have a 13+ account, but you can use a <13 account too (some bypasses might just tag) ❕
