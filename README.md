@@ -49,7 +49,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 
 ## Loadstring
 ```lua
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua")))()
 ```
 
 Copy the loadstring and enjoy using the Chat Bypasser!
