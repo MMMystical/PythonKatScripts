@@ -54,4 +54,52 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 
 Copy the loadstring and enjoy using the Chat Bypasser!
 
+# CHAIN Abuser v0.10 ⚔️ (BETA)
+
+## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
+
+Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
+
+### Features
+- Cheats ❇️🔰
+  - Infinite Stamina, Combat Stamina
+  - Automatically win QTEs
+  - Weapon modifications
+- ESP 👁️🛑
+  - View CHAIN and Scrap around the map
+- Teleports ✅🕳️
+  - Teleport around the map easily with buttons
+- Miscellaneous ✳️⤵️
+  - CHAIN Aimbot
+  - Auto Scrap Collector
+  - Local player modifications
+  - Fun
+
+^^ More to come very soon!
+
+### Notes
+- You might sometimes get kicked from the game by their anti cheat! ❕
+- This script only works in CHAIN Survival gamemode. ❗
+
+### Authors
+
+👤 **PythonKat** (main developer)
+
+* Github: [@MMMystical](https://github.com/MMMystical)
+* Discord: mmmystical
+
+👤 **Kevin** (co developer)
+
+* Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
+* Discord: kevinjky7555
+
+### CHAIN Abuser v0.10 ⚔️ uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+
+## Loadstring
+```lua
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua")))()
+```
+
+Copy the loadstring and enjoy using the CHAIN Abuser!
+
 # That's all the scripts as of right now. More to come soon!
