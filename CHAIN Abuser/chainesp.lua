@@ -1,11 +1,12 @@
+--// cloneref fallback for compatibility with non-Synapse environments
+if not cloneref then
+    getgenv().cloneref = function(v) return v end
+end
+
 --// Services
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
-
---// cloneref fallback for compatibility with non-Synapse environments
-local success, existingCloneref = pcall(function() return cloneref end)
-local cloneref = (success and existingCloneref) or function(v) return v end
 
 local function SafeGetService(service)
 	return cloneref(service)
