@@ -3,6 +3,14 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
+--// cloneref fallback for compatibility with non-Synapse environments
+local success, existingCloneref = pcall(function() return cloneref end)
+local cloneref = (success and existingCloneref) or function(v) return v end
+
+local function SafeGetService(service)
+	return cloneref(service)
+end
+
 --// Bin Library (for cleanup)
 local Bin
 do
@@ -55,16 +63,6 @@ end
 --// Utilities
 local function format(num)
 	return string.format("%.1f", num)
-end
-
-local function blackfunction(...)
-	return ...
-end
-
-local cloneref = cloneref or blackfunction
-
-local function SafeGetService(service)
-	return cloneref(service)
 end
 
 --// GUI Base
