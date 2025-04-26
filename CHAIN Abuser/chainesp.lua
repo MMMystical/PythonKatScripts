@@ -8,8 +8,7 @@ do
 	Bin = setmetatable({}, {
 		__tostring = function()
 			return "Bin"
-		end,
-	})
+		})
 	Bin.__index = Bin
 	function Bin.new(...)
 		local self = setmetatable({}, Bin)
@@ -198,33 +197,50 @@ end
 ESP.instances = {}
 ESP.connections = Bin.new()
 
-ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
-	task.spawn(function()
-		repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
-		if instance:IsA("Model") and instance:FindFirstChild("HumanoidRootPart") then
-			ESP.new(instance)
-		end
-	end)
-end))
-
-ESP.connections:add(RunService.RenderStepped:Connect(function()
-	for _, esp in pairs(ESP.instances) do
-		esp:render()
-	end
-end))
-
-for _, model in pairs(AIFolder:GetChildren()) do
-	if model:FindFirstChild("Humanoid") then
-		local suc, res = pcall(function()
-			ESP.new(model)
+local function enable()
+	ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
+		task.spawn(function()
+			repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
+			if instance:IsA("Model") and instance:FindFirstChild("HumanoidRootPart") then
+				ESP.new(instance)
+			end
 		end)
-		if not suc then
-			warn(res)
+	end))
+
+	ESP.connections:add(RunService.RenderStepped:Connect(function()
+		for _, esp in pairs(ESP.instances) do
+			esp:render()
 		end
+	end))
+
+	for _, model in pairs(AIFolder:GetChildren()) do
+		if model:FindFirstChild("Humanoid") then
+			local suc, res = pcall(function()
+				ESP.new(model)
+			end)
+			if not suc then
+				warn(res)
+			end
+		end
+	end
+
+	ScreenGui.DisplayOrder = 10
+	ScreenGui.IgnoreGuiInset = true
+	ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
+end
+
+local function disable()
+	ESP.connections:destroy()
+	for _, esp in pairs(ESP.instances) do
+		esp:destroy()
+	end
+	table.clear(ESP.instances)
+	if ScreenGui then
+		ScreenGui:Destroy()
 	end
 end
 
-ScreenGui.DisplayOrder = 10
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
-return 0
+return {
+	enable = enable,
+	disable = disable,
+}
