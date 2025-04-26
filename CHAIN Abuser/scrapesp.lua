@@ -14,6 +14,7 @@ local CurrentCamera = Workspace.CurrentCamera
 
 local Lootables = {}
 local ScrapConnection
+local RenderConnection
 
 local Bin = {}
 Bin.__index = Bin
@@ -43,7 +44,7 @@ end
 local LootableComponent = {}
 LootableComponent.__index = LootableComponent
 
-function LootableComponent.new(scrap, screenGui)
+function LootableComponent.new(scrap, gui)
 	local self = setmetatable({}, LootableComponent)
 	self.scrap = scrap
 	self.pivot = scrap:GetPivot()
@@ -68,10 +69,10 @@ function LootableComponent.new(scrap, screenGui)
 	self.nameLabel.Text = "Scrap"
 
 	self.nameLabel.Parent = self.container
-	self.container.Parent = screenGui
+	self.container.Parent = gui
 
-	self.bin:add(RunService.RenderStepped:Connect(function()
-		self:render()
+	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
+		self.available = self.values:GetAttribute("Available")
 	end))
 
 	return self
@@ -106,6 +107,7 @@ function LootableComponent:destroy()
 		self.container:Destroy()
 	end
 	self.bin:destroy()
+	Lootables[self.scrap] = nil
 end
 
 function Module:enable()
@@ -120,46 +122,26 @@ function Module:enable()
 		self.ScreenGui = newGui
 	end
 
-	local function setupScrap(scrap)
-		if Lootables[scrap] then return end
-
-		local comp = LootableComponent.new(scrap, self.ScreenGui)
-
-		Lootables[scrap] = {
-			bin = Bin.new(),
-			component = comp,
-		}
-
-		local function update()
-			comp.available = scrap:GetAttribute("Available")
-		end
-
-		-- initial check
-		update()
-
-		Lootables[scrap].bin:add(scrap:GetAttributeChangedSignal("Available"):Connect(function()
-			task.defer(update)
-		end))
-
-		Lootables[scrap].bin:add(scrap.Destroying:Connect(function()
-			if Lootables[scrap] then
-				if Lootables[scrap].component then
-					Lootables[scrap].component:destroy()
-				end
-				Lootables[scrap].bin:destroy()
-				Lootables[scrap] = nil
-			end
-		end))
-	end
-
 	for _, scrap in ipairs(LootFolders:GetChildren()) do
-		setupScrap(scrap)
+		if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
+			Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
+		end
 	end
 
 	ScrapConnection = LootFolders.ChildAdded:Connect(function(scrap)
 		task.spawn(function()
-			setupScrap(scrap)
+			if scrap:GetAttribute("Scrap") then
+				Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
+			end
 		end)
+	end)
+
+	RenderConnection = RunService.RenderStepped:Connect(function()
+		for _, lootable in pairs(Lootables) do
+			if lootable then
+				lootable:render()
+			end
+		end
 	end)
 end
 
@@ -172,18 +154,20 @@ function Module:disable()
 		ScrapConnection = nil
 	end
 
+	if RenderConnection then
+		RenderConnection:Disconnect()
+		RenderConnection = nil
+	end
+
 	for _, lootable in pairs(Lootables) do
-		if lootable.component then
-			lootable.component:destroy()
-		end
-		lootable.bin:destroy()
+		lootable:destroy()
 	end
 	table.clear(Lootables)
 
 	if self.ScreenGui and self.ScreenGui.Parent then
 		self.ScreenGui:Destroy()
+		self.ScreenGui = nil
 	end
-	self.ScreenGui = nil
 end
 
 return setmetatable({}, Module)
