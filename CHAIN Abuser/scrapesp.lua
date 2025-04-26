@@ -136,7 +136,11 @@ function Module:enable()
 
 	ScrapConnection = LootFolders.ChildAdded:Connect(function(scrap)
 		task.spawn(function()
-			if scrap:GetAttribute("Scrap") then
+			if not scrap:GetAttribute("Scrap") then
+				scrap:GetAttributeChangedSignal("Scrap"):Wait()
+			end
+
+			if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
 				Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
 			end
 		end)
