@@ -64,14 +64,15 @@ Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won'
 - Cheats ❇️🔰
   - Infinite Stamina, Combat Stamina
   - Automatically win QTEs
-  - Weapon modifications
+  - CHAIN Aimbot
+  - Auto Scrap & Artifact Collectors
+- Weapons 🏹🛡️
+  - Infinite XSaw Gas
 - ESP 👁️🛑
   - View CHAIN and Scrap around the map
 - Teleports ✅🕳️
   - Teleport around the map easily with buttons
 - Miscellaneous ✳️⤵️
-  - CHAIN Aimbot
-  - Auto Scrap Collector
   - Local player modifications
   - Fun
 
