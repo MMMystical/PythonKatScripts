@@ -98,11 +98,9 @@ function LootableComponent:render()
 		local dist = (LocalPlayer.Character.HumanoidRootPart.Position - self.pivot.Position).Magnitude
 		self.nameLabel.Text = "Scrap [" .. format(dist, 1) .. "]"
 
-		-- Smooth color change
 		local targetColor = self.available and Color3.new(0, 1, 0) or Color3.new(0.5, 0.5, 0.5)
 		TweenService:Create(self.nameLabel, self.tweenInfo, {TextColor3 = targetColor}):Play()
 
-		-- Dynamic text size based on distance
 		local scaleFactor = math.clamp(100 / dist, 0.7, 1.5)
 		self.nameLabel.TextSize = 15 * scaleFactor
 
