@@ -11,7 +11,6 @@ local SafeGetService = function(service) return cloneref(service) end
 local LootFolders = Workspace.Misc.Zones.LootingItems:WaitForChild('Scrap')
 local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
-local ScreenGui = Instance.new("ScreenGui")
 
 local Lootables = {}
 local ScrapConnection
@@ -44,7 +43,7 @@ end
 local LootableComponent = {}
 LootableComponent.__index = LootableComponent
 
-function LootableComponent.new(scrap)
+function LootableComponent.new(scrap, gui)
 	local self = setmetatable({}, LootableComponent)
 	self.scrap = scrap
 	self.pivot = scrap:GetPivot()
@@ -69,7 +68,7 @@ function LootableComponent.new(scrap)
 	self.nameLabel.Text = "Scrap"
 
 	self.nameLabel.Parent = self.container
-	self.container.Parent = ScreenGui
+	self.container.Parent = gui
 
 	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
 		self.available = self.values:GetAttribute("Available")
@@ -121,22 +120,24 @@ function Module:enable()
 	if self.enabled then return end
 	self.enabled = true
 
-	if ScreenGui.Parent == nil then
-		ScreenGui.DisplayOrder = 10
-		ScreenGui.IgnoreGuiInset = true
-		ScreenGui.Parent = SafeGetService(game:GetService("CoreGui"))
+	if not self.ScreenGui then
+		local newGui = Instance.new("ScreenGui")
+		newGui.DisplayOrder = 10
+		newGui.IgnoreGuiInset = true
+		newGui.Parent = SafeGetService(game:GetService("CoreGui"))
+		self.ScreenGui = newGui
 	end
 
 	for _, scrap in ipairs(LootFolders:GetChildren()) do
 		if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
-			Lootables[scrap] = LootableComponent.new(scrap)
+			Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
 		end
 	end
 
 	ScrapConnection = LootFolders.ChildAdded:Connect(function(scrap)
 		task.spawn(function()
 			if scrap:GetAttribute("Scrap") then
-				Lootables[scrap] = LootableComponent.new(scrap)
+				Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
 			end
 		end)
 	end)
@@ -156,8 +157,9 @@ function Module:disable()
 	end
 	table.clear(Lootables)
 
-	if ScreenGui and ScreenGui.Parent then
-		ScreenGui:Destroy()
+	if self.ScreenGui and self.ScreenGui.Parent then
+		self.ScreenGui:Destroy()
+		self.ScreenGui = nil
 	end
 end
 
