@@ -123,25 +123,15 @@ function Module:enable()
 	local function setupScrap(scrap)
 		if Lootables[scrap] then return end
 
+		local comp = LootableComponent.new(scrap, self.ScreenGui)
+
 		Lootables[scrap] = {
 			bin = Bin.new(),
-			component = nil,
+			component = comp,
 		}
 
 		local function update()
-			local available = scrap:GetAttribute("Available")
-			if available then
-				if not Lootables[scrap].component then
-					local comp = LootableComponent.new(scrap, self.ScreenGui)
-					comp.available = true
-					Lootables[scrap].component = comp
-				end
-			else
-				if Lootables[scrap].component then
-					Lootables[scrap].component:destroy()
-					Lootables[scrap].component = nil
-				end
-			end
+			comp.available = scrap:GetAttribute("Available")
 		end
 
 		-- initial check
