@@ -47,16 +47,21 @@ local tab = gui:tab({
 })
 
 local tab2 = gui:tab({
+	Icon = "rbxassetid://11927170177",
+	Name = "Weapons"
+})
+
+local tab3 = gui:tab({
 	Icon = "rbxassetid://6523858394",
 	Name = "ESP"
 })
 
-local tab3 = gui:tab({
+local tab4 = gui:tab({
 	Icon = "rbxassetid://125300760963399",
 	Name = "Teleports"
 })
 
-local tab4 = gui:tab({
+local tab5 = gui:tab({
 	Icon = "rbxassetid://12809025337",
 	Name = "Miscellaneous"
 })
@@ -207,7 +212,7 @@ tab:toggle({
 
 			while true do
 				task.wait(0.015)
-				game.Players.LocalPlayer.Character.Stats:FindFirstChild("ClashStrength").Value = 80
+				game.Players.LocalPlayer.Character.Stats:FindFirstChild("ClashStrength").Value = 75
 
 				if qteToggle == false then
 					break
@@ -219,23 +224,101 @@ tab:toggle({
 	end
 })
 
-tab:button({
-	Name = "Refuel XSaw Gas",
-	Description = "Refuels 60w gas for free",
-	Callback = function()
-		if game.Players.LocalPlayer.Character.Items:FindFirstChild("XSaw") and game.Players.LocalPlayer.Character.Items.XSaw:GetAttribute("Gas") <= 0 then
-			game.Players.LocalPlayer.Character.Items.XSaw:SetAttribute("Gas", 60)
-			
+local aimbotChain = false
+local Workspace = cloneref(game:GetService("Workspace"))
+local RunService = cloneref(game:GetService("RunService"))
+local UserInputService = cloneref(game:GetService("UserInputService"))
+local MiscFolder = Workspace:WaitForChild("Misc")
+local AIFolder = MiscFolder:WaitForChild("AI")
+local Camera = Workspace.CurrentCamera
+
+local isHoldingRightClick = false
+
+local function lookAt(cframe)
+	local lookAtPos = CFrame.new(Camera.CFrame.Position, cframe.Position)
+	Camera.CFrame = lookAtPos
+end
+
+local function getChain()
+	for _, child in AIFolder:GetChildren() do
+		local rootPart = child:FindFirstChild("HumanoidRootPart")
+		if rootPart then
+			return child
+		end
+	end
+end
+
+RunService.RenderStepped:Connect(function()
+	if not aimbotChain then return end
+	if not isHoldingRightClick then return end
+
+	local chain = getChain()
+	if chain then
+		lookAt(chain:GetPivot())
+	end
+end)
+
+UserInputService.InputBegan:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton2 then
+		isHoldingRightClick = true
+	end
+end)
+
+UserInputService.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton2 then
+		isHoldingRightClick = false
+	end
+end)
+
+tab:toggle({
+	Name = "CHAIN Aimbot",
+	Description = "Locks your camera onto CHAIN when holding right click with mouse",
+	StartingState = false,
+	Callback = function(state)
+		if aimbotChain == false then
+			aimbotChain = true
+
 			gui:notification{
-				Title = "CHAIN ⚔️ | Refuel XSaw Gas",
-				Text = "Refueled by 60w ✅ (won't save you from death tho)",
+				Title = "CHAIN ⚔️ | CHAIN Aimbot",
+				Text = "CHAIN Aimbot active ✅",
 				Duration = 7.5,
 				Callback = function() end
 			}
-		else
+		elseif aimbotChain == true then
+			aimbotChain = false
+		end
+	end
+})
+
+local collectingScrap = false
+
+tab:button({
+	Name = "Auto Collect Scrap",
+	Description = "Automatically collects available Scrap around the map",
+	Callback = function()
+		if collectingScrap == false then
+			collectingScrap = true
+			gui:notification{
+				Title = "CHAIN ⚔️ | Auto Collect Scrap",
+				Text = "Auto collecting scrap ✅",
+				Duration = 7.5,
+				Callback = function() end
+			}
+
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapcollector.lua"))()
+
+			task.wait(1)
+			gui:notification{
+				Title = "CHAIN ⚔️ | Auto Collect Scrap",
+				Text = "Auto collecting scrap finished, you can now run again ✅",
+				Duration = 7.5,
+				Callback = function() end
+			}
+			collectingScrap = false
+		elseif collectingScrap == true then
 			tab:prompt{
 				Title = "Warning",
-				Text = "You must first deplete all of your gas before using this!",
+				Text = "Please wait until the auto scrap collector is finished!",
 				Buttons = {
 					Alright = function()
 					end
@@ -245,9 +328,62 @@ tab:button({
 	end
 })
 
+local collectingArtifacts = false
+
+tab:button({
+	Name = "Auto Collect Artifacts",
+	Description = "Automatically collects available Artifacts around the map",
+	Callback = function()
+		if collectingArtifacts == false then
+			collectingArtifacts = true
+			gui:notification{
+				Title = "CHAIN ⚔️ | Auto Collect Artifacts",
+				Text = "Auto collecting artifacts ✅",
+				Duration = 7.5,
+				Callback = function() end
+			}
+
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/artifactcollector.lua"))()
+
+			task.wait(1)
+			gui:notification{
+				Title = "CHAIN ⚔️ | Auto Collect Artifacts",
+				Text = "Auto collecting artifacts finished, you can now run again ✅",
+				Duration = 7.5,
+				Callback = function() end
+			}
+			collectingArtifacts = false
+		elseif collectingArtifacts == true then
+			tab:prompt{
+				Title = "Warning",
+				Text = "Please wait until the auto artifact collector is finished!",
+				Buttons = {
+					Alright = function()
+					end
+				}
+			}
+		end
+	end
+})
+
+tab2:button({
+	Name = "What is this?",
+	Description = "Read me",
+	Callback = function()
+		tab:prompt{
+			Title = "Info",
+			Text = "Weapon modifications that give you advantages",
+			Buttons = {
+				Alright = function()
+				end
+			}
+		}
+	end
+})
+
 local xsawGasToggle = false
 
-tab:toggle({
+tab2:toggle({
 	Name = "Infinite XSaw Gas",
 	Description = "Grants you infinite XSaw gas",
 	StartingState = false,
@@ -255,7 +391,7 @@ tab:toggle({
 		if game.Players.LocalPlayer.Character.Items:FindFirstChild("XSaw") and game.Players.LocalPlayer.Character.Items.XSaw:GetAttribute("Gas") <= 0 then
 			if xsawGasToggle == false then
 				xsawGasToggle = true
-				
+
 				gui:notification{
 					Title = "CHAIN ⚔️ | Infinite XSaw Gas",
 					Text = "Toggle again after death! ✅ (won't save you from death tho)",
@@ -289,7 +425,7 @@ tab:toggle({
 	end
 })
 
-tab2:button({
+tab3:button({
 	Name = "What is this?",
 	Description = "Read me",
 	Callback = function()
@@ -306,17 +442,17 @@ tab2:button({
 
 local espChain = false
 
-tab2:button({
+tab3:button({
 	Name = "Advanced CHAIN Esp",
 	Description = "Displays where CHAIN is along with detailed info",
 	Callback = function()
 		if espChain == false then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/chain%20esp.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainesp.lua"))()
 			espChain = true
 
 			gui:notification{
 				Title = "CHAIN ⚔️ | Advanced CHAIN Esp",
-				Text = "CHAIN esp active ✅ (this isn't mine! credits to BongCloudMaster on GitHub)",
+				Text = "CHAIN esp active ✅",
 				Duration = 7.5,
 				Callback = function() end
 			}
@@ -335,7 +471,7 @@ tab2:button({
 
 local highlightToggle = false
 
-tab2:toggle({
+tab3:toggle({
 	Name = "Highlight CHAIN",
 	Description = "Highlights where CHAIN is with a red highlight",
 	StartingState = false,
@@ -370,17 +506,17 @@ tab2:toggle({
 
 local espScrap = false
 
-tab2:button({
+tab3:button({
 	Name = "Scrap Esp",
 	Description = "Displays where all the scrap is",
 	Callback = function()
 		if espScrap == false then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrap%20esp.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapesp.lua"))()
 			espScrap = true
 
 			gui:notification{
 				Title = "CHAIN ⚔️ | Scrap Esp",
-				Text = "Scrap esp active ✅ (this isn't mine! credits to BongCloudMaster on GitHub)",
+				Text = "Scrap esp active ✅",
 				Duration = 7.5,
 				Callback = function() end
 			}
@@ -397,7 +533,7 @@ tab2:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "What is this?",
 	Description = "Read me",
 	Callback = function()
@@ -412,7 +548,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Small Cabin Location",
 	Description = "Teleports you to the Small Cabin",
 	Callback = function()
@@ -427,7 +563,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Storage Shed Location",
 	Description = "Teleports you to the Storage Shed",
 	Callback = function()
@@ -442,7 +578,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Power Station Location",
 	Description = "Teleports you to the Power Station",
 	Callback = function()
@@ -457,7 +593,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Radio Tower Location",
 	Description = "Teleports you to the Radio Tower",
 	Callback = function()
@@ -472,7 +608,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Shop Location",
 	Description = "Teleports you to the Shop",
 	Callback = function()
@@ -487,7 +623,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Workshop Location",
 	Description = "Teleports you to the Workshop",
 	Callback = function()
@@ -502,7 +638,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Warehouse Location",
 	Description = "Teleports you to the Warehouse",
 	Callback = function()
@@ -517,7 +653,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Ritual Location",
 	Description = "Teleports you to the Ritual",
 	Callback = function()
@@ -532,7 +668,7 @@ tab3:button({
 	end
 })
 
-tab3:button({
+tab4:button({
 	Name = "Leaderboard Location",
 	Description = "Teleports you to the Leaderboard",
 	Callback = function()
@@ -547,7 +683,7 @@ tab3:button({
 	end
 })
 
-tab4:button({
+tab5:button({
 	Name = "What is this?",
 	Description = "Read me",
 	Callback = function()
@@ -562,77 +698,10 @@ tab4:button({
 	end
 })
 
-local aimbotChain = false
-
-tab4:button({
-	Name = "CHAIN Aimbot",
-	Description = "Locks your camera onto CHAIN when holding right click with mouse",
-	Callback = function()
-		if aimbotChain == false then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/aimbot.lua"))()
-			aimbotChain = true
-
-			gui:notification{
-				Title = "CHAIN ⚔️ | CHAIN Aimbot",
-				Text = "CHAIN Aimbot active ✅ (this isn't mine! credits to BongCloudMaster on GitHub)",
-				Duration = 7.5,
-				Callback = function() end
-			}
-		elseif aimbotChain == true then
-			tab:prompt{
-				Title = "Warning",
-				Text = "You already are using CHAIN Aimbot!",
-				Buttons = {
-					Alright = function()
-					end
-				}
-			}
-		end
-	end
-})
-
-local collectingScrap = false
-
-tab4:button({
-	Name = "Auto Collect Scrap",
-	Description = "Automatically collects available Scrap around the map",
-	Callback = function()
-		if collectingScrap == false then
-			collectingScrap = true
-			gui:notification{
-				Title = "CHAIN ⚔️ | Auto Collect Scrap",
-				Text = "Auto collecting scrap ✅ (this isn't mine! credits to BongCloudMaster on GitHub)",
-				Duration = 7.5,
-				Callback = function() end
-			}
-			
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/BongCloudMaster/CHAIN/main/scrapcollector.lua"))()
-			
-			task.wait(1)
-			gui:notification{
-				Title = "CHAIN ⚔️ | Auto Collect Scrap",
-				Text = "Auto collecting scrap finished, you can now run again ✅",
-				Duration = 7.5,
-				Callback = function() end
-			}
-			collectingScrap = false
-		elseif collectingScrap == true then
-			tab:prompt{
-				Title = "Warning",
-				Text = "Please wait until the auto scrap collector is finished!",
-				Buttons = {
-					Alright = function()
-					end
-				}
-			}
-		end
-	end
-})
-
 local constantSpeedToggle = false
 local fasterConstantSpeedToggle = false
 
-tab4:toggle({
+tab5:toggle({
 	Name = "Constant Speed",
 	Description = "Always have high speed no matter what, even while crouching, placing traps, etc",
 	StartingState = false,
@@ -676,7 +745,7 @@ tab4:toggle({
 	end
 })
 
-tab4:toggle({
+tab5:toggle({
 	Name = "Faster Constant Speed",
 	Description = "Always have higher speed no matter what, even while crouching, placing traps, etc",
 	StartingState = false,
@@ -722,26 +791,36 @@ tab4:toggle({
 
 local maskHead = false
 
-tab4:button({
+tab5:button({
 	Name = "Remove Mask on Head",
 	Description = "Removes the mask that's on your head on your character",
 	Callback = function()
 		if maskHead == false then
-			if game.Players.LocalPlayer.Character.Sack.SurfaceAppearance.Parent then
-				game.Players.LocalPlayer.Character.Sack.SurfaceAppearance.Parent:Destroy()
-			end
-			maskHead = true
+			if game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
+				game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent:Destroy()
+				maskHead = true
 
-			gui:notification{
-				Title = "CHAIN ⚔️ | Remove Mask on Head",
-				Text = "Removed mask on head ✅",
-				Duration = 7.5,
-				Callback = function() end
-			}
+				gui:notification{
+					Title = "CHAIN ⚔️ | Remove Mask on Head",
+					Text = "Removed the mask on your head ✅",
+					Duration = 7.5,
+					Callback = function() end
+				}
+				
+				while true do
+					task.wait(0.1)
+					if not game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
+						continue
+					elseif game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
+						maskHead = false
+						break
+					end
+				end
+			end
 		elseif maskHead == true then
 			tab:prompt{
 				Title = "Warning",
-				Text = "You already removed the mask!",
+				Text = "You already removed the mask on your head!",
 				Buttons = {
 					Alright = function()
 					end
@@ -754,7 +833,7 @@ tab4:button({
 local thirdPerson = false
 local firstPerson = false
 
-tab4:button({
+tab5:button({
 	Name = "Third Person",
 	Description = "Changes your camera to third person",
 	Callback = function()
@@ -782,7 +861,7 @@ tab4:button({
 	end
 })
 
-tab4:button({
+tab5:button({
 	Name = "First Person",
 	Description = "Changes your camera to first person",
 	Callback = function()
@@ -810,7 +889,7 @@ tab4:button({
 	end
 })
 
-tab4:textbox({
+tab5:textbox({
 	Name = "Custom Print",
 	Description = "Print anything in the console",
 	Callback = function(text)
@@ -825,7 +904,7 @@ tab4:textbox({
 	end
 })
 
-tab4:textbox({
+tab5:textbox({
 	Name = "Custom Notification",
 	Description = "Create a custom notification",
 	Callback = function(text)
@@ -837,3 +916,18 @@ tab4:textbox({
 		}
 	end
 })
+
+task.spawn(function()
+	while gui do
+		task.wait(math.random(60, 300))
+
+		if not gui then break end
+
+		gui:notification{
+			Title = "CHAIN ⚔️ | Reminder",
+			Text = "Every time you die, re-toggle any toggles or buttons to ensure they keep working!",
+			Duration = 12.5,
+			Callback = function() end
+		}
+	end
+end)
