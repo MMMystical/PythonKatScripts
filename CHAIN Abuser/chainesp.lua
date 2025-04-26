@@ -2,7 +2,6 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
---[[ Bin class for cleanup ]]
 local Bin
 do
 	Bin = setmetatable({}, {
@@ -160,46 +159,45 @@ do
 		return self.bin:destroy()
 	end
 
-	-- (everything else before this remains unchanged)
+	function ESP:render()
+		local camera = CurrentCamera
+		local instance = self.instance
+		local attributes = self.attributes
+		local labels = self.labels
+		local _binding = labels
+		local container = _binding.container
+		local name = _binding.name
+		local data = _binding.data
 
-function ESP:render()
-	local camera = CurrentCamera
-	local instance = self.instance
-	local attributes = self.attributes
-	local labels = self.labels
-	local _binding = labels
-	local container = _binding.container
-	local name = _binding.name
-	local data = _binding.data
+		local position, visible = camera:WorldToViewportPoint(instance.HumanoidRootPart.Position)
 
-	local position, visible = camera:WorldToViewportPoint(instance.HumanoidRootPart.Position)
+		if visible and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
+			local scale = 1 / (position.Z * math.tan(math.rad(camera.FieldOfView * 0.5)) * 2) * 1000
+			local width, height = math.floor(4.5 * scale), math.floor(6 * scale)
+			local x, y = math.floor(position.X), math.floor(position.Y)
+			local xPosition, yPosition = math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale))
+			local vector2 = Vector2.new(xPosition, yPosition)
 
-	if visible and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
-		local scale = 1 / (position.Z * math.tan(math.rad(camera.FieldOfView * 0.5)) * 2) * 1000
-		local width, height = math.floor(4.5 * scale), math.floor(6 * scale)
-		local x, y = math.floor(position.X), math.floor(position.Y)
-		local xPosition, yPosition = math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale))
-		local vector2 = Vector2.new(xPosition, yPosition)
+			attributes = instance:GetAttributes()
 
-		attributes = instance:GetAttributes()
+			local _valueExisted = container.Visible == false
+			container.Visible = true
+			name.Text = instance.Name
 
-		local _valueExisted = container.Visible == false
-		container.Visible = true
-		name.Text = instance.Name
+			local positionDiff = LocalPlayer.Character.HumanoidRootPart.Position - instance.HumanoidRootPart.Position
 
-		local positionDiff = LocalPlayer.Character.HumanoidRootPart.Position - instance.HumanoidRootPart.Position
+			data.Text = string.format(
+				"[%.1f] [Anger: %.1f] [Choke: %.1f%%] [Ground Slam: %.1f]",
+				positionDiff.Magnitude,
+				tonumber(attributes.Anger) or 0,
+				tonumber(attributes.ChokeMeter) or 0,
+				tonumber(attributes.Burst) or 0
+			)
 
-		data.Text = string.format(
-			"[%.1f] [Anger: %.1f] [Choke: %.1f%%] [Ground Slam: %.1f]",
-			positionDiff.Magnitude,
-			tonumber(attributes.Anger) or 0,
-			tonumber(attributes.ChokeMeter) or 0,
-			tonumber(attributes.Burst) or 0
-		)
-
-		container.Position = UDim2.new(0, vector2.X, 0, vector2.Y + 3)
-	else
-		local _valueExisted_1 = container.Visible == true
-		container.Visible = false
+			container.Position = UDim2.new(0, vector2.X, 0, vector2.Y + 3)
+		else
+			local _valueExisted_1 = container.Visible == true
+			container.Visible = false
+		end
 	end
 end
