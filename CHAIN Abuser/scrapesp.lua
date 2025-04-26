@@ -14,7 +14,6 @@ local CurrentCamera = Workspace.CurrentCamera
 
 local Lootables = {}
 local ScrapConnection
-local RenderConnection
 
 local Bin = {}
 Bin.__index = Bin
@@ -44,7 +43,7 @@ end
 local LootableComponent = {}
 LootableComponent.__index = LootableComponent
 
-function LootableComponent.new(scrap, gui)
+function LootableComponent.new(scrap, screenGui)
 	local self = setmetatable({}, LootableComponent)
 	self.scrap = scrap
 	self.pivot = scrap:GetPivot()
@@ -69,13 +68,17 @@ function LootableComponent.new(scrap, gui)
 	self.nameLabel.Text = "Scrap"
 
 	self.nameLabel.Parent = self.container
-	self.container.Parent = gui
+	self.container.Parent = screenGui
 
 	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
 		self.available = self.values:GetAttribute("Available")
 		if not self.available then
 			self:destroy()
 		end
+	end))
+
+	self.bin:add(RunService.RenderStepped:Connect(function()
+		self:render()
 	end))
 
 	return self
@@ -138,14 +141,6 @@ function Module:enable()
 			end
 		end)
 	end)
-
-	RenderConnection = RunService.RenderStepped:Connect(function()
-		for _, lootable in pairs(Lootables) do
-			if lootable then
-				lootable:render()
-			end
-		end
-	end)
 end
 
 function Module:disable()
@@ -157,11 +152,6 @@ function Module:disable()
 		ScrapConnection = nil
 	end
 
-	if RenderConnection then
-		RenderConnection:Disconnect()
-		RenderConnection = nil
-	end
-
 	for _, lootable in pairs(Lootables) do
 		lootable:destroy()
 	end
@@ -169,8 +159,8 @@ function Module:disable()
 
 	if self.ScreenGui and self.ScreenGui.Parent then
 		self.ScreenGui:Destroy()
-		self.ScreenGui = nil
 	end
+	self.ScreenGui = nil
 end
 
 return setmetatable({}, Module)
