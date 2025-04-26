@@ -106,7 +106,6 @@ function LootableComponent:destroy()
 		self.container:Destroy()
 	end
 	self.bin:destroy()
-	Lootables[self.scrap] = nil
 end
 
 function Module:enable()
@@ -122,42 +121,45 @@ function Module:enable()
 	end
 
 	local function setupScrap(scrap)
-		if not Lootables[scrap] then
-			Lootables[scrap] = {
-				bin = Bin.new(),
-				component = nil,
-			}
+		if Lootables[scrap] then return end
 
-			local function update()
-				local available = scrap:GetAttribute("Available")
-				if available then
-					if not Lootables[scrap].component then
-						local comp = LootableComponent.new(scrap, self.ScreenGui)
-						comp.available = true
-						Lootables[scrap].component = comp
-					end
-				else
-					if Lootables[scrap].component then
-						Lootables[scrap].component:destroy()
-						Lootables[scrap].component = nil
-					end
+		Lootables[scrap] = {
+			bin = Bin.new(),
+			component = nil,
+		}
+
+		local function update()
+			local available = scrap:GetAttribute("Available")
+			if available then
+				if not Lootables[scrap].component then
+					local comp = LootableComponent.new(scrap, self.ScreenGui)
+					comp.available = true
+					Lootables[scrap].component = comp
+				end
+			else
+				if Lootables[scrap].component then
+					Lootables[scrap].component:destroy()
+					Lootables[scrap].component = nil
 				end
 			end
-
-			update()
-
-			Lootables[scrap].bin:add(scrap:GetAttributeChangedSignal("Available"):Connect(update))
-
-			Lootables[scrap].bin:add(scrap.Destroying:Connect(function()
-				if Lootables[scrap] then
-					if Lootables[scrap].component then
-						Lootables[scrap].component:destroy()
-					end
-					Lootables[scrap].bin:destroy()
-					Lootables[scrap] = nil
-				end
-			end))
 		end
+
+		-- initial check
+		update()
+
+		Lootables[scrap].bin:add(scrap:GetAttributeChangedSignal("Available"):Connect(function()
+			task.defer(update)
+		end))
+
+		Lootables[scrap].bin:add(scrap.Destroying:Connect(function()
+			if Lootables[scrap] then
+				if Lootables[scrap].component then
+					Lootables[scrap].component:destroy()
+				end
+				Lootables[scrap].bin:destroy()
+				Lootables[scrap] = nil
+			end
+		end))
 	end
 
 	for _, scrap in ipairs(LootFolders:GetChildren()) do
