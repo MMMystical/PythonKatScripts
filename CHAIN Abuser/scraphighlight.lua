@@ -4,8 +4,7 @@ Module.__index = Module
 local Workspace = cloneref(game:GetService("Workspace"))
 local RunService = cloneref(game:GetService("RunService"))
 
-local MiscFolder = Workspace:WaitForChild("Misc")
-local ScrapFolder = MiscFolder:WaitForChild("Scraps")
+local ScrapFolder = Workspace.Misc.Zones.LootingItems:WaitForChild('Scrap')
 
 local highlights = {}
 local scrapConnection
@@ -14,7 +13,7 @@ local renderConnection
 
 local function createHighlight(target)
     local highlight = Instance.new("Highlight")
-    highlight.FillColor = Color3.fromRGB(255, 165, 0) -- 🧡 orange-ish for scrap
+    highlight.FillColor = Color3.fromRGB(255, 165, 0)
     highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
     highlight.FillTransparency = 0.5
     highlight.OutlineTransparency = 0
