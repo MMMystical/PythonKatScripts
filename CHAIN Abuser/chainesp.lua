@@ -206,28 +206,22 @@ ESP.connections = Bin.new()
 
 -- Add ESP to new AI models
 ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
-	task.spawn(function()
-		local timeout = tick() + 5
-		while tick() < timeout do
-			if instance:IsA("Model") and instance:FindFirstChild("HumanoidRootPart") then
-				local suc, res = pcall(function()
-					ESP.new(instance)
-				end)
-				if not suc then warn(res) end
-				return
-			end
-			if not instance:IsDescendantOf(game) then return end
-			task.wait()
+	local thread = task.spawn(function()
+		repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
+		if instance:IsA("Model") and instance:FindFirstChild("HumanoidRootPart") then
+			ESP.new(instance)
 		end
 	end)
+	ESP.connections:add(thread)
 end))
 
--- ESP render loop
 ESP.connections:add(RunService.RenderStepped:Connect(function()
-	for _, esp in pairs(ESP.instances) do
-		pcall(function()
+	for model, esp in pairs(ESP.instances) do
+		if not model:IsDescendantOf(game) then
+			esp:destroy()
+		else
 			esp:render()
-		end)
+		end
 	end
 end))
 
