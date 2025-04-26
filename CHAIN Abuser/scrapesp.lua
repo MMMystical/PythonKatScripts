@@ -4,6 +4,7 @@ Module.__index = Module
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
+local TweenService = game:GetService("TweenService")
 
 local cloneref = cloneref or function(...) return ... end
 local SafeGetService = function(service) return cloneref(service) end
@@ -71,6 +72,8 @@ function LootableComponent.new(scrap, gui)
 	self.nameLabel.Parent = self.container
 	self.container.Parent = gui
 
+	self.tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+
 	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
 		self.available = self.values:GetAttribute("Available")
 	end))
@@ -95,12 +98,13 @@ function LootableComponent:render()
 		local dist = (LocalPlayer.Character.HumanoidRootPart.Position - self.pivot.Position).Magnitude
 		self.nameLabel.Text = "Scrap [" .. format(dist, 1) .. "]"
 
-		-- Change color based on availability
-		if self.available then
-			self.nameLabel.TextColor3 = Color3.new(0, 1, 0) -- Green
-		else
-			self.nameLabel.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Gray
-		end
+		-- Smooth color change
+		local targetColor = self.available and Color3.new(0, 1, 0) or Color3.new(0.5, 0.5, 0.5)
+		TweenService:Create(self.nameLabel, self.tweenInfo, {TextColor3 = targetColor}):Play()
+
+		-- Dynamic text size based on distance
+		local scaleFactor = math.clamp(100 / dist, 0.7, 1.5)
+		self.nameLabel.TextSize = 15 * scaleFactor
 
 		self.container.Position = UDim2.new(0, vector2.X, 0, vector2.Y)
 		self.container.Visible = true
