@@ -5,8 +5,13 @@ local Camera = Workspace.CurrentCamera
 local LocalPlayer = Players.LocalPlayer
 local MiscFolder = Workspace:WaitForChild("Misc")
 local ZonesFolder = MiscFolder:WaitForChild("Zones")
-local LootFolders = ZonesFolder:WaitForChild("LootingItems"):WaitForChild("Scrap")
-local ScrapCollectorController = {}
+local LootItemsFolder = ZonesFolder:WaitForChild("LootingItems", 5)
+local LootFolders = LootItemsFolder and LootItemsFolder:FindFirstChild("Scrap")
+
+if not LootFolders then
+	return
+else
+	local ScrapCollectorController = {}
 do
 	local _container = ScrapCollectorController
 	local scrapCounter = 0
@@ -52,3 +57,4 @@ do
 end
 ScrapCollectorController.__init()
 return 0
+end
