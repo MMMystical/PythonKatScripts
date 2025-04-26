@@ -62,11 +62,11 @@ function LootableComponent.new(scrap, gui)
 
 	self.nameLabel.BackgroundTransparency = 1
 	self.nameLabel.Font = Enum.Font.Nunito
-	self.nameLabel.TextColor3 = Color3.new(0, 1, 0)
 	self.nameLabel.TextStrokeTransparency = 0.5
 	self.nameLabel.Size = UDim2.new(1, 0, 0, 14)
 	self.nameLabel.TextSize = 15
 	self.nameLabel.Text = "Scrap"
+	self.nameLabel.TextColor3 = Color3.new(0, 1, 0)
 
 	self.nameLabel.Parent = self.container
 	self.container.Parent = gui
@@ -86,7 +86,7 @@ function LootableComponent:render()
 
 	local pos, visible = CurrentCamera:WorldToViewportPoint(self.pivot.Position)
 
-	if visible and self.available and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+	if visible and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
 		local scale = 1 / (pos.Z * math.tan(math.rad(CurrentCamera.FieldOfView * 0.5)) * 2) * 1000
 		local width, height = math.floor(1 * scale), math.floor(3 * scale)
 		local x, y = math.floor(pos.X), math.floor(pos.Y)
@@ -94,6 +94,13 @@ function LootableComponent:render()
 
 		local dist = (LocalPlayer.Character.HumanoidRootPart.Position - self.pivot.Position).Magnitude
 		self.nameLabel.Text = "Scrap [" .. format(dist, 1) .. "]"
+
+		-- Change color based on availability
+		if self.available then
+			self.nameLabel.TextColor3 = Color3.new(0, 1, 0) -- Green
+		else
+			self.nameLabel.TextColor3 = Color3.new(0.5, 0.5, 0.5) -- Gray
+		end
 
 		self.container.Position = UDim2.new(0, vector2.X, 0, vector2.Y)
 		self.container.Visible = true
