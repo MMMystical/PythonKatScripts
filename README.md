@@ -97,7 +97,7 @@ Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won'
 
 ## Loadstring
 ```lua
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/main/Chat%20Bypasser/src.lua")))()
+https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/src.lua
 ```
 
 Copy the loadstring and enjoy using the CHAIN Abuser!
