@@ -5,8 +5,13 @@ local Camera = Workspace.CurrentCamera
 local LocalPlayer = Players.LocalPlayer
 local MiscFolder = Workspace:WaitForChild("Misc")
 local ZonesFolder = MiscFolder:WaitForChild("Zones")
-local LootFolders = ZonesFolder:WaitForChild("LootingItems"):WaitForChild("Artifact")
-local ArtifactCollectorController = {}
+local LootItemsFolder = ZonesFolder:WaitForChild("LootingItems", 5)
+local LootFolders = LootItemsFolder and LootItemsFolder:FindFirstChild("Artifact")
+
+if not LootFolders then
+	return
+else
+	local ArtifactCollectorController = {}
 do
 	local _container = ArtifactCollectorController
 	local artifactCounter = 0
@@ -51,3 +56,4 @@ do
 end
 ArtifactCollectorController.__init()
 return 0
+end
