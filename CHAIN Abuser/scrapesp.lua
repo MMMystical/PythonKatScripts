@@ -70,13 +70,6 @@ function LootableComponent.new(scrap, screenGui)
 	self.nameLabel.Parent = self.container
 	self.container.Parent = screenGui
 
-	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
-		self.available = self.values:GetAttribute("Available")
-		if not self.available then
-			self:destroy()
-		end
-	end))
-
 	self.bin:add(RunService.RenderStepped:Connect(function()
 		self:render()
 	end))
@@ -128,21 +121,52 @@ function Module:enable()
 		self.ScreenGui = newGui
 	end
 
-	for _, scrap in ipairs(LootFolders:GetChildren()) do
-		if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
-			Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
+	local function setupScrap(scrap)
+		if not Lootables[scrap] then
+			Lootables[scrap] = {
+				bin = Bin.new(),
+				component = nil,
+			}
+
+			local function update()
+				local available = scrap:GetAttribute("Available")
+				if available then
+					if not Lootables[scrap].component then
+						local comp = LootableComponent.new(scrap, self.ScreenGui)
+						comp.available = true
+						Lootables[scrap].component = comp
+					end
+				else
+					if Lootables[scrap].component then
+						Lootables[scrap].component:destroy()
+						Lootables[scrap].component = nil
+					end
+				end
+			end
+
+			update()
+
+			Lootables[scrap].bin:add(scrap:GetAttributeChangedSignal("Available"):Connect(update))
+
+			Lootables[scrap].bin:add(scrap.Destroying:Connect(function()
+				if Lootables[scrap] then
+					if Lootables[scrap].component then
+						Lootables[scrap].component:destroy()
+					end
+					Lootables[scrap].bin:destroy()
+					Lootables[scrap] = nil
+				end
+			end))
 		end
+	end
+
+	for _, scrap in ipairs(LootFolders:GetChildren()) do
+		setupScrap(scrap)
 	end
 
 	ScrapConnection = LootFolders.ChildAdded:Connect(function(scrap)
 		task.spawn(function()
-			if not scrap:GetAttribute("Scrap") then
-				scrap:GetAttributeChangedSignal("Scrap"):Wait()
-			end
-
-			if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
-				Lootables[scrap] = LootableComponent.new(scrap, self.ScreenGui)
-			end
+			setupScrap(scrap)
 		end)
 	end)
 end
@@ -157,7 +181,10 @@ function Module:disable()
 	end
 
 	for _, lootable in pairs(Lootables) do
-		lootable:destroy()
+		if lootable.component then
+			lootable.component:destroy()
+		end
+		lootable.bin:destroy()
 	end
 	table.clear(Lootables)
 
