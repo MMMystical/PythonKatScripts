@@ -2,6 +2,7 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
+--[[ Bin class for cleanup ]]
 local Bin
 do
 	Bin = setmetatable({}, {
@@ -162,42 +163,68 @@ do
 	function ESP:render()
 		local camera = CurrentCamera
 		local instance = self.instance
-		local attributes = self.attributes
 		local labels = self.labels
-		local _binding = labels
-		local container = _binding.container
-		local name = _binding.name
-		local data = _binding.data
+		local container, name, data = labels.container, labels.name, labels.data
+
+		if not instance or not instance:FindFirstChild("HumanoidRootPart") then
+			self:destroy()
+			return
+		end
 
 		local position, visible = camera:WorldToViewportPoint(instance.HumanoidRootPart.Position)
 
-		if visible and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
+		if visible and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
 			local scale = 1 / (position.Z * math.tan(math.rad(camera.FieldOfView * 0.5)) * 2) * 1000
 			local width, height = math.floor(4.5 * scale), math.floor(6 * scale)
 			local x, y = math.floor(position.X), math.floor(position.Y)
-			local xPosition, yPosition = math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale))
-			local vector2 = Vector2.new(xPosition, yPosition)
+			local vector2 = Vector2.new(math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale)))
 
-			attributes = instance:GetAttributes()
+			local attributes = instance:GetAttributes()
+			local anger = format(attributes.Anger)
+			local choke = format(attributes.ChokeMeter)
+			local burst = format(attributes.Burst)
+			local dist = format((LocalPlayer.Character.HumanoidRootPart.Position - instance.HumanoidRootPart.Position).Magnitude)
 
-			local _valueExisted = container.Visible == false
-			container.Visible = true
 			name.Text = instance.Name
-
-			local positionDiff = LocalPlayer.Character.HumanoidRootPart.Position - instance.HumanoidRootPart.Position
-
-			data.Text = string.format(
-				"[%.1f] [Anger: %.1f] [Choke: %.1f%%] [Ground Slam: %.1f]",
-				positionDiff.Magnitude,
-				tonumber(attributes.Anger) or 0,
-				tonumber(attributes.ChokeMeter) or 0,
-				tonumber(attributes.Burst) or 0
-			)
-
+			data.Text = string.format("[%s] [Anger: %s] [Choke: %s%%] [Ground Slam: %s]", dist, anger, choke, burst)
 			container.Position = UDim2.new(0, vector2.X, 0, vector2.Y + 3)
+			container.Visible = true
 		else
-			local _valueExisted_1 = container.Visible == true
 			container.Visible = false
 		end
 	end
 end
+
+ESP.instances = {}
+ESP.connections = Bin.new()
+
+ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
+	task.spawn(function()
+		repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
+		if instance:IsA("Model") and instance:FindFirstChild("HumanoidRootPart") then
+			ESP.new(instance)
+		end
+	end)
+end))
+
+ESP.connections:add(RunService.RenderStepped:Connect(function()
+	for _, esp in pairs(ESP.instances) do
+		esp:render()
+	end
+end))
+
+for _, model in pairs(AIFolder:GetChildren()) do
+	if model:FindFirstChild("Humanoid") then
+		local suc, res = pcall(function()
+			ESP.new(model)
+		end)
+		if not suc then
+			warn(res)
+		end
+	end
+end
+
+ScreenGui.DisplayOrder = 10
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
+return 0
