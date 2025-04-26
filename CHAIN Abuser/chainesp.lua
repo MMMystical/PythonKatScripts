@@ -178,45 +178,51 @@ local Module = {}
 Module.__index = Module
 
 function Module:enable()
-	if ScreenGui.Parent == nil then
-		ScreenGui.DisplayOrder = 10
-		ScreenGui.IgnoreGuiInset = true
-		ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
-	end
+    if ScreenGui and ScreenGui.Parent then
+        ScreenGui:Destroy()
+    end
 
-	ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
-		task.spawn(function()
-			repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
-			if instance:IsA("Model") then
-				ESP.new(instance)
-			end
-		end)
-	end))
+    ScreenGui = Instance.new("ScreenGui")
+    ScreenGui.DisplayOrder = 10
+    ScreenGui.IgnoreGuiInset = true
+    ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
 
-	ESP.connections:add(RunService.RenderStepped:Connect(function()
-		for _, esp in pairs(ESP.instances) do
-			esp:render()
-		end
-	end))
+    ESP.connections = Bin.new()
 
-	for _, model in pairs(AIFolder:GetChildren()) do
-		if model:FindFirstChild("Humanoid") then
-			pcall(function()
-				ESP.new(model)
-			end)
-		end
-	end
+    ESP.connections:add(AIFolder.ChildAdded:Connect(function(instance)
+        task.spawn(function()
+            repeat task.wait() until instance:FindFirstChild("HumanoidRootPart")
+            if instance:IsA("Model") then
+                ESP.new(instance)
+            end
+        end)
+    end))
+
+    ESP.connections:add(RunService.RenderStepped:Connect(function()
+        for _, esp in pairs(ESP.instances) do
+            esp:render()
+        end
+    end))
+
+    for _, model in pairs(AIFolder:GetChildren()) do
+        if model:FindFirstChild("Humanoid") then
+            pcall(function()
+                ESP.new(model)
+            end)
+        end
+    end
 end
 
 function Module:disable()
-	ESP.connections:destroy()
-	for _, esp in pairs(ESP.instances) do
-		esp:destroy()
-	end
-	table.clear(ESP.instances)
-	if ScreenGui then
-		ScreenGui:Destroy()
-	end
+    ESP.connections:destroy()
+    for _, esp in pairs(ESP.instances) do
+        esp:destroy()
+    end
+    table.clear(ESP.instances)
+    if ScreenGui and ScreenGui.Parent then
+        ScreenGui:Destroy()
+        ScreenGui = nil
+    end
 end
 
 return setmetatable({}, Module)
