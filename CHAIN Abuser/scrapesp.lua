@@ -14,6 +14,7 @@ local CurrentCamera = Workspace.CurrentCamera
 
 local Lootables = {}
 local ScrapConnection
+local RenderConnection
 
 local Bin = {}
 Bin.__index = Bin
@@ -77,10 +78,6 @@ function LootableComponent.new(scrap, gui)
 		end
 	end))
 
-	self.bin:add(RunService.RenderStepped:Connect(function()
-		self:render()
-	end))
-
 	return self
 end
 
@@ -141,6 +138,14 @@ function Module:enable()
 			end
 		end)
 	end)
+
+	RenderConnection = RunService.RenderStepped:Connect(function()
+		for _, lootable in pairs(Lootables) do
+			if lootable then
+				lootable:render()
+			end
+		end
+	end)
 end
 
 function Module:disable()
@@ -150,6 +155,11 @@ function Module:disable()
 	if ScrapConnection then
 		ScrapConnection:Disconnect()
 		ScrapConnection = nil
+	end
+
+	if RenderConnection then
+		RenderConnection:Disconnect()
+		RenderConnection = nil
 	end
 
 	for _, lootable in pairs(Lootables) do
