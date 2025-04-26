@@ -1,215 +1,164 @@
-local Bin
-do
-	Bin = setmetatable({}, {
-		__tostring = function()
-			return "Bin"
-		end,
-	})
-	Bin.__index = Bin
-	function Bin.new(...)
-		local self = setmetatable({}, Bin)
-		return self:constructor(...) or self
-	end
-	function Bin:constructor()
-	end
-	function Bin:add(item)
-		local node = {
-			item = item,
-		}
-		if self.head == nil then
-			self.head = node
-		end
-		if self.tail then
-			self.tail.next = node
-		end
-		self.tail = node
-		return self
-	end
-	function Bin:destroy()
-		local head = self.head
-		while head do
-			local _binding = head
-			local item = _binding.item
-			if type(item) == "function" then
-				item()
-			elseif typeof(item) == "RBXScriptConnection" then
-				item:Disconnect()
-			elseif type(item) == "thread" then
-				task.cancel(item)
-			elseif item.destroy ~= nil then
-				item:destroy()
-			elseif item.Destroy ~= nil then
-				item:Destroy()
-			end
-			head = head.next
-			self.head = head
-		end
-	end
-	function Bin:isEmpty()
-		return self.head == nil
-	end
-end
+local Module = {}
+Module.__index = Module
 
---[[ Variables & References ]]
 local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
-local LootFolders : Folder = Workspace.Misc.Zones.LootingItems:WaitForChild('Scrap')
-local LocalPlayer : Player = Players.LocalPlayer
+local cloneref = cloneref or function(...) return ... end
+local SafeGetService = function(service) return cloneref(service) end
+
+local LootFolders = Workspace.Misc.Zones.LootingItems:WaitForChild('Scrap')
+local LocalPlayer = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local ScreenGui = Instance.new("ScreenGui")
 
---[[ Functions ]]
-function format(num, formatDecimals)
-	return string.format("%."..formatDecimals.."f", num)
+local Lootables = {}
+local ScrapConnection
+
+local Bin = {}
+Bin.__index = Bin
+function Bin.new()
+	return setmetatable({}, Bin)
 end
-
-function blackfunction(...)
-	return ...
+function Bin:add(item)
+	self[#self+1] = item
 end
-
-local cloneref = cloneref or blackfunction
-
-local function SafeGetService(service)
-	return cloneref(service)
-end
-
---[[ BaseComponent ]]
-local BaseComponent
-do
-	BaseComponent = setmetatable({}, {
-		__tostring = function()
-			return "BaseComponent"
-		end,
-	})
-	BaseComponent.__index = BaseComponent
-	function BaseComponent.new(...)
-		local self = setmetatable({}, BaseComponent)
-		return self:constructor(...) or self
-	end
-	function BaseComponent:constructor(item)
-		self.bin = Bin.new()
-		self.object = item
-	end
-	function BaseComponent:destroy()
-		self.bin:destroy()
-	end
-end
-
---[[ LootableComponent ]]
-local LootableComponent
-do
-	local super = BaseComponent
-	LootableComponent = setmetatable({}, {
-		__tostring = function()
-			return "LootableComponent"
-		end,
-		__index = super,
-	})
-	LootableComponent.__index = LootableComponent
-	function LootableComponent.new(...)
-		local self =  setmetatable({}, LootableComponent)
-		return self:constructor(...) or self
-	end
-	function LootableComponent:constructor(isAvailable : boolean ,scrap : Model, pivot: CFrame) : (boolean, Model, CFrame)
-		super.constructor(self, scrap)
-		self.interface = {
-			container = Instance.new("Frame"),
-			name = Instance.new("TextLabel"),
-		}
-		self.pivotPos = pivot
-		self.isAvailable = isAvailable
-		self:initialize()
-	end
-	function LootableComponent:initialize()
-		local _binding = self
-		local bin = _binding.bin
-		local interface = _binding.interface
-		local instance = _binding.object
-		local values : Folder = instance:WaitForChild('Values', 10)
-
-		local container = interface.container
-		local name = interface.name
-
-		container.Visible = false
-		container.AnchorPoint = Vector2.new(0.5, 0)
-		container.BackgroundTransparency = 1
-		name.BackgroundTransparency = 1
-		name.Font = Enum.Font.Nunito
-		name.Text = 'Scrap'
-		name.TextColor3 = Color3.new(0, 1, 0)
-		name.TextSize = 15
-		name.TextStrokeTransparency = 0.5
-		name.Size = UDim2.new(1, 0, 0, 14)
-		container.Size = UDim2.new(0, 100, 0, 50)
-
-		name.Parent = container
-		container.Parent = ScreenGui
-
-		bin:add(values:GetAttributeChangedSignal('Available'):Connect(function()
-			_binding.isAvailable = values:GetAttribute('Available')
-			if not _binding.isAvailable then
-				_binding:destroy()
-			end
-		end))
-		bin:add(RunService.RenderStepped:Connect(function()
-			_binding:render()
-		end))
-	end
-	function LootableComponent:render()
-		local camera = CurrentCamera
-		local _binding = self
-		local instance = _binding.object
-		local pivot = _binding.pivotPos
-		local interface = _binding.interface
-		local container = interface.container
-		local name = interface.name
-
-		if not instance or not instance.Parent then
-			self:destroy()
-			return
+function Bin:destroy()
+	for _, item in ipairs(self) do
+		if typeof(item) == "RBXScriptConnection" then
+			item:Disconnect()
+		elseif typeof(item) == "Instance" then
+			item:Destroy()
+		elseif type(item) == "function" then
+			item()
 		end
+	end
+	table.clear(self)
+end
 
-		if camera and instance then
-			local position, visible = camera:WorldToViewportPoint(pivot.Position)
+local function format(num, decimals)
+	return string.format("%."..decimals.."f", num)
+end
 
-			if visible and self.isAvailable and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
-				local scale = 1 / (position.Z * math.tan(math.rad(camera.FieldOfView * 0.5)) * 2) * 1000
-				local width, height = math.floor(1 * scale), math.floor(3 * scale)
-				local x, y = math.floor(position.X), math.floor(position.Y)
-				local xPosition, yPosition = math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale))
-				local vector2 = Vector2.new(xPosition, yPosition)
+local LootableComponent = {}
+LootableComponent.__index = LootableComponent
 
-				container.Visible = true
+function LootableComponent.new(scrap)
+	local self = setmetatable({}, LootableComponent)
+	self.scrap = scrap
+	self.pivot = scrap:GetPivot()
+	self.values = scrap:WaitForChild("Values", 10)
+	self.available = self.values:GetAttribute("Available")
+	self.bin = Bin.new()
 
-				local PositionDiff = LocalPlayer.Character.HumanoidRootPart.Position - pivot.Position
-				name.Text = "Scrap [" .. format(PositionDiff.Magnitude, 1) .. "]"
+	self.container = Instance.new("Frame")
+	self.nameLabel = Instance.new("TextLabel")
 
-				container.Position = UDim2.new(0, vector2.X, 0, vector2.Y)
-			else
-				container.Visible = false
-			end
-		else
+	self.container.Visible = false
+	self.container.AnchorPoint = Vector2.new(0.5, 0)
+	self.container.BackgroundTransparency = 1
+	self.container.Size = UDim2.new(0, 100, 0, 50)
+
+	self.nameLabel.BackgroundTransparency = 1
+	self.nameLabel.Font = Enum.Font.Nunito
+	self.nameLabel.TextColor3 = Color3.new(0, 1, 0)
+	self.nameLabel.TextStrokeTransparency = 0.5
+	self.nameLabel.Size = UDim2.new(1, 0, 0, 14)
+	self.nameLabel.TextSize = 15
+	self.nameLabel.Text = "Scrap"
+
+	self.nameLabel.Parent = self.container
+	self.container.Parent = ScreenGui
+
+	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
+		self.available = self.values:GetAttribute("Available")
+		if not self.available then
 			self:destroy()
 		end
+	end))
+
+	self.bin:add(RunService.RenderStepped:Connect(function()
+		self:render()
+	end))
+
+	return self
+end
+
+function LootableComponent:render()
+	if not self.scrap or not self.scrap.Parent then
+		self:destroy()
+		return
 	end
-	function LootableComponent:destroy()
-		if self.interface and self.interface.container then
-			self.interface.container:Destroy()
+
+	local pos, visible = CurrentCamera:WorldToViewportPoint(self.pivot.Position)
+
+	if visible and self.available and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+		local scale = 1 / (pos.Z * math.tan(math.rad(CurrentCamera.FieldOfView * 0.5)) * 2) * 1000
+		local width, height = math.floor(1 * scale), math.floor(3 * scale)
+		local x, y = math.floor(pos.X), math.floor(pos.Y)
+		local vector2 = Vector2.new(x - width * 0.5, (y - height * 0.5) + (0.5 * scale))
+
+		local dist = (LocalPlayer.Character.HumanoidRootPart.Position - self.pivot.Position).Magnitude
+		self.nameLabel.Text = "Scrap [" .. format(dist, 1) .. "]"
+
+		self.container.Position = UDim2.new(0, vector2.X, 0, vector2.Y)
+		self.container.Visible = true
+	else
+		self.container.Visible = false
+	end
+end
+
+function LootableComponent:destroy()
+	if self.container then
+		self.container:Destroy()
+	end
+	self.bin:destroy()
+	Lootables[self.scrap] = nil
+end
+
+function Module:enable()
+	if self.enabled then return end
+	self.enabled = true
+
+	if ScreenGui.Parent == nil then
+		ScreenGui.DisplayOrder = 10
+		ScreenGui.IgnoreGuiInset = true
+		ScreenGui.Parent = SafeGetService(game:GetService("CoreGui"))
+	end
+
+	for _, scrap in ipairs(LootFolders:GetChildren()) do
+		if scrap:GetAttribute("Scrap") and not Lootables[scrap] then
+			Lootables[scrap] = LootableComponent.new(scrap)
 		end
-		self.bin:destroy()
+	end
+
+	ScrapConnection = LootFolders.ChildAdded:Connect(function(scrap)
+		task.spawn(function()
+			if scrap:GetAttribute("Scrap") then
+				Lootables[scrap] = LootableComponent.new(scrap)
+			end
+		end)
+	end)
+end
+
+function Module:disable()
+	if not self.enabled then return end
+	self.enabled = false
+
+	if ScrapConnection then
+		ScrapConnection:Disconnect()
+		ScrapConnection = nil
+	end
+
+	for _, lootable in pairs(Lootables) do
+		lootable:destroy()
+	end
+	table.clear(Lootables)
+
+	if ScreenGui and ScreenGui.Parent then
+		ScreenGui:Destroy()
 	end
 end
 
-for _, v in (LootFolders:GetChildren()) do
-	if v:GetAttribute('Scrap') then
-		LootableComponent.new(v.Values:GetAttribute('Available'), v, v:GetPivot())
-	end
-end
-
-ScreenGui.DisplayOrder = 10
-ScreenGui.IgnoreGuiInset = true
-ScreenGui.Parent = SafeGetService(game:GetService('CoreGui'))
-
-return 0
+return setmetatable({}, Module)
