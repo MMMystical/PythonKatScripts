@@ -1,7 +1,3 @@
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-local Workspace = game:GetService("Workspace")
-
 local Bin
 do
 	Bin = setmetatable({}, {
@@ -54,49 +50,32 @@ do
 	end
 end
 
---[[
-    ----------------------
-    Variables & References
-    ----------------------
-]]
+--[[ Variables & References ]]
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
 
 local LootFolders : Folder = Workspace.Misc.Zones.LootingItems:WaitForChild('Scrap')
 local LocalPlayer : Player = Players.LocalPlayer
 local CurrentCamera = Workspace.CurrentCamera
 local ScreenGui = Instance.new("ScreenGui")
 
---[[
-    --------------------
-    Function Declaration
-    --------------------
-    All the functions that are used throughout the code
-]]
-function format(num, format)
-	local formatted = string.format(`%.{format}f`, num)
-	return formatted
+--[[ Functions ]]
+function format(num, formatDecimals)
+	return string.format("%."..formatDecimals.."f", num)
 end
 
 function blackfunction(...)
 	return ...
 end
 
---[[
-    ----------------
-    Custom Functions
-    ----------------
-    All the custom functions that are used through the code for compability
-]]
 local cloneref = cloneref or blackfunction
 
 local function SafeGetService(service)
 	return cloneref(service)
 end
 
---[[
-    ---------------------
-    Component Declaration
-    ---------------------
-]]
+--[[ BaseComponent ]]
 local BaseComponent
 do
 	BaseComponent = setmetatable({}, {
@@ -117,6 +96,8 @@ do
 		self.bin:destroy()
 	end
 end
+
+--[[ LootableComponent ]]
 local LootableComponent
 do
 	local super = BaseComponent
@@ -133,16 +114,12 @@ do
 	end
 	function LootableComponent:constructor(isAvailable : boolean ,scrap : Model, pivot: CFrame) : (boolean, Model, CFrame)
 		super.constructor(self, scrap)
-		-- Interface:
 		self.interface = {
 			container = Instance.new("Frame"),
 			name = Instance.new("TextLabel"),
 		}
-		-- Variables:
 		self.pivotPos = pivot
 		self.isAvailable = isAvailable
-
-		-- init:
 		self:initialize()
 	end
 	function LootableComponent:initialize()
@@ -152,10 +129,9 @@ do
 		local instance = _binding.object
 		local values : Folder = instance:WaitForChild('Values', 10)
 
-		-- Instances:
 		local container = interface.container
 		local name = interface.name
-		-- Properties:
+
 		container.Visible = false
 		container.AnchorPoint = Vector2.new(0.5, 0)
 		container.BackgroundTransparency = 1
@@ -167,9 +143,10 @@ do
 		name.TextStrokeTransparency = 0.5
 		name.Size = UDim2.new(1, 0, 0, 14)
 		container.Size = UDim2.new(0, 100, 0, 50)
-		-- Initialization:
+
 		name.Parent = container
 		container.Parent = ScreenGui
+
 		bin:add(values:GetAttributeChangedSignal('Available'):Connect(function()
 			_binding.isAvailable = values:GetAttribute('Available')
 			if not _binding.isAvailable then
@@ -189,30 +166,39 @@ do
 		local container = interface.container
 		local name = interface.name
 
+		if not instance or not instance.Parent then
+			self:destroy()
+			return
+		end
+
 		if camera and instance then
 			local position, visible = camera:WorldToViewportPoint(pivot.Position)
 
-			if visible and self.isAvailable and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
+			if visible and self.isAvailable and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild('HumanoidRootPart') then
 				local scale = 1 / (position.Z * math.tan(math.rad(camera.FieldOfView * 0.5)) * 2) * 1000
 				local width, height = math.floor(1 * scale), math.floor(3 * scale)
 				local x, y = math.floor(position.X), math.floor(position.Y)
 				local xPosition, yPosition = math.floor(x - width * 0.5), math.floor((y - height * 0.5) + (0.5 * scale))
 				local vector2 = Vector2.new(xPosition, yPosition)
 
-				local _valueExisted = container.Visible == false
 				container.Visible = true
 
 				local PositionDiff = LocalPlayer.Character.HumanoidRootPart.Position - pivot.Position
-				name.Text = `Scrap [{format(PositionDiff.Magnitude, 1)}]`
+				name.Text = "Scrap [" .. format(PositionDiff.Magnitude, 1) .. "]"
 
 				container.Position = UDim2.new(0, vector2.X, 0, vector2.Y)
 			else
-				local _valueExisted_1 = container.Visible == true
 				container.Visible = false
 			end
 		else
 			self:destroy()
 		end
+	end
+	function LootableComponent:destroy()
+		if self.interface and self.interface.container then
+			self.interface.container:Destroy()
+		end
+		self.bin:destroy()
 	end
 end
 
