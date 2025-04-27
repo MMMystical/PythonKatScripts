@@ -14,36 +14,36 @@
 ### Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
 
 ### Changelog
-- v0.16 (04/28/2025)
+- v0.16 ⚔️ (04/28/2025)
   - Added uptime to status ℹ️
   - Bug fixes ✅
-- v0.155 (04/27/2025)
+- v0.155 ⚔️ (04/27/2025)
   - Added back an old feature 🔧✅
   - Updated notifications ℹ️
-- v0.151 (04/27/2025)
+- v0.151 ⚔️ (04/27/2025)
   - Fixed artifact collector ✅
   - Small fix ✅
-- v0.15 (04/27/2025)
+- v0.15 ⚔️ (04/27/2025)
   - New warnings ℹ️
   - Experimental feature ⚠️
   - Fix ✅
-- v0.14 (04/27/2025)
+- v0.14 ⚔️ (04/27/2025)
   - New weapon cheats 🏹
   - ESP rework 🔧
   - Big fixes and additions ✅
-- v0.13 (04/26/2025)
+- v0.13 ⚔️ (04/26/2025)
   - Removed a feature ❌
   - Turned some buttons into toggles and improved logic ✅
-- v0.12 (04/26/2025)
+- v0.12 ⚔️ (04/26/2025)
   - Bug fixing 🔧
   - Fixed issue with ESP ✅
-- v0.115 (04/26/2025)
+- v0.115 ⚔️ (04/26/2025)
   - Small changes ✅
-- v0.11 (04/26/2025)
+- v0.11 ⚔️ (04/26/2025)
   - Enhanced ESPs 🔧
   - Moved some stuff to other tabs ℹ️
   - Fixes ✅
-- v0.10 (04/25/2025)
+- v0.10 ⚔️ (04/25/2025)
   - Release of the CHAIN Abuser ⚔️ script 🔨
 
 ^^ More to come very soon! (unless there will be nothing else important to add)
