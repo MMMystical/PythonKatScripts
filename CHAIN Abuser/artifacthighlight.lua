@@ -4,7 +4,7 @@ Module.__index = Module
 local Workspace = cloneref(game:GetService("Workspace"))
 local RunService = cloneref(game:GetService("RunService"))
 
-local ArtifactFolder = Workspace.Misc.Zones.LootingItems:WaitForChild('Artifact')
+local ArtifactFolder = Workspace.Misc.Zones.LootingItems:WaitForChild('Artifacts')
 
 local highlights = {}
 local artifactConnection
