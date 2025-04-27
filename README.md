@@ -11,7 +11,7 @@
 
 Here's all the scripts made by PythonKat.
 
-# Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED)
+# Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 05/07/2024)
 
 ## WARNING: This script is discontinued. Over the last few months, roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
 
@@ -45,7 +45,7 @@ Bypass the chat moderation and say anything you want (almost) in the chat by jus
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### Chat Bypasser v2.0 ☀️⛱️ uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
@@ -54,7 +54,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 
 Copy the loadstring and enjoy using the Chat Bypasser!
 
-# CHAIN Abuser v0.10 ⚔️ (BETA)
+# CHAIN Abuser v0.16 ⚔️ (BETA, 04/28/2025)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
 
@@ -66,20 +66,26 @@ Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won'
   - Automatically win QTEs
   - CHAIN Aimbot
   - Auto Scrap & Artifact Collectors
+  - Infinite Dodge (EXPERIMENTAL)
 - Weapons 🏹🛡️
   - Infinite XSaw Gas
+  - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
 - ESP 👁️🛑
   - View CHAIN and Scrap around the map
+  - Highlight CHAIN and Scrap
 - Teleports ✅🕳️
   - Teleport around the map easily with buttons
 - Miscellaneous ✳️⤵️
   - Local player modifications
   - Fun
+- About ℹ️❔
+  - Script information
+  - All versions' changelog
 
-^^ More to come very soon!
+^^ More to come very soon! (unless there will be nothing else important to add)
 
 ### Notes
-- You might sometimes get kicked from the game by their anti cheat! ❕
+- You might sometimes get kicked from the game by the anti cheat! ❕
 - This script only works in CHAIN Survival gamemode. ❗
 
 ### Authors
@@ -94,7 +100,7 @@ Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won'
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.10 ⚔️ uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.16 ⚔️ (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
