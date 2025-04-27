@@ -13,6 +13,28 @@
 
 ### Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
 
+### Features
+- Cheats ❇️🔰
+  - Infinite Stamina, Combat Stamina
+  - Automatically win QTEs
+  - CHAIN Aimbot
+  - Auto Scrap & Artifact Collectors
+  - Infinite Dodge (EXPERIMENTAL)
+- Weapons 🏹🛡️
+  - Infinite XSaw Gas
+  - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
+- ESP 👁️🛑
+  - View CHAIN and Scrap around the map
+  - Highlight CHAIN and Scrap
+- Teleports ✅🕳️
+  - Teleport around the map easily with buttons
+- Miscellaneous ✳️⤵️
+  - Local player modifications
+  - Fun
+- About ℹ️❔
+  - Script information
+  - All versions' changelog
+
 ### Changelog
 - v0.16 ⚔️ (04/28/2025)
   - Added uptime to status ℹ️
