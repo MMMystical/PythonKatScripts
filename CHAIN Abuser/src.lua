@@ -7,12 +7,12 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 04/26
+edited: 04/28
 developers:
-v3rm: AbstractPoo	 discord: Abstract#8007
-v3rm: 0xDEITY		 discord: Deity#0228
-github: MMMystical	 discord: mmmystical
-github: Kevinjky7555 	 discord: kevinjky7555
+v3rm: AbstractPoo	 	discord: Abstract#8007
+v3rm: 0xDEITY		 	discord: Deity#0228
+github: MMMystical	 	discord: mmmystical
+github: Kevinjky7555 	discord: kevinjky7555
 
 ]]
 
@@ -23,10 +23,10 @@ local gui = Library:create({
 })
 
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.10 ⚔️ | PythonKat v0.21 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.16 ⚔️ | PythonKat v0.216 🩸")
 
 gui:notification({
-	Title = "Loading CHAIN Abuser v0.10 ⚔️ ...",
+	Title = "Loading CHAIN Abuser v0.16 ⚔️ ...",
 	Text = "CHAIN when you inf stamina: 💀",
 	Duration = 7.5,
 	Callback = function() end
@@ -35,11 +35,13 @@ gui:notification({
 task.wait(2)
 
 gui:notification({
-	Title = "CHAIN Abuser v0.10 ⚔️",
+	Title = "CHAIN Abuser v0.16 ⚔️",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
 })
+
+local scriptStartTime = os.clock()
 
 local tab = gui:tab({
 	Icon = "rbxassetid://6594776225",
@@ -66,17 +68,17 @@ local tab5 = gui:tab({
 	Name = "Miscellaneous"
 })
 
-local tab7 = gui:tab({
+local tab6 = gui:tab({
 	Icon = "rbxassetid://6231961866",
 	Name = "About"
 })
 
-tab7:button({
-	Name = "CHAIN Abuser v0.10 ⚔️",
+tab6:button({
+	Name = "CHAIN Abuser v0.16 ⚔️",
 	Description = "Information about this script",
 	Callback = function()
 		tab:prompt{
-			Title = "CHAIN Abuser v0.10 ⚔️",
+			Title = "CHAIN Abuser v0.16 ⚔️",
 			Text = "some cheats against CHAIN! now you won't get yo ahh smacked easily!",
 			Buttons = {
 				Cool = function()
@@ -86,13 +88,13 @@ tab7:button({
 	end
 })
 
-tab7:button({
+tab6:button({
 	Name = "Warning",
 	Description = "Read me",
 	Callback = function()
 		tab:prompt{
 			Title = "Warning",
-			Text = "you may get kicked sometimes from the game's anti cheat!",
+			Text = "You may get kicked sometimes from the game's anti cheat! (but VERY rare)",
 			Buttons = {
 				Alright = function()
 				end
@@ -101,7 +103,142 @@ tab7:button({
 	end
 })
 
-tab7:button({
+tab6:button({
+	Name = "Changelog v0.16",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.16",
+			Text = "-added uptime to status ℹ️\n-bug fixes 🔧✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.155",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.155",
+			Text = "-added back an old feature 🔧✅\n-updated notifications ℹ️",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.151",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.151",
+			Text = "-fixed artifact collector ✅\n-small fix ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.15",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.15",
+			Text = "-new warnings + experimental feature ℹ️⚠️\n-updated descriptions + fix ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.14",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.14",
+			Text = "-new weapon cheats 🏹\n-ESP rework + big fixes and additions 🔧✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.13",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.13",
+			Text = "-removed a feature ❌\n-turned some buttons into toggles + improved ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.12",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.12",
+			Text = "-bug fixing 🔧\n-fixed issue with esp ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.115",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.115",
+			Text = "-small changes ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.11",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.11",
+			Text = "-enhanced ESPs 🔧\n-moved some stuff to other tabs + fixes ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
 	Name = "Changelog v0.10",
 	Description = "See version changes",
 	Callback = function()
@@ -143,8 +280,8 @@ tab:toggle({
 			
 			gui:notification{
 				Title = "CHAIN ⚔️ | Infinite Stamina",
-				Text = "Toggle again after death! ✅",
-				Duration = 7.5,
+				Text = "You can now sprint infinitely ✅",
+				Duration = 3,
 				Callback = function() end
 			}
 			
@@ -158,6 +295,13 @@ tab:toggle({
 			end
 		elseif staminaToggle == true then
 			staminaToggle = false
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Stamina",
+				Text = "Now your stamina will deplete normally ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
@@ -174,8 +318,8 @@ tab:toggle({
 			
 			gui:notification{
 				Title = "CHAIN ⚔️ | Infinite Combat Stamina",
-				Text = "Toggle again after death! ✅",
-				Duration = 7.5,
+				Text = "You can now swing infinitely ✅",
+				Duration = 3,
 				Callback = function() end
 			}
 
@@ -189,6 +333,13 @@ tab:toggle({
 			end
 		elseif combatStaminaToggle == true then
 			combatStaminaToggle = false
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Stamina",
+				Text = "Now your combat stamina will deplete normally when swinging ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
@@ -205,8 +356,8 @@ tab:toggle({
 			
 			gui:notification{
 				Title = "CHAIN ⚔️ | Auto Win QTE",
-				Text = "Toggle again after death! ✅",
-				Duration = 7.5,
+				Text = "Now your strength in QTEs will be high constantly ✅",
+				Duration = 3,
 				Callback = function() end
 			}
 
@@ -220,72 +371,45 @@ tab:toggle({
 			end
 		elseif qteToggle == true then
 			qteToggle = false
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Auto Win QTE",
+				Text = "Now you have to press the keys in QTEs to increase your strength ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
 
-local aimbotChain = false
-local Workspace = cloneref(game:GetService("Workspace"))
-local RunService = cloneref(game:GetService("RunService"))
-local UserInputService = cloneref(game:GetService("UserInputService"))
-local MiscFolder = Workspace:WaitForChild("Misc")
-local AIFolder = MiscFolder:WaitForChild("AI")
-local Camera = Workspace.CurrentCamera
-
-local isHoldingRightClick = false
-
-local function lookAt(cframe)
-	local lookAtPos = CFrame.new(Camera.CFrame.Position, cframe.Position)
-	Camera.CFrame = lookAtPos
-end
-
-local function getChain()
-	for _, child in AIFolder:GetChildren() do
-		local rootPart = child:FindFirstChild("HumanoidRootPart")
-		if rootPart then
-			return child
-		end
-	end
-end
-
-RunService.RenderStepped:Connect(function()
-	if not aimbotChain then return end
-	if not isHoldingRightClick then return end
-
-	local chain = getChain()
-	if chain then
-		lookAt(chain:GetPivot())
-	end
-end)
-
-UserInputService.InputBegan:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton2 then
-		isHoldingRightClick = true
-	end
-end)
-
-UserInputService.InputEnded:Connect(function(input)
-	if input.UserInputType == Enum.UserInputType.MouseButton2 then
-		isHoldingRightClick = false
-	end
-end)
+local aimbotChainToggle = false
+local aimbotChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainaimbot.lua"))()
 
 tab:toggle({
 	Name = "CHAIN Aimbot",
 	Description = "Locks your camera onto CHAIN when holding right click with mouse",
 	StartingState = false,
 	Callback = function(state)
-		if aimbotChain == false then
-			aimbotChain = true
+		if aimbotChainToggle == false then
+			aimbotChainToggle = true
+			aimbotChainModule:enable()
 
 			gui:notification{
 				Title = "CHAIN ⚔️ | CHAIN Aimbot",
-				Text = "CHAIN Aimbot active ✅",
-				Duration = 7.5,
+				Text = "Hold right click to lock on CHAIN ✅",
+				Duration = 3,
 				Callback = function() end
 			}
-		elseif aimbotChain == true then
-			aimbotChain = false
+		elseif aimbotChainToggle == true then
+			aimbotChainToggle = false
+			aimbotChainModule:disable()
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | CHAIN Aimbot",
+				Text = "Aimbot disabled, you won't lock onto CHAIN anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
@@ -301,7 +425,7 @@ tab:button({
 			gui:notification{
 				Title = "CHAIN ⚔️ | Auto Collect Scrap",
 				Text = "Auto collecting scrap ✅",
-				Duration = 7.5,
+				Duration = 3,
 				Callback = function() end
 			}
 
@@ -311,7 +435,7 @@ tab:button({
 			gui:notification{
 				Title = "CHAIN ⚔️ | Auto Collect Scrap",
 				Text = "Auto collecting scrap finished, you can now run again ✅",
-				Duration = 7.5,
+				Duration = 3,
 				Callback = function() end
 			}
 			collectingScrap = false
@@ -335,24 +459,35 @@ tab:button({
 	Description = "Automatically collects available Artifacts around the map",
 	Callback = function()
 		if collectingArtifacts == false then
-			collectingArtifacts = true
-			gui:notification{
-				Title = "CHAIN ⚔️ | Auto Collect Artifacts",
-				Text = "Auto collecting artifacts ✅",
-				Duration = 7.5,
-				Callback = function() end
-			}
+			if game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints"):GetAttribute("SpellBook") == true then
+				collectingArtifacts = true
+				gui:notification{
+					Title = "CHAIN ⚔️ | Auto Collect Artifacts",
+					Text = "Auto collecting artifacts ✅",
+					Duration = 3,
+					Callback = function() end
+				}
 
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/artifactcollector.lua"))()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/artifactcollector.lua"))()
 
-			task.wait(1)
-			gui:notification{
-				Title = "CHAIN ⚔️ | Auto Collect Artifacts",
-				Text = "Auto collecting artifacts finished, you can now run again ✅",
-				Duration = 7.5,
-				Callback = function() end
-			}
-			collectingArtifacts = false
+				task.wait(1)
+				gui:notification{
+					Title = "CHAIN ⚔️ | Auto Collect Artifacts",
+					Text = "Auto collecting artifacts finished, you can now run again ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+				collectingArtifacts = false
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "First you need to get the Spell Book blueprint!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
+			end
 		elseif collectingArtifacts == true then
 			tab:prompt{
 				Title = "Warning",
@@ -363,6 +498,52 @@ tab:button({
 				}
 			}
 		end
+	end
+})
+
+local dodgeToggle = false
+
+tab:toggle({
+	Name = "Infinite Dodge (EXPERIMENTAL)",
+	Description = "Grants you infinite dodging (no cooldown)",
+	StartingState = false,
+	Callback = function(state)
+		if dodgeToggle == false then
+			dodgeToggle = true
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Dodge (EXPERIMENTAL)",
+				Text = "Triggered anti cheat ❌ (failed)",
+				Duration = 3,
+				Callback = function() end
+			}
+			
+			tab:prompt{
+				Title = "Warning",
+				Text = "This is only EXPERIMENTAL, it's not fully supported and may get removed in the future!",
+				Buttons = {
+					Alright = function()
+					end
+				}
+			}
+		elseif dodgeToggle == true then
+			dodgeToggle = false
+		end
+	end
+})
+
+tab:button({
+	Name = "Warning",
+	Description = "Read me",
+	Callback = function()
+		tab:prompt{
+			Title = "Warning",
+			Text = "Sometimes these break after dying, so you have to re-toggle!",
+			Buttons = {
+				Alright = function()
+				end
+			}
+		}
 	end
 })
 
@@ -388,14 +569,14 @@ tab2:toggle({
 	Description = "Grants you infinite XSaw gas",
 	StartingState = false,
 	Callback = function(state)
-		if game.Players.LocalPlayer.Character.Items:FindFirstChild("XSaw") and game.Players.LocalPlayer.Character.Items.XSaw:GetAttribute("Gas") <= 0 then
-			if xsawGasToggle == false then
+		if xsawGasToggle == false then
+			if game.Players.LocalPlayer.Character.Items:FindFirstChild("XSaw") and game.Players.LocalPlayer.Character.Items.XSaw:GetAttribute("Gas") <= 0 then
 				xsawGasToggle = true
 
 				gui:notification{
 					Title = "CHAIN ⚔️ | Infinite XSaw Gas",
-					Text = "Toggle again after death! ✅ (won't save you from death tho)",
-					Duration = 7.5,
+					Text = "Now your gas always stays at 100w ✅ (won't save you from death tho)",
+					Duration = 3,
 					Callback = function() end
 				}
 
@@ -407,21 +588,247 @@ tab2:toggle({
 						break
 					end
 				end
-			elseif xsawGasToggle == true then
-				xsawGasToggle = false
-				task.wait(1)
-				game.Players.LocalPlayer.Character.Items.XSaw:SetAttribute("Gas", 0)
-			end
-		else
-			tab:prompt{
-				Title = "Warning",
-				Text = "You must first deplete all of your gas before using this!",
-				Buttons = {
-					Alright = function()
-					end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "You must first deplete all of your gas before using this!",
+					Buttons = {
+						Alright = function()
+						end
+					}
 				}
+			end
+		elseif xsawGasToggle == true then
+			xsawGasToggle = false
+			task.wait(0.25)
+			game.Players.LocalPlayer.Character.Items.XSaw:SetAttribute("Gas", 0)
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite XSaw Gas",
+				Text = "Now your gas is reverted back to 0w ❌",
+				Duration = 3,
+				Callback = function() end
 			}
 		end
+	end
+})
+
+local m1911AmmoToggle = false
+
+tab2:toggle({
+	Name = "Infinite M1911 Ammo",
+	Description = "Grants you infinite M1911 ammo",
+	StartingState = false,
+	Callback = function(state)
+		if m1911AmmoToggle == false then
+			if game.Players.LocalPlayer.Character.Items:FindFirstChild("M1911") and game.Players.LocalPlayer.Character.Items.M1911:GetAttribute("Ammo") <= 0 then
+				m1911AmmoToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite M1911 Ammo",
+					Text = "Now your ammo always stays at 69 ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.015)
+					game.Players.LocalPlayer.Character.Items.M1911:SetAttribute("Ammo", 69)
+
+					if m1911AmmoToggle == false then
+						break
+					end
+				end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "You must first deplete all of your ammo before using this!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
+			end
+		elseif m1911AmmoToggle == true then
+			m1911AmmoToggle = false
+			task.wait(0.25)
+			game.Players.LocalPlayer.Character.Items.M1911:SetAttribute("Ammo", 0)
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite M1911 Ammo",
+				Text = "Now your ammo is reverted back to 0 ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local dbAmmoToggle = false
+
+tab2:toggle({
+	Name = "Infinite Double Barrel Ammo",
+	Description = "Grants you infinite Double Barrel ammo",
+	StartingState = false,
+	Callback = function(state)
+		if dbAmmoToggle == false then
+			if game.Players.LocalPlayer.Character.Items:FindFirstChild("DoubleBarrel") and game.Players.LocalPlayer.Character.Items.DoubleBarrel:GetAttribute("Ammo") <= 0 then
+				dbAmmoToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite Double Barrel Ammo",
+					Text = "Now your ammo always stays at 69 ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.25)
+					game.Players.LocalPlayer.Character.Items.DoubleBarrel:SetAttribute("Ammo", 69)
+
+					if dbAmmoToggle == false then
+						break
+					end
+				end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "You must first deplete all of your ammo before using this!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
+			end
+		elseif dbAmmoToggle == true then
+			dbAmmoToggle = false
+			task.wait(0.25)
+			game.Players.LocalPlayer.Character.Items.DoubleBarrel:SetAttribute("Ammo", 0)
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Double Barrel Ammo",
+				Text = "Now your ammo is reverted back to 0 ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local deagleAmmoToggle = false
+
+tab2:toggle({
+	Name = "Infinite Deagle Ammo",
+	Description = "Grants you infinite Deagle ammo",
+	StartingState = false,
+	Callback = function(state)
+		if deagleAmmoToggle == false then
+			if game.Players.LocalPlayer.Character.Items:FindFirstChild("Deagle") and game.Players.LocalPlayer.Character.Items.Deagle:GetAttribute("Ammo") <= 0 then
+				deagleAmmoToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite Deagle Ammo",
+					Text = "Now your ammo always stays at 69 ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.015)
+					game.Players.LocalPlayer.Character.Items.Deagle:SetAttribute("Ammo", 69)
+
+					if deagleAmmoToggle == false then
+						break
+					end
+				end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "You must first deplete all of your ammo before using this!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
+			end
+		elseif deagleAmmoToggle == true then
+			deagleAmmoToggle = false
+			task.wait(0.25)
+			game.Players.LocalPlayer.Character.Items.Deagle:SetAttribute("Ammo", 0)
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Deagle Ammo",
+				Text = "Now your ammo is reverted back to 0 ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local ak47AmmoToggle = false
+
+tab2:toggle({
+	Name = "Infinite AK47 Ammo",
+	Description = "Grants you infinite AK47 ammo",
+	StartingState = false,
+	Callback = function(state)
+		if ak47AmmoToggle == false then
+			if game.Players.LocalPlayer.Character.Items:FindFirstChild("AK47") and game.Players.LocalPlayer.Character.Items.AK47:GetAttribute("Ammo") <= 0 then
+				ak47AmmoToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite AK47 Ammo",
+					Text = "Now your ammo always stays at 69 ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.015)
+					game.Players.LocalPlayer.Character.Items.AK47:SetAttribute("Ammo", 69)
+
+					if ak47AmmoToggle == false then
+						break
+					end
+				end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "You must first deplete all of your ammo before using this!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
+			end
+		elseif ak47AmmoToggle == true then
+			ak47AmmoToggle = false
+			task.wait(0.25)
+			game.Players.LocalPlayer.Character.Items.AK47:SetAttribute("Ammo", 0)
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite AK47 Ammo",
+				Text = "Now your ammo is reverted back to 0 ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+tab2:button({
+	Name = "Warning",
+	Description = "Read me",
+	Callback = function()
+		tab:prompt{
+			Title = "Warning",
+			Text = "You have to get 0 gas/ammo on your weapons first before these cheats work!",
+			Buttons = {
+				Alright = function()
+				end
+			}
+		}
 	end
 })
 
@@ -440,96 +847,146 @@ tab3:button({
 	end
 })
 
-local espChain = false
+local espChainToggle = false
+local espChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainesp.lua"))()
 
-tab3:button({
-	Name = "Advanced CHAIN Esp",
+tab3:toggle({
+	Name = "CHAIN Esp",
 	Description = "Displays where CHAIN is along with detailed info",
-	Callback = function()
-		if espChain == false then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainesp.lua"))()
-			espChain = true
+	StartingState = false,
+	Callback = function(state)
+		if espChainToggle == false then
+			espChainToggle = true
+			espChainModule:enable()
 
 			gui:notification{
-				Title = "CHAIN ⚔️ | Advanced CHAIN Esp",
-				Text = "CHAIN esp active ✅",
-				Duration = 7.5,
+				Title = "CHAIN ⚔️ | CHAIN Esp",
+				Text = "CHAIN is now shown ✅",
+				Duration = 3,
 				Callback = function() end
 			}
-		elseif espChain == true then
-			tab:prompt{
-				Title = "Warning",
-				Text = "You already are using CHAIN esp!",
-				Buttons = {
-					Alright = function()
-					end
-				}
+		elseif espChainToggle == true then
+			espChainToggle = false
+			espChainModule:disable()
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | CHAIN Esp",
+				Text = "CHAIN isn't shown anymore ❌",
+				Duration = 3,
+				Callback = function() end
 			}
 		end
 	end
 })
 
-local highlightToggle = false
+local chainHighlightToggle = false
+local chainHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainhighlight.lua"))()
 
 tab3:toggle({
 	Name = "Highlight CHAIN",
 	Description = "Highlights where CHAIN is with a red highlight",
 	StartingState = false,
 	Callback = function(state)
-		local partToHighlight = workspace.Misc.AI.CHAIN
-		local highlight = Instance.new("Highlight")
-
-		highlight.FillColor = Color3.fromRGB(122, 21, 21)
-		highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
-		highlight.FillTransparency = 0.5
-		highlight.OutlineTransparency = 0
-		highlight.Parent = partToHighlight
-		highlight.Enabled = false
-		
-		if highlightToggle == false then
-			highlightToggle = true
-			
-			highlight.Enabled = true
+		if chainHighlightToggle == false then
+			chainHighlightToggle = true
+			chainHighlightModule:enable()
 
 			gui:notification{
 				Title = "CHAIN ⚔️ | Highlight CHAIN",
-				Text = "Toggle again after each night! ✅",
-				Duration = 7.5,
+				Text = "CHAIN is now highlighted ✅",
+				Duration = 3,
 				Callback = function() end
 			}
-		elseif highlightToggle == true then
-			highlightToggle = false
-			highlight.Enabled = false
+		elseif chainHighlightToggle == true then
+			chainHighlightToggle = false
+			chainHighlightModule:disable()
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight CHAIN",
+				Text = "CHAIN isn't highlighted anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
 
-local espScrap = false
+espScrapToggle = false
+espScrapModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapesp.lua"))()
 
-tab3:button({
+tab3:toggle({
 	Name = "Scrap Esp",
 	Description = "Displays where all the scrap is",
-	Callback = function()
-		if espScrap == false then
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapesp.lua"))()
-			espScrap = true
-
+	StartingState = false,
+	Callback = function(state)
+		if espScrapToggle == false then
+			espScrapToggle = true
+			espScrapModule:enable()
+			
 			gui:notification{
 				Title = "CHAIN ⚔️ | Scrap Esp",
-				Text = "Scrap esp active ✅",
-				Duration = 7.5,
+				Text = "Scrap is now shown ✅",
+				Duration = 3,
 				Callback = function() end
 			}
-		elseif espScrap == true then
-			tab:prompt{
-				Title = "Warning",
-				Text = "You already are using Scrap esp!",
-				Buttons = {
-					Alright = function()
-					end
-				}
+		elseif espScrapToggle == true then
+			espScrapToggle = false
+			espScrapModule:disable()
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Scrap Esp",
+				Text = "Scrap isn't shown anymore ❌",
+				Duration = 3,
+				Callback = function() end
 			}
 		end
+	end
+})
+
+local scrapHighlightToggle = false
+local scrapHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scraphighlight.lua"))()
+
+tab3:toggle({
+	Name = "Highlight Scrap",
+	Description = "Highlights where Scrap is with a orange highlight",
+	StartingState = false,
+	Callback = function(state)
+		if scrapHighlightToggle == false then
+			scrapHighlightToggle = true
+			scrapHighlightModule:enable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Scrap",
+				Text = "Scrap is now highlighted ✅",
+				Duration = 3,
+				Callback = function() end
+			}
+		elseif scrapHighlightToggle == true then
+			scrapHighlightToggle = false
+			scrapHighlightModule:disable()
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Scrap",
+				Text = "Scrap isn't highlighted anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+tab3:button({
+	Name = "Warning",
+	Description = "Read me",
+	Callback = function()
+		tab:prompt{
+			Title = "Warning",
+			Text = "Over time, this MIGHT make your game laggy, especially CHAIN Esp and Scrap Esp!",
+			Buttons = {
+				Alright = function()
+				end
+			}
+		}
 	end
 })
 
@@ -557,7 +1014,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Small Cabin Location",
 			Text = "Teleported you to Small Cabin ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -572,7 +1029,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Storage Shed Location",
 			Text = "Teleported you to Storage Shed ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -587,7 +1044,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Power Station Location",
 			Text = "Teleported you to Power Station ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -602,7 +1059,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Radio Tower Location",
 			Text = "Teleported you to Radio Tower ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -612,12 +1069,12 @@ tab4:button({
 	Name = "Shop Location",
 	Description = "Teleports you to the Shop",
 	Callback = function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-111.376678, -87.2069778, 203.522934, -0.851789057, -5.88233995e-08, 0.523884892, -1.06661249e-08, 1, 9.49409156e-08, -0.523884892, 7.5281811e-08, -0.851789057)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-111.376678, -87.2069778, 203.522934, -0.851789057, -5.88233995e-08, 0.523884892, -1.06661249e-08, 1, 9.49409156e-08, -0.523884892, 3281811e-08, -0.851789057)
 
 		gui:notification{
 			Title = "CHAIN ⚔️ | Shop Location",
 			Text = "Teleported you to Shop ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -632,7 +1089,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Workshop Location",
 			Text = "Teleported you to Workshop ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -647,7 +1104,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Warehouse Location",
 			Text = "Teleported you to Warehouse ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -662,7 +1119,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Ritual Location",
 			Text = "Teleported you to Ritual ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -677,7 +1134,7 @@ tab4:button({
 		gui:notification{
 			Title = "CHAIN ⚔️ | Leaderboard Location",
 			Text = "Teleported you to Leaderboard ✅",
-			Duration = 7.5,
+			Duration = 3,
 			Callback = function() end
 		}
 	end
@@ -716,8 +1173,8 @@ tab5:toggle({
 
 				gui:notification{
 					Title = "CHAIN ⚔️ | Constant Speed",
-					Text = "Toggle again after death! ✅",
-					Duration = 7.5,
+					Text = "Now your speed is always constant and high ✅",
+					Duration = 3,
 					Callback = function() end
 				}
 
@@ -741,6 +1198,13 @@ tab5:toggle({
 			end
 		elseif constantSpeedToggle == true then
 			constantSpeedToggle = false
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Constant Speed",
+				Text = "Now your speed is back to normal ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
@@ -760,8 +1224,8 @@ tab5:toggle({
 
 				gui:notification{
 					Title = "CHAIN ⚔️ | Faster Constant Speed",
-					Text = "Toggle again after death! ✅",
-					Duration = 7.5,
+					Text = "Now your speed is always constant and even higher ✅",
+					Duration = 3,
 					Callback = function() end
 				}
 
@@ -785,6 +1249,13 @@ tab5:toggle({
 			end
 		elseif fasterConstantSpeedToggle == true then
 			fasterConstantSpeedToggle = false
+			
+			gui:notification{
+				Title = "CHAIN ⚔️ | Faster Constant Speed",
+				Text = "Now your speed is back to normal ❌",
+				Duration = 3,
+				Callback = function() end
+			}
 		end
 	end
 })
@@ -796,26 +1267,35 @@ tab5:button({
 	Description = "Removes the mask that's on your head on your character",
 	Callback = function()
 		if maskHead == false then
-			if game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
-				game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent:Destroy()
+			if game.Players.LocalPlayer.Character:WaitForChild("Sack", 1) then
+				game.Players.LocalPlayer.Character.Sack:FindFirstChild("SurfaceAppearance").Parent:Destroy()
 				maskHead = true
 
 				gui:notification{
 					Title = "CHAIN ⚔️ | Remove Mask on Head",
 					Text = "Removed the mask on your head ✅",
-					Duration = 7.5,
+					Duration = 3,
 					Callback = function() end
 				}
-				
+
 				while true do
-					task.wait(0.1)
-					if not game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
+					task.wait(1)
+					if not game.Players.LocalPlayer.Character.Sack then
 						continue
-					elseif game.Players.LocalPlayer.Character:FindFirstChild("Sack").SurfaceAppearance.Parent then
+					else
 						maskHead = false
 						break
 					end
 				end
+			else
+				tab:prompt{
+					Title = "Warning",
+					Text = "No mask found on your head!",
+					Buttons = {
+						Alright = function()
+						end
+					}
+				}
 			end
 		elseif maskHead == true then
 			tab:prompt{
@@ -829,6 +1309,7 @@ tab5:button({
 		end
 	end
 })
+
 
 local thirdPerson = false
 local firstPerson = false
@@ -845,7 +1326,7 @@ tab5:button({
 			gui:notification{
 				Title = "CHAIN ⚔️ | Third Person",
 				Text = "Third Person active, you can now zoom out ✅",
-				Duration = 7.5,
+				Duration = 3,
 				Callback = function() end
 			}
 		elseif thirdPerson == true then
@@ -873,7 +1354,7 @@ tab5:button({
 			gui:notification{
 				Title = "CHAIN ⚔️ | First Person",
 				Text = "First Person active, you can't zoom out anymore ✅",
-				Duration = 7.5,
+				Duration = 3,
 				Callback = function() end
 			}
 		elseif firstPerson == true then
@@ -917,17 +1398,121 @@ tab5:textbox({
 	end
 })
 
-task.spawn(function()
-	while gui do
-		task.wait(math.random(60, 300))
+local function formatTime(seconds)
+	local days = math.floor(seconds / 86400)
+	local hours = math.floor((seconds % 86400) / 3600)
+	local minutes = math.floor((seconds % 3600) / 60)
+	local secs = seconds % 60
 
+	if days > 0 then
+		return string.format("%dd %dh %dm %ds", days, hours, minutes, secs)
+	elseif hours > 0 then
+		return string.format("%dh %dm %ds", hours, minutes, secs)
+	elseif minutes > 0 then
+		return string.format("%dm %ds", minutes, secs)
+	else
+		return string.format("%ds", secs)
+	end
+end
+
+task.spawn(function()
+	local lastDeath = false
+
+	while gui do
+		task.wait(1)
+		
 		if not gui then break end
 
+		local humanoid = game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+		if humanoid then
+			if humanoid.Health <= 0 and not lastDeath then
+				lastDeath = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Reminder",
+					Text = "Every time you die, re-toggle any toggles or buttons to ensure they keep working!",
+					Duration = 12.5,
+					Callback = function() end
+				}
+
+				task.wait(15)
+			elseif humanoid.Health > 0 and lastDeath then
+				lastDeath = false
+			end
+		end
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(math.random(180,600))
+
+		if not gui then break end
 		gui:notification{
-			Title = "CHAIN ⚔️ | Reminder",
-			Text = "Every time you die, re-toggle any toggles or buttons to ensure they keep working!",
+			Title = "CHAIN ⚔️ | Love this script?",
+			Text = "Make sure to smack CHAIN's ahh then, with advantages to fight that unfair mf!",
 			Duration = 12.5,
 			Callback = function() end
 		}
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(math.random(120,300))
+
+		if not gui then break end
+		local uptime = math.floor(os.clock() - scriptStartTime)
+		local messages = {"If you lose to CHAIN, just tell him it's a skill issue. It works 0% of the time... 💔", "You've been abusing CHAIN for " .. formatTime(uptime) .. "! Damn bro... 😭", "CHAIN cries 3 times per hour because of you... CHAIN wakes up at night thinking bout you 💀", "You're the reason CHAIN can't sleep peacefully anymore 🤣", "You're giving CHAIN more trauma than the lore intended 💀💔", "Devs watching you beat CHAIN: 👁️👄👁️"}
+		
+		gui:notification{
+			Title = "CHAIN ⚔️ | Fun Fact",
+			Text = messages[math.random(1, #messages)],
+			Duration = 12.5,
+			Callback = function() end
+		}
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(90)
+
+		if not gui then break end
+		local messages = {"Annoyed by limited stamina/combat stamina? Use infinite stamina and combat stamina to never run out!", "Tired of losing machete block/xsaw special attack/choke? Use auto win QTE!", "Lazy to get scrap or artifacts? Use auto collect!", "Can't aim properly? Use CHAIN aimbot!", "Running out of gas/ammo? Use infinite gas/ammo!", "Trying to find where CHAIN or scrap is? Use esp/highlight!", "Need to get somewhere fast? Use teleports!", "Wanna go fast? Use constant speed or faster constant speed!", "Tired of first person? Use third person, and you can go back to first person later, and you can also remove the mask on your head!", "Bored? Mess with custom print/notification, or read through the 'About' tab!"}
+		
+		gui:notification{
+			Title = "CHAIN ⚔️ | Tip",
+			Text = messages[math.random(1, #messages)],
+			Duration = 12.5,
+			Callback = function() end
+		}
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(math.random(300,600))
+
+		if not gui then break end
+		gui:notification{
+			Title = "PythonKat 🦇 | System Notification",
+			Text = "Enjoying PythonKat? Check the 'Credits' tab for the creators, and the 'Settings' tab for changing the theme, other settings, or checking the changelog! ✅",
+			Duration = 12.5,
+			System = true,
+			Callback = function() end
+		}
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(1)
+
+		if not gui then break end
+
+		local uptime = math.floor(os.clock() - scriptStartTime)
+		
+		gui:set_status("Status | Abusing CHAIN... LoL | Uptime: " .. formatTime(uptime))
 	end
 end)
