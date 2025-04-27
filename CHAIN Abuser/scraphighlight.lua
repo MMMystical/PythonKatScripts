@@ -13,7 +13,7 @@ local renderConnection
 
 local function createHighlight(target)
     local highlight = Instance.new("Highlight")
-    highlight.FillColor = Color3.fromRGB(255, 165, 0)
+    highlight.FillColor = Color3.fromRGB(0, 1, 0)
     highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
     highlight.FillTransparency = 0.5
     highlight.OutlineTransparency = 0
