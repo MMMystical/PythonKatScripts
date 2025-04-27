@@ -15,7 +15,7 @@ local function createHighlight(target)
     local highlight = Instance.new("Highlight")
     highlight.FillColor = Color3.fromRGB(0, 1, 0)
     highlight.OutlineColor = Color3.fromRGB(0, 0, 0)
-    highlight.FillTransparency = 0.5
+    highlight.FillTransparency = 0.75
     highlight.OutlineTransparency = 0
     highlight.Parent = target
     highlights[target] = highlight
