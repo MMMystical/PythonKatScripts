@@ -73,8 +73,8 @@ function LootableComponent.new(artifacts, gui)
 
 	self.tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 
-	self.bin:add(self.values:GetAttributeChangedSignal("Available"):Connect(function()
-		self.available = self.values:GetAttribute("Available")
+	self.bin:add(artifacts:GetAttributeChangedSignal("Active"):Connect(function()
+		self.available = artifacts:GetAttribute("Active")
 	end))
 
 	return self
