@@ -1,4 +1,4 @@
-<h1 align="center">PythonKat Library</h1>
+<h1 align="center">CHAIN Abuser v0.16 ⚔️ (BETA, 04/28/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
@@ -9,56 +9,48 @@
       /____/                                        
 ```
 
-### What is the PythonKat Library?
-- The PythonKat Library is a ui library for scripts used by PythonKat.
-- It's based off [Mercury Lib](https://github.com/deeeity/mercury-lib/tree/master), a open source ui library for roblox scripts.
+## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
+
+### Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
 
 ### Changelog
-- v0.216 🦇 (04/27/2025)
-  - Updated home page 🔧
-  - Added new clock and greeting ℹ️
-  - Updated status logic 🔨
-  - Bug fix ✅
-- v0.215 🦇 (04/27/2025)
-  - Updated notification logic 🔨
-  - Updated some info ℹ️
-  - Slight changes to UI and themes 🛠️
-  - Small fix + changed settings file name correctly ✅
-- v0.21 🦇 (04/25/2025)
-  - Added back seasonal theme (easter) 🩷
-  - Added a new theme (vampiric) 🩸
-  - Removed old summer theme ☀️⛱️
-  - Changes and improvements to UI and improved themes 🛠️
-  - Major fixes ✅
-- v0.20 🌊 (07/04/2024)
-  - Added a new seasonal theme (summer) ☀️⛱️
-  - Removed old lunar theme 🎆
-  - A few fixes ✅
-- v0.16 🐇 (04/03/2024)
-  - Added a new seasonal theme (easter) 🩷
-  - Removed old christmas theme ❄
-  - A few fixes ✅
-- v0.15 🍀 (03/03/2024)
-  - Added a new theme (light) 💚
-  - A bit better ui 🔨
-  - A few more changes ✅
-- v0.14 🍀 (02/29/2024)
-  - Changed default theme 💚
+- v0.16 (04/28/2025)
+  - Added uptime to status ℹ️
+  - Bug fixes ✅
+- v0.155 (04/27/2025)
+  - Added back an old feature 🔧✅
+  - Updated notifications ℹ️
+- v0.151 (04/27/2025)
+  - Fixed artifact collector ✅
   - Small fix ✅
-- v0.13 🎆 (12/31/2023)
-  - New year theme 🌉
-  - Few fixes ✅
-- v0.12 ❄ (12/06/2023)
-  - Changes on credits tab 🔨
-  - Small fixes ✅
-- v0.11 ❄ (12/04/2023)
-  - Added 2 new themes ❄😼
-  - Some changes on credits 🔨
-  - A few more changes ✅
-- v0.109 (12/03/2023)
-  - Slight changes to the ui 📃
-- v0.10 (12/03/2023)
-  - Release of the PythonKat Library 🔨
+- v0.15 (04/27/2025)
+  - New warnings ℹ️
+  - Experimental feature ⚠️
+  - Fix ✅
+- v0.14 (04/27/2025)
+  - New weapon cheats 🏹
+  - ESP rework 🔧
+  - Big fixes and additions ✅
+- v0.13 (04/26/2025)
+  - Removed a feature ❌
+  - Turned some buttons into toggles and improved logic ✅
+- v0.12 (04/26/2025)
+  - Bug fixing 🔧
+  - Fixed issue with ESP ✅
+- v0.115 (04/26/2025)
+  - Small changes ✅
+- v0.11 (04/26/2025)
+  - Enhanced ESPs 🔧
+  - Moved some stuff to other tabs ℹ️
+  - Fixes ✅
+- v0.10 (04/25/2025)
+  - Release of the CHAIN Abuser ⚔️ script 🔨
+
+^^ More to come very soon! (unless there will be nothing else important to add)
+
+### Notes
+- You might sometimes get kicked from the game by the anti cheat! ❕
+- This script only works in CHAIN Survival gamemode. ❗
 
 ### Authors
 
@@ -72,6 +64,13 @@
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-👤 Also credits to the original creators of Mercury Lib as this is a modified version of it: **Deity#0228** and **Abstract#8007**
+### CHAIN Abuser v0.16 ⚔️ (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+
+## Loadstring
+```lua
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/src.lua")))()
+```
+
+Copy the loadstring and enjoy using the CHAIN Abuser!
 
 # More updates to come soon.
