@@ -6,7 +6,7 @@ local LocalPlayer = Players.LocalPlayer
 local MiscFolder = Workspace:WaitForChild("Misc")
 local ZonesFolder = MiscFolder:WaitForChild("Zones")
 local LootItemsFolder = ZonesFolder:WaitForChild("LootingItems", 5)
-local LootFolders = LootItemsFolder and LootItemsFolder:FindFirstChild("Artifact")
+local LootFolders = LootItemsFolder and LootItemsFolder:FindFirstChild("Artifacts")
 
 if not LootFolders then
 	return
@@ -43,7 +43,7 @@ do
 	end
 	local function __init()
 		for _, artifacts in LootFolders:GetChildren() do
-			if artifacts:GetAttribute("artifact") ~= nil and artifacts:IsA("Model") and artifacts:GetAttribute("Active") == true and artifacts:GetAttribute("CanCollect") == true then
+			if artifacts:GetAttribute("Artifact") ~= nil and artifacts:IsA("Model") and artifacts:GetAttribute("Active") == true and artifacts:GetAttribute("CanCollect") == true then
 				bringPlr(artifacts:GetPivot())
 				--print(`Brought {LocalPlayer.Name} to artifact`)
 				collect(artifacts)
