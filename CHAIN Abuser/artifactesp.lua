@@ -66,7 +66,7 @@ function LootableComponent.new(artifacts, gui)
 	self.nameLabel.Size = UDim2.new(1, 0, 0, 14)
 	self.nameLabel.TextSize = 15
 	self.nameLabel.Text = "Artifact"
-	self.nameLabel.TextColor3 = Color3.new(0, 1, 0)
+	self.nameLabel.TextColor3 = Color3.new(255, 165, 0)
 
 	self.nameLabel.Parent = self.container
 	self.container.Parent = gui
