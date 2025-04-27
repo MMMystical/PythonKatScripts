@@ -133,7 +133,7 @@ function PlayerESP:update()
 	local labels = self.labels
 	local container, name, data, listlayout = labels.container, labels.name, labels.data, labels.listlayout
 
-	name.TextColor3 = Color3.fromRGB(173, 216, 230) -- Light Blue
+	name.TextColor3 = Color3.fromRGB(173, 216, 230)
 	data.TextColor3 = Color3.new(1, 1, 1)
 	listlayout.Padding = UDim.new(0, -4)
 	container.Size = UDim2.new(0, 300, 0, listlayout.AbsoluteContentSize.Y)
@@ -171,7 +171,7 @@ function PlayerESP:render()
 		local maxHealth = character.Humanoid.MaxHealth
 		local dist = format(distance)
 
-		name.Text = string.format("%s (%s)", player.DisplayName, player.Name)
+		name.Text = string.format("%s (@%s)", player.DisplayName, player.Name)
 		data.Text = string.format("[%s] [Health: %.0f%%]", dist, (health / maxHealth) * 100)
 
 		container.Position = UDim2.new(0, vector2.X, 0, vector2.Y + 3)
