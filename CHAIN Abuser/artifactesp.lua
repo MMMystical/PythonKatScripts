@@ -45,11 +45,11 @@ end
 local LootableComponent = {}
 LootableComponent.__index = LootableComponent
 
-function LootableComponent.new(artifacts, gui)
+function LootableComponent.new(artifact, gui)
 	local self = setmetatable({}, LootableComponent)
-	self.artifact = artifacts
-	self.pivot = artifacts:GetPivot()
-	self.available = artifacts:GetAttribute("Active")
+	self.artifact = artifact
+	self.pivot = artifact:GetPivot()
+	self.available = artifact:GetAttribute("Active")
 	self.bin = Bin.new()
 
 	self.container = Instance.new("Frame")
@@ -73,15 +73,15 @@ function LootableComponent.new(artifacts, gui)
 
 	self.tweenInfo = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
 
-	self.bin:add(artifacts:GetAttributeChangedSignal("Active"):Connect(function()
-		self.available = artifacts:GetAttribute("Active")
+	self.bin:add(artifact:GetAttributeChangedSignal("Active"):Connect(function()
+		self.available = artifact:GetAttribute("Active")
 	end))
 
 	return self
 end
 
 function LootableComponent:render()
-	if not self.artifacts or not self.artifacts.Parent then
+	if not self.artifact or not self.artifact.Parent then
 		self:destroy()
 		return
 	end
@@ -115,7 +115,7 @@ function LootableComponent:destroy()
 		self.container:Destroy()
 	end
 	self.bin:destroy()
-	Lootables[self.artifacts] = nil
+	Lootables[self.artifact] = nil
 end
 
 function Module:enable()
@@ -136,10 +136,10 @@ function Module:enable()
 		end
 	end
 
-	ArtifactConnection = LootFolders.ChildAdded:Connect(function(artifacts)
+	ArtifactConnection = LootFolders.ChildAdded:Connect(function(artifact)
 		task.spawn(function()
-			if artifacts:GetAttribute("Artifacts") then
-				Lootables[artifacts] = LootableComponent.new(artifacts, self.ScreenGui)
+			if artifact:GetAttribute("Artifact") then
+				Lootables[artifact] = LootableComponent.new(artifact, self.ScreenGui)
 			end
 		end)
 	end)
