@@ -24,8 +24,8 @@
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
 - ESP 👁️🛑
-  - View CHAIN and Scrap around the map
-  - Highlight CHAIN and Scrap
+  - View Players, CHAIN, Scrap, and Artifacts around the map
+  - Highlight Players, CHAIN, Scrap, and Artifacts
 - Teleports ✅🕳️
   - Teleport around the map easily with buttons
 - Miscellaneous ✳️⤵️
