@@ -66,7 +66,7 @@ function LootableComponent.new(artifact, gui)
 	self.nameLabel.Size = UDim2.new(1, 0, 0, 14)
 	self.nameLabel.TextSize = 15
 	self.nameLabel.Text = "Artifact"
-	self.nameLabel.TextColor3 = Color3.new(255, 165, 0)
+	self.nameLabel.TextColor3 = Color3.new(1, 1, 0)
 
 	self.nameLabel.Parent = self.container
 	self.container.Parent = gui
@@ -95,9 +95,9 @@ function LootableComponent:render()
 		local vector2 = Vector2.new(x - width * 0.5, (y - height * 0.5) + (0.5 * scale))
 
 		local dist = (LocalPlayer.Character.HumanoidRootPart.Position - self.pivot.Position).Magnitude
-		self.nameLabel.Text = "Artifacts [" .. format(dist, 1) .. "]"
+		self.nameLabel.Text = "Artifact [" .. format(dist, 1) .. "]"
 
-		local targetColor = self.available and Color3.new(0, 1, 0) or Color3.new(0.5, 0.5, 0.5)
+		local targetColor = self.available and Color3.new(1, 1, 0) or Color3.new(0.5, 0.5, 0.5)
 		TweenService:Create(self.nameLabel, self.tweenInfo, {TextColor3 = targetColor}):Play()
 
 		local scaleFactor = math.clamp(100 / dist, 0.7, 1.5)
