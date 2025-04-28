@@ -27,6 +27,7 @@
 
 ## Changelog
 ## v2.0 ⚠️ (FINAL UPDATE, 10/18/2024)
+![Image](https://github.com/user-attachments/assets/9184c791-8d8d-46ca-9517-c7cadf0bdaeb)
   - Script has been discontinued. ☹️
     - Thank you everyone for using Chat Bypasser! ❤️
 ### v2.0 ☀️⛱️ (07/04/2024)
