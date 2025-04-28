@@ -38,7 +38,7 @@
   - All versions' changelog
 
 ## Changelog
-## v0.172 ⚔️🐇 (LATEST BETA, 04/28/2025)
+## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025)
   - Easter theme 🧺🩷
   - Small fix ✅
 ### v0.171 ⚔️ (BETA, 04/28/2025)
