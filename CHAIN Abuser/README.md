@@ -24,6 +24,7 @@
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
   - Infinite Trap and Jack O' Mine placements
+  - Unlock all blueprints
 - ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
@@ -37,6 +38,9 @@
   - All versions' changelog
 
 ### Changelog
+- v0.171 ⚔️ (04/28/2025)
+  - Added blueprints unlocker 🏹
+  - Bug fixes ✅
 - v0.17 ⚔️ (04/28/2025)
   - Added infinite trap + jack o' mine placement 🏹
   - Organized essentials 📁ℹ️
