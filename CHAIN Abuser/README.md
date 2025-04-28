@@ -1,4 +1,4 @@
-<h1 align="center">CHAIN Abuser v0.16 ⚔️ (BETA, 04/28/2025)</h1>
+<h1 align="center">CHAIN Abuser v0.17 ⚔️ (BETA, 04/28/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
@@ -23,6 +23,7 @@
 - Weapons 🏹🛡️
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
+  - Infinite Trap and Jack-O-Mine placements
 - ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
@@ -36,6 +37,12 @@
   - All versions' changelog
 
 ### Changelog
+- v0.17 ⚔️ (04/28/2025)
+  - Added infinite trap + jack-o-mine placement 🏹
+  - Organized essentials 📁ℹ️
+- v0.165 ⚔️ (04/28/2025)
+  - Added player & artifact ESP + highlight ℹ️
+  - Changed ESP + highlight color 🔧
 - v0.16 ⚔️ (04/28/2025)
   - Added uptime to status ℹ️
   - Bug fixes ✅
@@ -86,7 +93,7 @@
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.16 ⚔️ (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.17 ⚔️ (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
