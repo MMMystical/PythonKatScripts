@@ -20,67 +20,67 @@
   - CHAIN Aimbot
   - Auto Scrap & Artifact Collectors
   - Infinite Dodge (EXPERIMENTAL)
-### - Weapons 🏹🛡️
+### Weapons 🏹🛡️
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
   - Infinite Trap and Jack O' Mine placements
   - Unlock all blueprints
-### - ESP 👁️🛑
+### ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
-### - Teleports ✅🕳️
+### Teleports ✅🕳️
   - Teleport around the map easily with buttons
-### - Miscellaneous ✳️⤵️
+### Miscellaneous ✳️⤵️
   - Local player modifications
   - Fun
-### - About ℹ️❔
+### About ℹ️❔
   - Script information
   - All versions' changelog
 
 ## Changelog
-## - v0.172 ⚔️🐇 (LATEST BETA, 04/28/2025)
+## v0.172 ⚔️🐇 (LATEST BETA, 04/28/2025)
   - Easter theme 🧺🩷
   - Small fix ✅
-### - v0.171 ⚔️ (BETA, 04/28/2025)
+### v0.171 ⚔️ (BETA, 04/28/2025)
   - Added blueprints unlocker 🏹
   - Bug fixes ✅
-### - v0.17 ⚔️ (BETA, 04/28/2025)
+### v0.17 ⚔️ (BETA, 04/28/2025)
   - Added infinite trap + jack o' mine placement 🏹
   - Organized essentials 📁ℹ️
-### - v0.165 ⚔️ (BETA, 04/28/2025)
+### v0.165 ⚔️ (BETA, 04/28/2025)
   - Added player & artifact ESP + highlight ℹ️
   - Changed ESP + highlight color 🔧
-### - v0.16 ⚔️ (BETA, 04/28/2025)
+### v0.16 ⚔️ (BETA, 04/28/2025)
   - Added uptime to status ℹ️
   - Bug fixes ✅
-### - v0.155 ⚔️ (BETA, 04/27/2025)
+### v0.155 ⚔️ (BETA, 04/27/2025)
   - Added back an old feature 🔧✅
   - Updated notifications ℹ️
-### - v0.151 ⚔️ (BETA, 04/27/2025)
+### v0.151 ⚔️ (BETA, 04/27/2025)
   - Fixed artifact collector ✅
   - Small fix ✅
-### - v0.15 ⚔️ (BETA, 04/27/2025)
+### v0.15 ⚔️ (BETA, 04/27/2025)
   - New warnings ℹ️
   - Experimental feature ⚠️
   - Fix ✅
-### - v0.14 ⚔️ (BETA, 04/27/2025)
+### v0.14 ⚔️ (BETA, 04/27/2025)
   - New weapon cheats 🏹
   - ESP rework 🔧
   - Big fixes and additions ✅
-### - v0.13 ⚔️ (BETA, 04/26/2025)
+### v0.13 ⚔️ (BETA, 04/26/2025)
   - Removed a feature ❌
   - Turned some buttons into toggles and improved logic ✅
-### - v0.12 ⚔️ (BETA, 04/26/2025)
+### v0.12 ⚔️ (BETA, 04/26/2025)
   - Bug fixing 🔧
   - Fixed issue with ESP ✅
   - Out of ALPHA stage! ⬆️
-### - v0.115 ⚔️ (ALPHA, 04/26/2025)
+### v0.115 ⚔️ (ALPHA, 04/26/2025)
   - Small changes ✅
-### - v0.11 ⚔️ (ALPHA, 04/26/2025)
+### v0.11 ⚔️ (ALPHA, 04/26/2025)
   - Enhanced ESPs 🔧
   - Moved some stuff to other tabs ℹ️
   - Fixes ✅
-### - v0.10 ⚔️ (ALPHA, 04/25/2025)
+### v0.10 ⚔️ (ALPHA, 04/25/2025)
   - Release of the CHAIN Abuser ⚔️ script 🔨
 
 ^^ More to come very soon! (unless there will be nothing else important to add)
