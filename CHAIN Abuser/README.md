@@ -14,7 +14,7 @@
 ### Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
 
 ## Features
-### - Cheats ❇️🔰
+### Cheats ❇️🔰
   - Infinite Stamina, Combat Stamina
   - Automatically win QTEs
   - CHAIN Aimbot
