@@ -12,6 +12,7 @@
 Here's all the scripts made by PythonKat.
 
 # Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 10/18/2024) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black)
+![Image](https://github.com/user-attachments/assets/9184c791-8d8d-46ca-9517-c7cadf0bdaeb)
 
 ## WARNING: This script is discontinued. Over the last few months, Roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
 
