@@ -26,7 +26,7 @@
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones as well)
 
 ## Changelog
-## v2.0 ⚠️ (FINAL UPDATE, 10/18/2024) ![Summer Badge](https://img.shields.io/badge/Event-SUMMER-yellow?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black)
+## v2.0 ⚠️ (FINAL UPDATE, 10/18/2024) ![Summer Badge](https://img.shields.io/badge/Event-SUMMER-yellow?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black) 
 ![Image](https://github.com/user-attachments/assets/9184c791-8d8d-46ca-9517-c7cadf0bdaeb)
   - Script has been discontinued. ☹️
     - Thank you everyone for using Chat Bypasser! ❤️
