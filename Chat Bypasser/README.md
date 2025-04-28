@@ -13,19 +13,19 @@
 
 ### Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
-### Features
-- Ton of bypasses 📃
+## Features
+### - Ton of bypasses 📃
   - Normal insults
   - Sentences with insults
   - Roleplay bypasses
-- Undetectable bypasses 🔰
+### - Undetectable bypasses 🔰
   - The messages bypass the chat log so you can't get banned for this (unless you probably spam a lot)
-- Working bypasses ✅
+### - Working bypasses ✅
   - All bypasses on the script work and don't tag (after you use certain bypasses some will start to tag, but it's normal)
-- Funny bypasses 🤫
+### - Funny bypasses 🤫
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones as well)
 
-### Changelog
+## Changelog
 ### - v2.0 ⚠️ (FINAL UPDATE, 10/18/2024)
   - Script has been discontinued. ☹️
     - Thank you everyone for using Chat Bypasser! ❤️
