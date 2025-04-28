@@ -40,7 +40,7 @@
 ### v1.93 🐇 (04/03/2024)
   - Added only a few bypasses 😔
   - Thats all rn 🤫
-  - ⬆️
+    - ⬆️
 ### v1.92 🍀 (03/04/2024)
   - Added even more bypasses 😶‍🌫️
   - Improved some (less tags) 🙏
