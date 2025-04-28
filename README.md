@@ -56,7 +56,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 
 # Updates are discontinued on this script.
 
-# CHAIN Abuser v0.172 ⚔️🐇 (BETA, 04/28/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+# CHAIN Abuser v0.182 ⚔️🐇 (BETA, 04/29/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
 
@@ -66,7 +66,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 ### Cheats ❇️🔰
   - Infinite Stamina, Combat Stamina
   - Automatically win QTEs
-  - CHAIN Aimbot
+  - CHAIN Aimbot, Warnings
   - Auto Scrap & Artifact Collectors
   - Infinite Dodge (EXPERIMENTAL)
 ### Weapons 🏹🛡️
@@ -104,7 +104,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.172 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.182 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
