@@ -38,8 +38,19 @@
   - All versions' changelog
 
 ## Changelog
-## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
-![Image](https://github.com/user-attachments/assets/48632459-3328-481f-85ce-fab4972becac)
+## v0.182 ⚔️🐇 (LATEST; BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+  - Added CHAIN warnings ℹ️
+  - Small fix ✅
+    - #kat 😼
+### v0.181 ⚔️🐇 (BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+  - Added survivals changer ℹ️
+  - Bug fix ✅
+    - pov 6969 survivals lel
+### v0.18 ⚔️🐇 (BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+  - Added server stats viewer ℹ️
+  - Toggles logic fix ✅
+    - ez 😼
+### v0.172 ⚔️🐇 (BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Easter theme 🧺🩷
   - Small fix ✅
     - bang CHAIN now 💀
