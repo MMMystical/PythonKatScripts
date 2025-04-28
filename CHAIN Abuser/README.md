@@ -76,13 +76,13 @@
   - Bug fixing 🔧
   - Fixed issue with ESP ✅
   - Out of ALPHA stage! ⬆️
-### v0.115 ⚔️ (ALPHA, 04/26/2025)
+### v0.115 ⚔️ (ALPHA, 04/26/2025) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Small changes ✅
 ### v0.11 ⚔️ (ALPHA, 04/26/2025) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Enhanced ESPs 🔧
   - Moved some stuff to other tabs ℹ️
   - Fixes ✅
-### v0.10 ⚔️ (ALPHA, 04/25/2025) ![Release Badge](https://img.shields.io/badge/The-RELEASE-blue?style=plastic&logo=moonrepo&logoColor=white&labelColor=black)
+### v0.10 ⚔️ (ALPHA, 04/25/2025) ![Release Badge](https://img.shields.io/badge/The-RELEASE-blue?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Release of the CHAIN Abuser ⚔️ script 🔨
 
 ^^ More to come very soon! (unless there will be nothing else important to add)
