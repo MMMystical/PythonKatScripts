@@ -43,36 +43,36 @@
   - Easter theme 🧺🩷
   - Small fix ✅
     - bang CHAIN now 💀
-### v0.171 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.171 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added blueprints unlocker 🏹
   - Bug fixes ✅
-### v0.17 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.17 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added infinite trap + jack o' mine placement 🏹
   - Organized essentials 📁ℹ️
-### v0.165 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.165 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added player & artifact ESP + highlight ℹ️
   - Changed ESP + highlight color 🔧
-### v0.16 ⚔️ (BETA, 04/28/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.16 ⚔️ (BETA, 04/28/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added uptime to status ℹ️
   - Bug fixes ✅
-### v0.155 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.155 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added back an old feature 🔧✅
   - Updated notifications ℹ️
-### v0.151 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.151 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Fixed artifact collector ✅
   - Small fix ✅
-### v0.15 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.15 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - New warnings ℹ️
   - Experimental feature ⚠️
   - Fix ✅
-### v0.14 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.14 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - New weapon cheats 🏹
   - ESP rework 🔧
   - Big fixes and additions ✅
-### v0.13 ⚔️ (BETA, 04/26/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.13 ⚔️ (BETA, 04/26/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Removed a feature ❌
   - Turned some buttons into toggles and improved logic ✅
-### v0.12 ⚔️ (BETA, 04/26/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
+### v0.12 ⚔️ (BETA, 04/26/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Bug fixing 🔧
   - Fixed issue with ESP ✅
   - Out of ALPHA stage! ⬆️
