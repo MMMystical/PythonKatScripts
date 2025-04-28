@@ -32,38 +32,38 @@
 ### v2.0 ☀️⛱️ (07/04/2024)
   - Added new category 🙏
     - It contains some funni stuff
-      - Lots of them fixed bc roblox chat 🤬
+    - Lots of them fixed bc roblox chat 🤬
 ### v1.94 🐇 (04/10/2024)
   - Added like only < 15 bypasses 😶‍🌫️
-  - Thats it 🥱
+    - Thats it 🥱
     - ok 🥶
 ### v1.93 🐇 (04/03/2024)
   - Added only a few bypasses 😔
-  - Thats all rn 🤫
+    - Thats all rn 🤫
     - ⬆️
 ### v1.92 🍀 (03/04/2024)
   - Added even more bypasses 😶‍🌫️
   - Improved some (less tags) 🙏
-  - #idk 😔
+    - #idk 😔
 ### v1.91 🍀 (03/03/2024)
   - Added a lot of new bypasses 🙃
   - New tab 😁
-  - Now have fun 🤫
+    - Now have fun 🤫
 ### v1.9 🍀 (03/03/2024)
   - Flooded the tabs of bypasses...
-  - ❤️
-  - Bully emos now 🙄
+    - ❤️
+    - Bully emos now 🙄
 ### v1.85 (02/29/2024)
   - A TON of new bypasses 🙏
-  - funni
-  - Dirty bypasses 😈
+    - funni
+    - Dirty bypasses 😈
 ### v1.84 (02/26/2024)
   - 2 new bypasses 🤫
-  - ok
+    - ok
     - More allah jokes 😇
 ### v1.83 🎆 (01/05/2024)
   - 3 new bypasses 😔
-  - idk
+    - idk
     - 1 of them kinda racist ngl 🧏‍♀️
 ### v1.82 🎆 (12/31/2023)
   - A few bypass additions 👏
@@ -75,7 +75,7 @@
     - #idkwhattosay 😔
 ### v1.8 🎆 (12/28/2023)
   - Huge ass amount of bypasses 👏
-  - No bugs this time 🤯
+    - No bugs this time 🤯
     - We getting bad now 🗣️🗣️
 ### v1.7 ❄ (12/27/2023)
   - A ton of new bypasses 🐱
