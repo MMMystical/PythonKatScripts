@@ -13,7 +13,7 @@ Here's all the scripts made by PythonKat.
 
 # Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 05/07/2024)
 
-## WARNING: This script is discontinued. Over the last few months, roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
+## WARNING: This script is discontinued. Over the last few months, Roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
 
 Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
