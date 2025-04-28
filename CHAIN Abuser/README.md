@@ -23,7 +23,7 @@
 - Weapons 🏹🛡️
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
-  - Infinite Trap and Jack-O-Mine placements
+  - Infinite Trap and Jack O' Mine placements
 - ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
@@ -38,7 +38,7 @@
 
 ### Changelog
 - v0.17 ⚔️ (04/28/2025)
-  - Added infinite trap + jack-o-mine placement 🏹
+  - Added infinite trap + jack o' mine placement 🏹
   - Organized essentials 📁ℹ️
 - v0.165 ⚔️ (04/28/2025)
   - Added player & artifact ESP + highlight ℹ️
