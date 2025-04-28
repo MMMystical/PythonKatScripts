@@ -38,7 +38,7 @@
   - All versions' changelog
 
 ## Changelog
-## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025)
+## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
 ![Image](https://github.com/user-attachments/assets/48632459-3328-481f-85ce-fab4972becac)
   - Easter theme 🧺🩷
   - Small fix ✅
