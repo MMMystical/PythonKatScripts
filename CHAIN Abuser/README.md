@@ -1,4 +1,4 @@
-<h1 align="center">CHAIN Abuser v0.172 ⚔️🐇 (BETA, 04/28/2025)</h1>
+<h1 align="center">CHAIN Abuser v0.182 ⚔️🐇 (BETA, 04/28/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
@@ -114,7 +114,7 @@
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.172 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.182 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
