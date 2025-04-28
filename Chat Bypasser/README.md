@@ -1,4 +1,4 @@
-<h1 align="center">Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 10/18/2024) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black)</h1>
+<h1 align="center">Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 10/18/2024)</h1> ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black)
 
 ```
     ____        __  __                __ __      __ 
