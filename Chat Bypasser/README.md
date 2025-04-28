@@ -36,7 +36,7 @@
 ### v1.94 🐇 (04/10/2024)
   - Added like only < 15 bypasses 😶‍🌫️
   - Thats it 🥱
-   - ok 🥶
+    - ok 🥶
 ### v1.93 🐇 (04/03/2024)
   - Added only a few bypasses 😔
   - Thats all rn 🤫
