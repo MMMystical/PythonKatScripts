@@ -23,10 +23,10 @@ local gui = Library:create({
 })
 
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.16 ⚔️ | PythonKat v0.216 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.171 ⚔️ (BETA) | PythonKat v0.216 🩸")
 
 gui:notification({
-	Title = "Loading CHAIN Abuser v0.16 ⚔️ ...",
+	Title = "Loading CHAIN Abuser v0.171 ⚔️ (BETA) ...",
 	Text = "CHAIN when you inf stamina: 💀",
 	Duration = 7.5,
 	Callback = function() end
@@ -35,7 +35,7 @@ gui:notification({
 task.wait(2)
 
 gui:notification({
-	Title = "CHAIN Abuser v0.16 ⚔️",
+	Title = "CHAIN Abuser v0.171 ⚔️ (BETA)",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
@@ -74,11 +74,11 @@ local tab6 = gui:tab({
 })
 
 tab6:button({
-	Name = "CHAIN Abuser v0.16 ⚔️",
+	Name = "CHAIN Abuser v0.171 ⚔️ (BETA)",
 	Description = "Information about this script",
 	Callback = function()
 		tab:prompt{
-			Title = "CHAIN Abuser v0.16 ⚔️",
+			Title = "CHAIN Abuser v0.171 ⚔️ (BETA)",
 			Text = "some cheats against CHAIN! now you won't get yo ahh smacked easily!",
 			Buttons = {
 				Cool = function()
@@ -104,11 +104,56 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.16",
+	Name = "Changelog v0.171 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.16",
+			Title = "v0.171 ⚔️ (BETA)",
+			Text = "-added blueprints unlocker 🏹\n-bug fixes ✅",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.17 ⚔️ (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.17 ⚔️ (BETA)",
+			Text = "-added infinite trap + jack o' mine placement 🏹\n-organized essentials 📁ℹ️",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.165 ⚔️ (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.165 ⚔️ (BETA)",
+			Text = "-added player & artifact esp + highlight ℹ️\n-changed esp + highlight color 🔧",
+			Buttons = {
+				Ok = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.16 ⚔️ (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.16 ⚔️ (BETA)",
 			Text = "-added uptime to status ℹ️\n-bug fixes 🔧✅",
 			Buttons = {
 				Ok = function()
@@ -119,11 +164,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.155",
+	Name = "Changelog v0.155 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.155",
+			Title = "v0.155 ⚔️ (BETA)",
 			Text = "-added back an old feature 🔧✅\n-updated notifications ℹ️",
 			Buttons = {
 				Ok = function()
@@ -134,11 +179,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.151",
+	Name = "Changelog v0.151 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.151",
+			Title = "v0.151 ⚔️ (BETA)",
 			Text = "-fixed artifact collector ✅\n-small fix ✅",
 			Buttons = {
 				Ok = function()
@@ -149,11 +194,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.15",
+	Name = "Changelog v0.15 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.15",
+			Title = "v0.15 ⚔️ (BETA)",
 			Text = "-new warnings + experimental feature ℹ️⚠️\n-updated descriptions + fix ✅",
 			Buttons = {
 				Ok = function()
@@ -164,11 +209,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.14",
+	Name = "Changelog v0.14 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.14",
+			Title = "v0.14 ⚔️ (BETA)",
 			Text = "-new weapon cheats 🏹\n-ESP rework + big fixes and additions 🔧✅",
 			Buttons = {
 				Ok = function()
@@ -179,11 +224,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.13",
+	Name = "Changelog v0.13 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.13",
+			Title = "v0.13 ⚔️ (BETA)",
 			Text = "-removed a feature ❌\n-turned some buttons into toggles + improved ✅",
 			Buttons = {
 				Ok = function()
@@ -194,11 +239,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.12",
+	Name = "Changelog v0.12 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.12",
+			Title = "v0.12 ⚔️ (BETA)",
 			Text = "-bug fixing 🔧\n-fixed issue with esp ✅",
 			Buttons = {
 				Ok = function()
@@ -209,11 +254,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.115",
+	Name = "Changelog v0.115 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.115",
+			Title = "v0.115 ⚔️ (BETA)",
 			Text = "-small changes ✅",
 			Buttons = {
 				Ok = function()
@@ -224,11 +269,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.11",
+	Name = "Changelog v0.11 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.11",
+			Title = "v0.11 ⚔️ (BETA)",
 			Text = "-enhanced ESPs 🔧\n-moved some stuff to other tabs + fixes ✅",
 			Buttons = {
 				Ok = function()
@@ -239,11 +284,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.10",
+	Name = "Changelog v0.10 ⚔️ (BETA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.10",
+			Title = "v0.10 ⚔️ (BETA)",
 			Text = "-release of script 🔨",
 			Buttons = {
 				Ok = function()
@@ -383,7 +428,7 @@ tab:toggle({
 })
 
 local aimbotChainToggle = false
-local aimbotChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainaimbot.lua"))()
+local aimbotChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/chainaimbot.lua"))()
 
 tab:toggle({
 	Name = "CHAIN Aimbot",
@@ -429,7 +474,7 @@ tab:button({
 				Callback = function() end
 			}
 
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapcollector.lua"))()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/scrapcollector.lua"))()
 
 			task.wait(1)
 			gui:notification{
@@ -468,7 +513,7 @@ tab:button({
 					Callback = function() end
 				}
 
-				loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/artifactcollector.lua"))()
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/artifactcollector.lua"))()
 
 				task.wait(1)
 				gui:notification{
@@ -817,6 +862,139 @@ tab2:toggle({
 	end
 })
 
+local infiniteTrapsToggle = false
+
+tab2:toggle({
+	Name = "Infinite Trap Placement",
+	Description = "Lets you place as many traps as you want",
+	StartingState = false,
+	Callback = function(state)
+		if infiniteTrapsToggle == false then
+			if game.Players.LocalPlayer:WaitForChild("PlayerStats"):GetAttribute("BearTrapPlaced") ~= nil then
+				infiniteTrapsToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite Trap Placement",
+					Text = "Now you can place as many traps as you want ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.015)
+					game.Players.LocalPlayer:WaitForChild("PlayerStats"):SetAttribute("BearTrapPlaced", false)
+
+					if infiniteTrapsToggle == false then
+						break
+					end
+				end
+			end
+		elseif infiniteTrapsToggle == true then
+			infiniteTrapsToggle = false
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Trap Placement",
+				Text = "Now you can only place one trap per night ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local infiniteJackOMinesToggle = false
+
+tab2:toggle({
+	Name = "Infinite Jack O' Mine Placement",
+	Description = "Lets you place as many jack o' mines as you want",
+	StartingState = false,
+	Callback = function(state)
+		if infiniteJackOMinesToggle == false then
+			if game.Players.LocalPlayer:WaitForChild("PlayerStats"):GetAttribute("JackOPlaced") ~= nil then
+				infiniteJackOMinesToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Infinite Jack O' Mine Placement",
+					Text = "Now you can place as many jack o' mines as you want ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+
+				while true do
+					task.wait(0.015)
+					game.Players.LocalPlayer:WaitForChild("PlayerStats"):SetAttribute("JackOPlaced", false)
+
+					if infiniteJackOMinesToggle == false then
+						break
+					end
+				end
+			end
+		elseif infiniteJackOMinesToggle == true then
+			infiniteJackOMinesToggle = false
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Infinite Jack O' Mine Placement",
+				Text = "Now you can only place one jack o' mine per night ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local unlockBlueprintsToggle = false
+local originalBlueprintStates = {}
+
+tab2:toggle({
+	Name = "Unlock Blueprints",
+	Description = "Unlocks all the blueprints for free",
+	StartingState = false,
+	Callback = function(state)
+		if unlockBlueprintsToggle == false then
+			if game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints") then
+				unlockBlueprintsToggle = true
+
+				gui:notification{
+					Title = "CHAIN ⚔️ | Unlock Blueprints",
+					Text = "Now you can craft anything ✅",
+					Duration = 3,
+					Callback = function() end
+				}
+				
+				for attributeName, value in pairs(game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints"):GetAttributes()) do
+					originalBlueprintStates[attributeName] = game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints"):GetAttribute(attributeName)
+				end
+
+				while true do
+					task.wait(0.015)
+					for attributeName, _ in pairs(originalBlueprintStates) do
+						game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints"):SetAttribute(attributeName, true)
+					end
+
+					if unlockBlueprintsToggle == false then
+						break
+					end
+				end
+			end
+		elseif unlockBlueprintsToggle == true then
+			unlockBlueprintsToggle = false
+			
+			for attributeName, originalValue in pairs(originalBlueprintStates) do
+				game.Players.LocalPlayer:WaitForChild("PlayerStats"):WaitForChild("Blueprints"):SetAttribute(attributeName, originalValue)
+			end
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Unlock Blueprints",
+				Text = "Now you can only craft what you originally had unlocked ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+			
+			table.clear(originalBlueprintStates)
+		end
+	end
+})
+
 tab2:button({
 	Name = "Warning",
 	Description = "Read me",
@@ -838,7 +1016,7 @@ tab3:button({
 	Callback = function()
 		tab:prompt{
 			Title = "Info",
-			Text = "Some esp options regarding CHAIN or Scrap",
+			Text = "Some esp options regarding CHAIN, Scrap, or Players",
 			Buttons = {
 				Alright = function()
 				end
@@ -847,8 +1025,72 @@ tab3:button({
 	end
 })
 
+local espPlayerToggle = false
+local espPlayerModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/playeresp.lua"))()
+
+tab3:toggle({
+	Name = "Player Esp",
+	Description = "Displays where players are along with detailed info",
+	StartingState = false,
+	Callback = function(state)
+		if espPlayerToggle == false then
+			espPlayerToggle = true
+			espPlayerModule:enable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Player Esp",
+				Text = "Players are now shown ✅",
+				Duration = 3,
+				Callback = function() end
+			}
+		elseif espPlayerToggle == true then
+			espPlayerToggle = false
+			espPlayerModule:disable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Player Esp",
+				Text = "Players aren't shown anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local playerHighlightToggle = false
+local playerHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/playerhighlight.lua"))()
+
+tab3:toggle({
+	Name = "Highlight Players",
+	Description = "Highlights where players are with a light blue highlight",
+	StartingState = false,
+	Callback = function(state)
+		if playerHighlightToggle == false then
+			playerHighlightToggle = true
+			playerHighlightModule:enable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Players",
+				Text = "Players are now highlighted ✅",
+				Duration = 3,
+				Callback = function() end
+			}
+		elseif playerHighlightToggle == true then
+			playerHighlightToggle = false
+			playerHighlightModule:disable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Players",
+				Text = "Players aren't highlighted anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
 local espChainToggle = false
-local espChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainesp.lua"))()
+local espChainModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/chainesp.lua"))()
 
 tab3:toggle({
 	Name = "CHAIN Esp",
@@ -880,7 +1122,7 @@ tab3:toggle({
 })
 
 local chainHighlightToggle = false
-local chainHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/chainhighlight.lua"))()
+local chainHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/chainhighlight.lua"))()
 
 tab3:toggle({
 	Name = "Highlight CHAIN",
@@ -912,7 +1154,7 @@ tab3:toggle({
 })
 
 espScrapToggle = false
-espScrapModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scrapesp.lua"))()
+espScrapModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/scrapesp.lua"))()
 
 tab3:toggle({
 	Name = "Scrap Esp",
@@ -944,11 +1186,11 @@ tab3:toggle({
 })
 
 local scrapHighlightToggle = false
-local scrapHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/scraphighlight.lua"))()
+local scrapHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/scraphighlight.lua"))()
 
 tab3:toggle({
 	Name = "Highlight Scrap",
-	Description = "Highlights where Scrap is with a orange highlight",
+	Description = "Highlights where scrap is with a green highlight",
 	StartingState = false,
 	Callback = function(state)
 		if scrapHighlightToggle == false then
@@ -975,13 +1217,77 @@ tab3:toggle({
 	end
 })
 
+espArtifactsToggle = false
+espArtifactsModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/artifactesp.lua"))()
+
+tab3:toggle({
+	Name = "Artifacts Esp",
+	Description = "Displays where all the artifacts are",
+	StartingState = false,
+	Callback = function(state)
+		if espArtifactsToggle == false then
+			espArtifactsToggle = true
+			espArtifactsModule:enable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Artifacts Esp",
+				Text = "Artifacts are now shown ✅",
+				Duration = 3,
+				Callback = function() end
+			}
+		elseif espArtifactsToggle == true then
+			espArtifactsToggle = false
+			espArtifactsModule:disable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Artifacts Esp",
+				Text = "Artifacts aren't shown anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
+local artifactHighlightToggle = false
+local artifactHighlightModule = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKatScripts/refs/heads/main/CHAIN%20Abuser/Essentials/artifacthighlight.lua"))()
+
+tab3:toggle({
+	Name = "Highlight Artifacts",
+	Description = "Highlights where artifacts are with a yellow highlight",
+	StartingState = false,
+	Callback = function(state)
+		if artifactHighlightToggle == false then
+			artifactHighlightToggle = true
+			artifactHighlightModule:enable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Artifacts",
+				Text = "Artifacts are now highlighted ✅",
+				Duration = 3,
+				Callback = function() end
+			}
+		elseif artifactHighlightToggle == true then
+			artifactHighlightToggle = false
+			artifactHighlightModule:disable()
+
+			gui:notification{
+				Title = "CHAIN ⚔️ | Highlight Artifacts",
+				Text = "Artifacts aren't highlighted anymore ❌",
+				Duration = 3,
+				Callback = function() end
+			}
+		end
+	end
+})
+
 tab3:button({
 	Name = "Warning",
 	Description = "Read me",
 	Callback = function()
 		tab:prompt{
 			Title = "Warning",
-			Text = "Over time, this MIGHT make your game laggy, especially CHAIN Esp and Scrap Esp!",
+			Text = "Over time, these MIGHT make your game laggy!",
 			Buttons = {
 				Alright = function()
 				end
@@ -1136,6 +1442,21 @@ tab4:button({
 			Text = "Teleported you to Leaderboard ✅",
 			Duration = 3,
 			Callback = function() end
+		}
+	end
+})
+
+tab4:button({
+	Name = "Warning",
+	Description = "Read me",
+	Callback = function()
+		tab:prompt{
+			Title = "Warning",
+			Text = "Sometimes you may fall out of the map!",
+			Buttons = {
+				Alright = function()
+				end
+			}
 		}
 	end
 })
@@ -1479,7 +1800,7 @@ task.spawn(function()
 		task.wait(90)
 
 		if not gui then break end
-		local messages = {"Annoyed by limited stamina/combat stamina? Use infinite stamina and combat stamina to never run out!", "Tired of losing machete block/xsaw special attack/choke? Use auto win QTE!", "Lazy to get scrap or artifacts? Use auto collect!", "Can't aim properly? Use CHAIN aimbot!", "Running out of gas/ammo? Use infinite gas/ammo!", "Trying to find where CHAIN or scrap is? Use esp/highlight!", "Need to get somewhere fast? Use teleports!", "Wanna go fast? Use constant speed or faster constant speed!", "Tired of first person? Use third person, and you can go back to first person later, and you can also remove the mask on your head!", "Bored? Mess with custom print/notification, or read through the 'About' tab!"}
+		local messages = {"Annoyed by limited stamina/combat stamina? Use infinite stamina and combat stamina to never run out!", "Tired of losing machete block/xsaw special attack/choke? Use auto win QTE!", "Lazy to get scrap or artifacts? Use auto collect!", "Can't aim properly? Use CHAIN aimbot!", "Running out of gas/ammo? Use infinite gas/ammo!", "Need to place more traps/jack o' mines? Use infinite placements!", "Don't wanna buy blueprints? Use unlock blueprints!", "Trying to find where players, CHAIN, scrap, or artifacts are? Use esp/highlight!", "Need to get somewhere fast? Use teleports!", "Wanna go fast? Use constant speed or faster constant speed!", "Tired of first person? Use third person, and you can go back to first person later, and you can also remove the mask on your head!", "Bored? Mess with custom print/notification, or read through the 'About' tab!"}
 		
 		gui:notification{
 			Title = "CHAIN ⚔️ | Tip",
