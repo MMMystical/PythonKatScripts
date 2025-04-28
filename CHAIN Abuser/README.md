@@ -39,6 +39,7 @@
 
 ## Changelog
 ## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025)
+![Image](https://github.com/user-attachments/assets/48632459-3328-481f-85ce-fab4972becac)
   - Easter theme 🧺🩷
   - Small fix ✅
     - bang CHAIN now 💀
