@@ -86,6 +86,8 @@ function LootableComponent:render()
 		return
 	end
 
+	self.pivot = self.artifact:GetPivot()
+
 	local pos, visible = CurrentCamera:WorldToViewportPoint(self.pivot.Position)
 
 	if visible and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
