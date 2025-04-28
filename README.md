@@ -11,7 +11,7 @@
 
 Here's all the scripts made by PythonKat.
 
-# Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 10/18/2024) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=flat&logo=session&logoColor=white&labelColor=black)
+# Chat Bypasser v2.0 ☀️⛱️ (DISCONTINUED, 10/18/2024) ![Discontinued Badge](https://img.shields.io/badge/Status-DISCONTINUED-gray?style=plastic&logo=session&logoColor=white&labelColor=black)
 
 ## WARNING: This script is discontinued. Over the last few months, Roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
 
@@ -56,7 +56,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 
 # Updates are discontinued on this script.
 
-# CHAIN Abuser v0.172 ⚔️🐇 (BETA, 04/28/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=flat&logo=session&logoColor=white&labelColor=black)
+# CHAIN Abuser v0.172 ⚔️🐇 (BETA, 04/28/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
 
