@@ -1,4 +1,4 @@
-<h1 align="center">CHAIN Abuser v0.182 ⚔️🐇 (BETA, 04/28/2025)</h1>
+<h1 align="center">CHAIN Abuser v0.182 ⚔️🐇 (BETA, 04/29/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
@@ -17,7 +17,7 @@
 ### Cheats ❇️🔰
   - Infinite Stamina, Combat Stamina
   - Automatically win QTEs
-  - CHAIN Aimbot
+  - CHAIN Aimbot, Warnings
   - Auto Scrap & Artifact Collectors
   - Infinite Dodge (EXPERIMENTAL)
 ### Weapons 🏹🛡️
@@ -38,7 +38,7 @@
   - All versions' changelog
 
 ## Changelog
-## v0.182 ⚔️🐇 (LATEST; BETA, 04/28/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+## v0.182 ⚔️🐇 (LATEST; BETA, 04/29/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added CHAIN warnings ℹ️
   - Small fix ✅
     - #kat 😼
