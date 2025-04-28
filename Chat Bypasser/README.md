@@ -26,8 +26,9 @@
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones as well)
 
 ### Changelog
-- v2.0 ☀️⛱️ (FINAL UPDATE, 10/18/2024)
+## - v2.0 ⚠️ (FINAL UPDATE, 10/18/2024)
   - Script has been discontinued. ☹️
+    - Thank you everyone for using Chat Bypasser! ❤️
 - v2.0 ☀️⛱️ (07/04/2024)
   - Added new category 🙏
   - It contains some funni stuff
