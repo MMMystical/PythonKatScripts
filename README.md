@@ -70,7 +70,7 @@ Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won'
 - Weapons 🏹🛡️
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
-  - Infinite Trap and Jack-O-Mine placements
+  - Infinite Trap and Jack O' Mine placements
 - ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
