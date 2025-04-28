@@ -43,42 +43,42 @@
   - Easter theme 🧺🩷
   - Small fix ✅
     - bang CHAIN now 💀
-### v0.171 ⚔️ (BETA, 04/28/2025)
+### v0.171 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Added blueprints unlocker 🏹
   - Bug fixes ✅
-### v0.17 ⚔️ (BETA, 04/28/2025)
+### v0.17 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Added infinite trap + jack o' mine placement 🏹
   - Organized essentials 📁ℹ️
-### v0.165 ⚔️ (BETA, 04/28/2025)
+### v0.165 ⚔️ (BETA, 04/28/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Added player & artifact ESP + highlight ℹ️
   - Changed ESP + highlight color 🔧
-### v0.16 ⚔️ (BETA, 04/28/2025)
+### v0.16 ⚔️ (BETA, 04/28/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Added uptime to status ℹ️
   - Bug fixes ✅
-### v0.155 ⚔️ (BETA, 04/27/2025)
+### v0.155 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Added back an old feature 🔧✅
   - Updated notifications ℹ️
-### v0.151 ⚔️ (BETA, 04/27/2025)
+### v0.151 ⚔️ (BETA, 04/27/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Fixed artifact collector ✅
   - Small fix ✅
-### v0.15 ⚔️ (BETA, 04/27/2025)
+### v0.15 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - New warnings ℹ️
   - Experimental feature ⚠️
   - Fix ✅
-### v0.14 ⚔️ (BETA, 04/27/2025)
+### v0.14 ⚔️ (BETA, 04/27/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - New weapon cheats 🏹
   - ESP rework 🔧
   - Big fixes and additions ✅
-### v0.13 ⚔️ (BETA, 04/26/2025)
+### v0.13 ⚔️ (BETA, 04/26/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Removed a feature ❌
   - Turned some buttons into toggles and improved logic ✅
-### v0.12 ⚔️ (BETA, 04/26/2025)
+### v0.12 ⚔️ (BETA, 04/26/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?
   - Bug fixing 🔧
   - Fixed issue with ESP ✅
   - Out of ALPHA stage! ⬆️
-### v0.115 ⚔️ (ALPHA, 04/26/2025) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
+### v0.115 ⚔️ (ALPHA, 04/26/2025) ![Minor Badge](https://img.shields.io/badge/Update-MINOR-green?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Small changes ✅
-### v0.11 ⚔️ (ALPHA, 04/26/2025) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
+### v0.11 ⚔️ (ALPHA, 04/26/2025) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Alpha Badge](https://img.shields.io/badge/Status-ALPHA-cyan?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Enhanced ESPs 🔧
   - Moved some stuff to other tabs ℹ️
   - Fixes ✅
