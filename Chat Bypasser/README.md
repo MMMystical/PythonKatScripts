@@ -31,8 +31,8 @@
     - Thank you everyone for using Chat Bypasser! ❤️
 ### v2.0 ☀️⛱️ (07/04/2024)
   - Added new category 🙏
-  - It contains some funni stuff
-  - Lots of them fixed bc roblox chat 🤬
+    - It contains some funni stuff
+      - Lots of them fixed bc roblox chat 🤬
 ### v1.94 🐇 (04/10/2024)
   - Added like only < 15 bypasses 😶‍🌫️
   - Thats it 🥱
@@ -60,43 +60,43 @@
 ### v1.84 (02/26/2024)
   - 2 new bypasses 🤫
   - ok
-  - More allah jokes 😇
+    - More allah jokes 😇
 ### v1.83 🎆 (01/05/2024)
   - 3 new bypasses 😔
   - idk
-  - 1 of them kinda racist ngl 🧏‍♀️
+    - 1 of them kinda racist ngl 🧏‍♀️
 ### v1.82 🎆 (12/31/2023)
   - A few bypass additions 👏
   - Removed a bypass 💀
-  - #idkwhattosayagain 😔
+    - #idkwhattosayagain 😔
 ### v1.81 🎆 (12/28/2023)
   - New bypasses and a new tab 💫
   - Fixed a few bypasses tagging 🤦‍♂️
-  - #idkwhattosay 😔
+    - #idkwhattosay 😔
 ### v1.8 🎆 (12/28/2023)
   - Huge ass amount of bypasses 👏
   - No bugs this time 🤯
-  - We getting bad now 🗣️🗣️
+    - We getting bad now 🗣️🗣️
 ### v1.7 ❄ (12/27/2023)
   - A ton of new bypasses 🐱
   - Bug fix 🧏‍♀️
-  - Wish i could add certain words... 💀
+    - Wish i could add certain words... 💀
 ### v1.6 ❄ (12/22/2023)
   - 2 new sentences bypasses 👌
   - Bug fix 💫
-  - #bypass 😍
+    - #bypass 😍
 ### v1.5 ❄ (12/06/2023)
   - More bypass additions 💀
   - Bug fixes ✅
-  - #kat 😼
+    - #kat 😼
 ### v1.4 ❄ (12/05/2023)
   - New bypass additions 😎
   - New bypass category 🤫
-  - Op 😼
+    - Op 😼
 ### v1.3 ❄ (12/04/2023)
   - Added a lot more bypasses
   - Small reorganizations 🔨
-  - Enjoy! 🔥
+    - Enjoy! 🔥
 ### v1.2 (12/03/2023)
   - Reorganized bypasses + new ones ✌
   - Better overlay ✔
