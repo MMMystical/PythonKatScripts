@@ -41,6 +41,7 @@
 ## v0.172 ⚔️🐇 (LATEST; BETA, 04/28/2025)
   - Easter theme 🧺🩷
   - Small fix ✅
+    - bang CHAIN now 💀
 ### v0.171 ⚔️ (BETA, 04/28/2025)
   - Added blueprints unlocker 🏹
   - Bug fixes ✅
