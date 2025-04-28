@@ -23,7 +23,7 @@ local gui = Library:create({
 })
 
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.182 ⚔️🐇 (BETA) | PythonKat v0.216 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.182 ⚔️🐇 (BETA) | PythonKat v0.22 🩸")
 
 gui:notification({
 	Title = "Loading CHAIN Abuser v0.182 ⚔️🐇 (BETA) ...",
