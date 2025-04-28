@@ -109,7 +109,7 @@ tab6:button({
 	Callback = function()
 		tab:prompt{
 			Title = "v0.172 ⚔️🐇 (BETA)",
-			Text = "-easter theme 🧺🩷\n-small fix ✅",
+			Text = "-easter theme 🧺🩷\n-small fix ✅\nbang CHAIN now 💀",
 			Buttons = {
 				Ok = function()
 				end
@@ -259,7 +259,7 @@ tab6:button({
 	Callback = function()
 		tab:prompt{
 			Title = "v0.12 ⚔️ (BETA)",
-			Text = "-bug fixing 🔧\n-fixed issue with esp ✅",
+			Text = "-bug fixing 🔧\n-fixed issue with esp ✅\n-out of ALPHA stage! ⬆️",
 			Buttons = {
 				Ok = function()
 				end
@@ -269,11 +269,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.115 ⚔️ (BETA)",
+	Name = "Changelog v0.115 ⚔️ (ALPHA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.115 ⚔️ (BETA)",
+			Title = "v0.115 ⚔️ (ALPHA)",
 			Text = "-small changes ✅",
 			Buttons = {
 				Ok = function()
@@ -284,11 +284,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.11 ⚔️ (BETA)",
+	Name = "Changelog v0.11 ⚔️ (ALPHA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.11 ⚔️ (BETA)",
+			Title = "v0.11 ⚔️ (ALPHA)",
 			Text = "-enhanced ESPs 🔧\n-moved some stuff to other tabs + fixes ✅",
 			Buttons = {
 				Ok = function()
@@ -299,11 +299,11 @@ tab6:button({
 })
 
 tab6:button({
-	Name = "Changelog v0.10 ⚔️ (BETA)",
+	Name = "Changelog v0.10 ⚔️ (ALPHA)",
 	Description = "See version changes",
 	Callback = function()
 		tab:prompt{
-			Title = "v0.10 ⚔️ (BETA)",
+			Title = "v0.10 ⚔️ (ALPHA)",
 			Text = "-release of script 🔨",
 			Buttons = {
 				Ok = function()
