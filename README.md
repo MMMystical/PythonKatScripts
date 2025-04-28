@@ -15,18 +15,18 @@ Here's all the scripts made by PythonKat.
 
 ## WARNING: This script is discontinued. Over the last few months, Roblox has made the moderation system more and more harsh, to the point almost any bypass is impossible. More than 90% of the bypasses here are probably fixed, but if you still want to try go ahead.
 
-Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
+### Bypass the chat moderation and say anything you want (almost) in the chat by just clicking the bypass options on the script.
 
-### Features
-- Ton of bypasses 📃
+## Features
+### Ton of bypasses 📃
   - Normal insults
   - Sentences with insults
   - Roleplay bypasses
-- Undetectable bypasses 🔰
+### Undetectable bypasses 🔰
   - The messages bypass the chat log so you can't get banned for this (unless you probably spam a lot)
-- Working bypasses ✅
+### Working bypasses ✅
   - All bypasses on the script work and don't tag (after you use certain bypasses some will start to tag, but it's normal)
-- Funny bypasses 🤫
+### Funny bypasses 🤫
   - The "sentences" tab usually has some funny bypasses too (but there are some offensive ones as well)
 
 ### Notes
@@ -54,33 +54,35 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 
 Copy the loadstring and enjoy using the Chat Bypasser!
 
+# Updates are discontinued on this script.
+
 # CHAIN Abuser v0.171 ⚔️🐇 (BETA, 04/28/2025)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
 
-Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
+### Gain advantages in CHAIN to make the fight more fair against CHAIN! Now you won't get yo ahh smacked...
 
-### Features
-- Cheats ❇️🔰
+## Features
+### Cheats ❇️🔰
   - Infinite Stamina, Combat Stamina
   - Automatically win QTEs
   - CHAIN Aimbot
   - Auto Scrap & Artifact Collectors
   - Infinite Dodge (EXPERIMENTAL)
-- Weapons 🏹🛡️
+### Weapons 🏹🛡️
   - Infinite XSaw Gas
   - Infinite M1911, Double Barrel, Deagle, and AK47 Ammo
   - Infinite Trap and Jack O' Mine placements
   - Unlock all blueprints
-- ESP 👁️🛑
+### ESP 👁️🛑
   - View Players, CHAIN, Scrap, and Artifacts around the map
   - Highlight Players, CHAIN, Scrap, and Artifacts
-- Teleports ✅🕳️
+### Teleports ✅🕳️
   - Teleport around the map easily with buttons
-- Miscellaneous ✳️⤵️
+### Miscellaneous ✳️⤵️
   - Local player modifications
   - Fun
-- About ℹ️❔
+### About ℹ️❔
   - Script information
   - All versions' changelog
 
@@ -110,5 +112,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/MMMystical/PythonKat
 ```
 
 Copy the loadstring and enjoy using the CHAIN Abuser!
+
+# More updates to come soon.
 
 # That's all the scripts as of right now. More to come soon!
