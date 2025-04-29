@@ -20,7 +20,7 @@ local function lookAt(cframe)
 end
 
 local function getChain()
-    for _, child in ipairs(AIFolder:GetChildren()) do
+    for _, child in ipairs(opqrstuvwx:GetChildren()) do -- changed from AIFolder to opqrstuvwx
         if child:FindFirstChild("HumanoidRootPart") then
             return child
         end
