@@ -1,30 +1,28 @@
-print("TEST!")
+print("TEST!2")
+
 local Module = {}
 Module.__index = Module
 
 local Workspace = game:GetService(string.char(87,111,114,107,115,112,97,99,101))
 local RunService = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))
 local UserInputService = game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))
-local rstuvwxyzA = Workspace:WaitForChild(string.char(77,105,115,99))
-local opqrstuvwx = rstuvwxyzA:WaitForChild(string.char(65,73))
+local CKCAOU = Workspace:WaitForChild(string.char(77,105,115,99))
+local xzkNVB = CKCAOU:WaitForChild(string.char(65,73))
 local Camera = Workspace.CurrentCamera
-
-local isHoldingRightClick = false
-local renderConnection
-local inputBeganConnection
-local inputEndedConnection
-
-local function lookAt(cframe)
-    local lookAtPos = CFrame.new(Camera.CFrame.Position, cframe.Position)
-    Camera.CFrame = lookAtPos
+local ZfkswD = (not true)
+local jXUHOC
+local HJBUAX
+local srxAkf
+local function MLobcC(FkuBrU)
+ local FBnugu = CFrame.new(Camera.CFrame.Position, FkuBrU.Position)
+ Camera.CFrame = FBnugu
 end
-
-local function getChain()
-    for _, child in ipairs(opqrstuvwx:GetChildren()) do -- changed from AIFolder to opqrstuvwx
-        if child:FindFirstChild("HumanoidRootPart") then
-            return child
-        end
-    end
+local function ofkgiz()
+ for _, child in ipairs(xzkNVB:GetChildren()) do
+ if child:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
+ return child
+ end
+ end
 end
 
 function Module:enable()
