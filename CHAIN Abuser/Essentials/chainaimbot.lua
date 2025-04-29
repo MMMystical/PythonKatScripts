@@ -1,62 +1,75 @@
 print("TEST!")
-local wxyzABCDEF = {}
-wxyzABCDEF.__index = wxyzABCDEF
-local Workspace = game:GetService("Workspace")
-local RunService = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local fghijklmno = Workspace:WaitForChild("Misc")
-local xyzABCDEFG = fghijklmno:WaitForChild("AI")
+local Module = {}
+Module.__index = Module
+
+local Workspace = game:GetService(string.char(87,111,114,107,115,112,97,99,101))
+local RunService = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))
+local UserInputService = game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))
+local rstuvwxyzA = Workspace:WaitForChild(string.char(77,105,115,99))
+local opqrstuvwx = rstuvwxyzA:WaitForChild(string.char(65,73))
 local Camera = Workspace.CurrentCamera
-local qbcdefghij = (not true)
-local ghijklmnop
-local zABCDEFGHI
-local opqrstuvwx
-local function jklmnopqrs(JKLMNOstuv)
- local qrstubcdef = CFrame.new(Camera.CFrame.Position, JKLMNOstuv.Position)
- Camera.CFrame = qrstubcdef
+
+local isHoldingRightClick = false
+local renderConnection
+local inputBeganConnection
+local inputEndedConnection
+
+local function lookAt(cframe)
+    local lookAtPos = CFrame.new(Camera.CFrame.Position, cframe.Position)
+    Camera.CFrame = lookAtPos
 end
-local function GHIJKLMNOP()
- for _, child in ipairs(xyzABCDEFG:GetChildren()) do
- if child:FindFirstChild("HumanoidRootPart") then
- return child
- end
- end
+
+local function getChain()
+    for _, child in ipairs(AIFolder:GetChildren()) do
+        if child:FindFirstChild("HumanoidRootPart") then
+            return child
+        end
+    end
 end
-function wxyzABCDEF:enable()
- self.enabled = (not (not true))
- ghijklmnop = RunService.RenderStepped:Connect(function()
- if not self.enabled then return end
- if not qbcdefghij then return end
- local lmnopqrstu = GHIJKLMNOP()
- if lmnopqrstu then
- jklmnopqrs(lmnopqrstu:GetPivot())
- end
- end)
- zABCDEFGHI = UserInputService.InputBegan:Connect(function(opHIJKLMNO)
- if opHIJKLMNO.UserInputType == Enum.UserInputType.MouseButton2 then
- qbcdefghij = (not (not true))
- end
- end)
- opqrstuvwx = UserInputService.InputEnded:Connect(function(opHIJKLMNO)
- if opHIJKLMNO.UserInputType == Enum.UserInputType.MouseButton2 then
- qbcdefghij = (not true)
- end
- end)
+
+function Module:enable()
+    self.enabled = true
+
+    renderConnection = RunService.RenderStepped:Connect(function()
+        if not self.enabled then return end
+        if not isHoldingRightClick then return end
+
+        local chain = getChain()
+        if chain then
+            lookAt(chain:GetPivot())
+        end
+    end)
+
+    inputBeganConnection = UserInputService.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton2 then
+            isHoldingRightClick = true
+        end
+    end)
+
+    inputEndedConnection = UserInputService.InputEnded:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton2 then
+            isHoldingRightClick = false
+        end
+    end)
 end
-function wxyzABCDEF:disable()
- self.enabled = (not true)
- if ghijklmnop then
- ghijklmnop:Disconnect()
- ghijklmnop = nil
- end
- if zABCDEFGHI then
- zABCDEFGHI:Disconnect()
- zABCDEFGHI = nil
- end
- if opqrstuvwx then
- opqrstuvwx:Disconnect()
- opqrstuvwx = nil
- end
+
+function Module:disable()
+    self.enabled = false
+
+    if renderConnection then
+        renderConnection:Disconnect()
+        renderConnection = nil
+    end
+
+    if inputBeganConnection then
+        inputBeganConnection:Disconnect()
+        inputBeganConnection = nil
+    end
+
+    if inputEndedConnection then
+        inputEndedConnection:Disconnect()
+        inputEndedConnection = nil
+    end
 end
-return setmetatable({}, wxyzABCDEF)
-print('Obfuscated with PythonKat Obfuscator v1')
+
+return setmetatable({}, Module)
