@@ -18,15 +18,28 @@ github: Kevinjky7555 	discord: kevinjky7555
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MMMystical/PythonKat-Lib/main/ui.lua"))()
 
+local UI_ID = "PythonKat_ChainAbuser"
+
+if getgenv and getgenv()[UI_ID] then
+	getgenv()[UI_ID]()
+	getgenv()[UI_ID] = nil
+end
+
 local gui = Library:create({
-	Theme = Library.Themes.Easter
+	--Theme = Library.Themes.Easter
 })
 
+if getgenv then
+	getgenv()[UI_ID] = function()
+		Library:closeUI()
+	end
+end
+
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.182 ⚔️🐇 (BETA) | PythonKat v0.22 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.183 ⚔️🐇 (BETA) | PythonKat v0.23 🩸")
 
 gui:notification({
-	Title = "Loading CHAIN Abuser v0.182 ⚔️🐇 (BETA) ...",
+	Title = "Loading CHAIN Abuser v0.183 ⚔️🐇 (BETA) ...",
 	Text = "CHAIN when you inf stamina: 💀",
 	Duration = 7.5,
 	Callback = function() end
@@ -35,7 +48,7 @@ gui:notification({
 task.wait(2)
 
 gui:notification({
-	Title = "CHAIN Abuser v0.182 ⚔️🐇 (BETA)",
+	Title = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
@@ -74,11 +87,11 @@ local tab6 = gui:tab({
 })
 
 tab6:button({
-	Name = "CHAIN Abuser v0.182 ⚔️🐇 (BETA)",
+	Name = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
 	Description = "Information about this script",
 	Callback = function()
 		tab:prompt{
-			Title = "CHAIN Abuser v0.182 ⚔️🐇 (BETA)",
+			Title = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
 			Text = "some cheats against CHAIN! now you won't get yo ahh smacked easily!",
 			Buttons = {
 				Cool = function()
@@ -97,6 +110,21 @@ tab6:button({
 			Text = "You may get kicked sometimes from the game's anti cheat! (but VERY rare)",
 			Buttons = {
 				Alright = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.183 ⚔️🐇 (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.183 ⚔️🐇 (BETA)",
+			Text = "-fixed CHAIN warning for bm 🔧\n-bug fix ✅\n#idk 😔",
+			Buttons = {
+				Ok = function()
 				end
 			}
 		}
@@ -584,7 +612,7 @@ tab:toggle({
 					end
 				end
 				
-				if bm == true then
+				if bm == true or anger >= angerRequirement then
 					if bmWarning == false then
 						bmWarning = true
 						
