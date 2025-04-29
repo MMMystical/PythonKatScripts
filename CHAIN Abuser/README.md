@@ -1,4 +1,4 @@
-<h1 align="center">CHAIN Abuser v0.182 ⚔️🐇 (BETA, 04/29/2025)</h1>
+<h1 align="center">CHAIN Abuser v0.183 ⚔️🐇 (BETA, 04/29/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
@@ -38,8 +38,12 @@
   - All versions' changelog
 
 ## Changelog
-## v0.182 ⚔️🐇 (LATEST; BETA, 04/29/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
-![Image](https://github.com/user-attachments/assets/a50c0fca-6b89-4f26-874c-78575a4064c1)
+## v0.183 ⚔️🐇 (LATEST; BETA, 04/29/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+![Image](https://github.com/user-attachments/assets/debee80b-943c-44d3-9e05-3a085866b21e)
+  - Fixed CHAIN warning for bm 🔧
+  - Bug fix ✅
+    - #idk 😔
+### v0.182 ⚔️🐇 (BETA, 04/29/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Major Badge](https://img.shields.io/badge/Update-MAJOR-purple?style=plastic&logo=moonrepo&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
   - Added CHAIN warnings ℹ️
   - Small fix ✅
     - #kat 😼
@@ -115,7 +119,7 @@
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.182 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.183 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
