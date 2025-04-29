@@ -13,4 +13,195 @@ github: MMMystical    discord: mmmystical
 github: Kevinjky7555  discord: kevinjky7555
 ]]
 
-local yXaJUz = {} yXaJUz.__index = yXaJUz local Players = game:GetService(string.char(0x50,0x6C,0x61,0x79,0x65,0x72,0x73)) local RunService = game:GetService(string.char(0x52,0x75,0x6E,0x53,0x65,0x72,0x76,0x69,0x63,0x65)) local Workspace = game:GetService(string.char(0x57,0x6F,0x72,0x6B,0x73,0x70,0x61,0x63,0x65)) local LocalPlayer = Players.LocalPlayer local CurrentCamera = Workspace.CurrentCamera local VHGYom = {} VHGYom.__index = VHGYom function VHGYom.new() local SxVDGD = setmetatable({}, VHGYom) return SxVDGD end function VHGYom:add(Hstkgi) local LuDLBt = { Hstkgi = Hstkgi } if not SxVDGD.tSdgwJ then SxVDGD.tSdgwJ = LuDLBt else SxVDGD.tail.next = LuDLBt end SxVDGD.tail = LuDLBt return SxVDGD end function VHGYom:destroy() local tSdgwJ = SxVDGD.tSdgwJ while tSdgwJ do local Hstkgi = tSdgwJ.Hstkgi if type(Hstkgi) == string.char(0x66,0x75,0x6E,0x63,0x74,0x69,0x6F,0x6E) then Hstkgi() elseif typeof(Hstkgi) == string.char(0x52,0x42,0x58,0x53,0x63,0x72,0x69,0x70,0x74,0x43,0x6F,0x6E,0x6E,0x65,0x63,0x74,0x69,0x6F,0x6E) then Hstkgi:Disconnect() elseif type(Hstkgi) == string.char(0x74,0x68,0x72,0x65,0x61,0x64) then task.cancel(Hstkgi) elseif Hstkgi.destroy then Hstkgi:destroy() elseif Hstkgi.Destroy then Hstkgi:Destroy() end tSdgwJ = tSdgwJ.next end SxVDGD.tSdgwJ = nil end function blackfunction(...) return ... end local TqYjoR = TqYjoR or blackfunction local function sFHzFL(fOLEdF) return TqYjoR(fOLEdF) end local niWINY = {} niWINY.__index = niWINY niWINY.instances = {} niWINY.connections = VHGYom.new() local ScreenGui = Instance.new(string.char(0x53,0x63,0x72,0x65,0x65,0x6E,0x47,0x75,0x69)) local function WXkiUh(nVnwRz) if type(nVnwRz) ~= string.char(0x6E,0x75,0x6D,0x62,0x65,0x72) then return string.char(0x30) end return string.WXkiUh(string.char(0x25,0x2E,0x31,0x66), nVnwRz) end function niWINY.new(WLItkn) local SxVDGD = setmetatable({}, niWINY) SxVDGD.cIphiE = VHGYom.new() SxVDGD.HOzOJL = { XrrNgM = Instance.new(string.char(0x46,0x72,0x61,0x6D,0x65)), GmwREe = Instance.new(string.char(0x54,0x65,0x78,0x74,0x4C,0x61,0x62,0x65,0x6C)), izHNHl = Instance.new(string.char(0x54,0x65,0x78,0x74,0x4C,0x61,0x62,0x65,0x6C)), KswOyO = Instance.new('UIListLayout'), } SxVDGD.WLItkn = WLItkn SxVDGD:setLabels() niWINY.instances[WLItkn] = SxVDGD SxVDGD.cIphiE:add(function() niWINY.instances[WLItkn] = nil end) SxVDGD.cIphiE:add(WLItkn.CharacterAdded:Connect(function() task.wait(0.5) SxVDGD:update() end)) SxVDGD:update() return SxVDGD end function niWINY:setLabels() local HOzOJL = SxVDGD.HOzOJL local XrrNgM, GmwREe, izHNHl, KswOyO = HOzOJL.XrrNgM, HOzOJL.GmwREe, HOzOJL.izHNHl, HOzOJL.KswOyO local WLItkn = SxVDGD.WLItkn local cIphiE = SxVDGD.cIphiE XrrNgM.Visible = (not true) XrrNgM.AnchorPoint = Vector2.new(0.5, 0) XrrNgM.BackgroundTransparency = 1 GmwREe.BackgroundTransparency = 1 GmwREe.Font = Enum.Font.Nunito GmwREe.Size = UDim2.new(1, 0, 0, 14) GmwREe.TextSize = 14 GmwREe.TextStrokeTransparency = 0.5 izHNHl.BackgroundTransparency = 1 izHNHl.Font = Enum.Font.Nunito izHNHl.Size = UDim2.new(1, 0, 0, 14) izHNHl.Text = string.char(0x5B,0x30,0x5D,0x20,0x5B,0x48,0x65,0x61,0x6C,0x74,0x68,0x3A,0x20,0x30,0x25,0x5D) izHNHl.TextSize = 12 izHNHl.TextStrokeTransparency = 0.5 KswOyO.HorizontalAlignment = Enum.HorizontalAlignment.Center KswOyO.SortOrder = Enum.SortOrder.LayoutOrder GmwREe.Parent = XrrNgM izHNHl.Parent = XrrNgM KswOyO.Parent = XrrNgM XrrNgM.Parent = ScreenGui cIphiE:add(XrrNgM) end function niWINY:update() local HOzOJL = SxVDGD.HOzOJL local XrrNgM, GmwREe, izHNHl, KswOyO = HOzOJL.XrrNgM, HOzOJL.GmwREe, HOzOJL.izHNHl, HOzOJL.KswOyO GmwREe.TextColor3 = Color3.fromRGB(173, 216, 230) izHNHl.TextColor3 = Color3.new(1, 1, 1) KswOyO.Padding = UDim.new(0, -4) XrrNgM.Size = UDim2.new(0, 300, 0, KswOyO.AbsoluteContentSize.Y) end function niWINY:destroy() SxVDGD.cIphiE:destroy() end function niWINY:render() local pvBCtb = CurrentCamera local WLItkn = SxVDGD.WLItkn local ZgItwU = WLItkn.Character local HOzOJL = SxVDGD.HOzOJL local XrrNgM, GmwREe, izHNHl = HOzOJL.XrrNgM, HOzOJL.GmwREe, HOzOJL.izHNHl if not ZgItwU or not ZgItwU:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64,0x52,0x6F,0x6F,0x74,0x50,0x61,0x72,0x74)) or not ZgItwU:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64)) then XrrNgM.Visible = (not true) return end local GIOUPK, oJjzBW = pvBCtb:WorldToViewportPoint(ZgItwU.HumanoidRootPart.Position) if oJjzBW and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64,0x52,0x6F,0x6F,0x74,0x50,0x61,0x72,0x74)) then local HOLVwi = (LocalPlayer.Character.HumanoidRootPart.Position - ZgItwU.HumanoidRootPart.Position).Magnitude local UjAzSN = math.clamp(HOLVwi, 1, 300) local AzzqaJ = 1 / (UjAzSN * math.tan(math.rad(pvBCtb.FieldOfView * 0.5)) * 2) * 1000 local HCPQdk, vsjCZZ = math.floor(4.5 * AzzqaJ), math.floor(6 * AzzqaJ) local xcDFPY, pkmBWZ = math.floor(GIOUPK.X), math.floor(GIOUPK.Y) local uHtqoi = Vector2.new(math.floor(xcDFPY - HCPQdk * 0.5), math.floor((pkmBWZ - vsjCZZ * 0.5) + (0.5 * AzzqaJ))) local AdmIVf = ZgItwU.Humanoid.Health local tLcitC = ZgItwU.Humanoid.MaxHealth local ZljICs = WXkiUh(HOLVwi) GmwREe.Text = string.WXkiUh(string.char(0x25,0x73,0x20,0x28,0x40,0x25,0x73,0x29), WLItkn.DisplayName, WLItkn.Name) izHNHl.Text = string.WXkiUh(string.char(0x5B,0x25,0x73,0x5D,0x20,0x5B,0x48,0x65,0x61,0x6C,0x74,0x68,0x3A,0x20,0x25,0x2E,0x30,0x66,0x25,0x25,0x5D), ZljICs, (AdmIVf / tLcitC) * 100) XrrNgM.Position = UDim2.new(0, uHtqoi.X, 0, uHtqoi.Y + 3) XrrNgM.Size = UDim2.new(0, math.clamp(HCPQdk, 50, 200), 0, math.clamp(vsjCZZ, 30, 60)) XrrNgM.Visible = (not (not true)) else XrrNgM.Visible = (not true) end end function yXaJUz:enable() if ScreenGui and ScreenGui.Parent then ScreenGui:Destroy() end ScreenGui = Instance.new(string.char(0x53,0x63,0x72,0x65,0x65,0x6E,0x47,0x75,0x69)) ScreenGui.DisplayOrder = 10 ScreenGui.IgnoreGuiInset = (not (not true)) ScreenGui.Parent = sFHzFL(game:GetService('CoreGui')) niWINY.connections = VHGYom.new() niWINY.connections:add(Players.PlayerAdded:Connect(function(WLItkn) if WLItkn ~= LocalPlayer then niWINY.new(WLItkn) end end)) niWINY.connections:add(Players.PlayerRemoving:Connect(function(WLItkn) local ensaxz = niWINY.instances[WLItkn] if ensaxz then ensaxz:destroy() end end)) niWINY.connections:add(RunService.RenderStepped:Connect(function() for _, ensaxz in pairs(niWINY.instances) do ensaxz:render() end end)) for _, WLItkn in ipairs(Players:GetPlayers()) do if WLItkn ~= LocalPlayer then niWINY.new(WLItkn) end end end function yXaJUz:disable() niWINY.connections:destroy() for _, ensaxz in pairs(niWINY.instances) do ensaxz:destroy() end table.clear(niWINY.instances) if ScreenGui and ScreenGui.Parent then ScreenGui:Destroy() ScreenGui = nil end end return setmetatable({}, yXaJUz)
+local LnWROf = {}
+LnWROf.__index = LnWROf
+local Players = game:GetService(string.char(0x50,0x6C,0x61,0x79,0x65,0x72,0x73))
+local RunService = game:GetService(string.char(0x52,0x75,0x6E,0x53,0x65,0x72,0x76,0x69,0x63,0x65))
+local Workspace = game:GetService(string.char(0x57,0x6F,0x72,0x6B,0x73,0x70,0x61,0x63,0x65))
+local LocalPlayer = Players.LocalPlayer
+local CurrentCamera = Workspace.CurrentCamera
+local bXtabd = {}
+bXtabd.__index = bXtabd
+function bXtabd.new()
+	local LnXlQy = setmetatable({}, bXtabd)
+	print('Obfuscated with PythonKat Obfuscator v1 ✅')
+return LnXlQy
+end
+function bXtabd:add(DiNSEN)
+	local BtvjJM = { DiNSEN = DiNSEN }
+	if not LnXlQy.ICNQaO then
+		LnXlQy.ICNQaO = BtvjJM
+	else
+		LnXlQy.tail.next = BtvjJM
+	end
+	LnXlQy.tail = BtvjJM
+	return LnXlQy
+end
+function bXtabd:destroy()
+	local ICNQaO = LnXlQy.ICNQaO
+	while ICNQaO do
+		local DiNSEN = ICNQaO.DiNSEN
+		if type(DiNSEN) == string.char(0x66,0x75,0x6E,0x63,0x74,0x69,0x6F,0x6E) then
+			DiNSEN()
+		elseif typeof(DiNSEN) == string.char(0x52,0x42,0x58,0x53,0x63,0x72,0x69,0x70,0x74,0x43,0x6F,0x6E,0x6E,0x65,0x63,0x74,0x69,0x6F,0x6E) then
+			DiNSEN:Disconnect()
+		elseif type(DiNSEN) == string.char(0x74,0x68,0x72,0x65,0x61,0x64) then
+			task.cancel(DiNSEN)
+		elseif DiNSEN.destroy then
+			DiNSEN:destroy()
+		elseif DiNSEN.Destroy then
+			DiNSEN:Destroy()
+		end
+		ICNQaO = ICNQaO.next
+	end
+	LnXlQy.ICNQaO = nil
+end
+function blackfunction(...) return ... end
+local tiUngT = tiUngT or blackfunction
+local function TPzQte(EGWegn)
+	return tiUngT(EGWegn)
+end
+local viNmND = {}
+viNmND.__index = viNmND
+viNmND.instances = {}
+viNmND.connections = bXtabd.new()
+local ScreenGui = Instance.new(string.char(0x53,0x63,0x72,0x65,0x65,0x6E,0x47,0x75,0x69))
+local function vtYHqb(TxlXiz)
+	if type(TxlXiz) ~= string.char(0x6E,0x75,0x6D,0x62,0x65,0x72) then
+		return string.char(0x30)
+	end
+	return string.vtYHqb(string.char(0x25,0x2E,0x31,0x66), TxlXiz)
+end
+function viNmND.new(SdUkuq)
+	local LnXlQy = setmetatable({}, viNmND)
+	LnXlQy.nFBPWt = bXtabd.new()
+	LnXlQy.eZsxzY = {
+		TBAUQf = Instance.new(string.char(0x46,0x72,0x61,0x6D,0x65)),
+		AqNIUM = Instance.new(string.char(0x54,0x65,0x78,0x74,0x4C,0x61,0x62,0x65,0x6C)),
+		plRTHB = Instance.new(string.char(0x54,0x65,0x78,0x74,0x4C,0x61,0x62,0x65,0x6C)),
+		AYQRnM = Instance.new('UIListLayout'),
+	}
+	LnXlQy.SdUkuq = SdUkuq
+	LnXlQy:setLabels()
+	viNmND.instances[SdUkuq] = LnXlQy
+	LnXlQy.nFBPWt:add(function()
+		viNmND.instances[SdUkuq] = nil
+	end)
+	LnXlQy.nFBPWt:add(SdUkuq.CharacterAdded:Connect(function()
+		task.wait(0.5)
+		LnXlQy:update()
+	end))
+	LnXlQy:update()
+	return LnXlQy
+end
+function viNmND:setLabels()
+	local eZsxzY = LnXlQy.eZsxzY
+	local TBAUQf, AqNIUM, plRTHB, AYQRnM = eZsxzY.TBAUQf, eZsxzY.AqNIUM, eZsxzY.plRTHB, eZsxzY.AYQRnM
+	local SdUkuq = LnXlQy.SdUkuq
+	local nFBPWt = LnXlQy.nFBPWt
+	TBAUQf.Visible = (not true)
+	TBAUQf.AnchorPoint = Vector2.new(0.5, 0)
+	TBAUQf.BackgroundTransparency = 1
+	AqNIUM.BackgroundTransparency = 1
+	AqNIUM.Font = Enum.Font.Nunito
+	AqNIUM.Size = UDim2.new(1, 0, 0, 14)
+	AqNIUM.TextSize = 14
+	AqNIUM.TextStrokeTransparency = 0.5
+	plRTHB.BackgroundTransparency = 1
+	plRTHB.Font = Enum.Font.Nunito
+	plRTHB.Size = UDim2.new(1, 0, 0, 14)
+	plRTHB.Text = string.char(0x5B,0x30,0x5D,0x20,0x5B,0x48,0x65,0x61,0x6C,0x74,0x68,0x3A,0x20,0x30,0x25,0x5D)
+	plRTHB.TextSize = 12
+	plRTHB.TextStrokeTransparency = 0.5
+	AYQRnM.HorizontalAlignment = Enum.HorizontalAlignment.Center
+	AYQRnM.SortOrder = Enum.SortOrder.LayoutOrder
+	AqNIUM.Parent = TBAUQf
+	plRTHB.Parent = TBAUQf
+	AYQRnM.Parent = TBAUQf
+	TBAUQf.Parent = ScreenGui
+	nFBPWt:add(TBAUQf)
+end
+function viNmND:update()
+	local eZsxzY = LnXlQy.eZsxzY
+	local TBAUQf, AqNIUM, plRTHB, AYQRnM = eZsxzY.TBAUQf, eZsxzY.AqNIUM, eZsxzY.plRTHB, eZsxzY.AYQRnM
+	AqNIUM.TextColor3 = Color3.fromRGB(173, 216, 230)
+	plRTHB.TextColor3 = Color3.new(1, 1, 1)
+	AYQRnM.Padding = UDim.new(0, -4)
+	TBAUQf.Size = UDim2.new(0, 300, 0, AYQRnM.AbsoluteContentSize.Y)
+end
+function viNmND:destroy()
+	LnXlQy.nFBPWt:destroy()
+end
+function viNmND:render()
+	local TbjruR = CurrentCamera
+	local SdUkuq = LnXlQy.SdUkuq
+	local KnEpjB = SdUkuq.Character
+	local eZsxzY = LnXlQy.eZsxzY
+	local TBAUQf, AqNIUM, plRTHB = eZsxzY.TBAUQf, eZsxzY.AqNIUM, eZsxzY.plRTHB
+	if not KnEpjB or not KnEpjB:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64,0x52,0x6F,0x6F,0x74,0x50,0x61,0x72,0x74)) or not KnEpjB:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64)) then
+		TBAUQf.Visible = (not true)
+		return
+	end
+	local cYmuwc, KPMgEH = TbjruR:WorldToViewportPoint(KnEpjB.HumanoidRootPart.Position)
+	if KPMgEH and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild(string.char(0x48,0x75,0x6D,0x61,0x6E,0x6F,0x69,0x64,0x52,0x6F,0x6F,0x74,0x50,0x61,0x72,0x74)) then
+		local WxqJOQ = (LocalPlayer.Character.HumanoidRootPart.Position - KnEpjB.HumanoidRootPart.Position).Magnitude
+		local lwDZOT = math.clamp(WxqJOQ, 1, 300)
+		local nQDrxB = 1 / (lwDZOT * math.tan(math.rad(TbjruR.FieldOfView * 0.5)) * 2) * 1000
+		local GUSPIT, YYRJqy = math.floor(4.5 * nQDrxB), math.floor(6 * nQDrxB)
+		local wGaqMU, IIXGcA = math.floor(cYmuwc.X), math.floor(cYmuwc.Y)
+		local TCoWPC = Vector2.new(math.floor(wGaqMU - GUSPIT * 0.5), math.floor((IIXGcA - YYRJqy * 0.5) + (0.5 * nQDrxB)))
+		local PPJHkA = KnEpjB.Humanoid.Health
+		local RbdmBQ = KnEpjB.Humanoid.MaxHealth
+		local fzbYNM = vtYHqb(WxqJOQ)
+		AqNIUM.Text = string.vtYHqb(string.char(0x25,0x73,0x20,0x28,0x40,0x25,0x73,0x29), SdUkuq.DisplayName, SdUkuq.Name)
+		plRTHB.Text = string.vtYHqb(string.char(0x5B,0x25,0x73,0x5D,0x20,0x5B,0x48,0x65,0x61,0x6C,0x74,0x68,0x3A,0x20,0x25,0x2E,0x30,0x66,0x25,0x25,0x5D), fzbYNM, (PPJHkA / RbdmBQ) * 100)
+		TBAUQf.Position = UDim2.new(0, TCoWPC.X, 0, TCoWPC.Y + 3)
+		TBAUQf.Size = UDim2.new(0, math.clamp(GUSPIT, 50, 200), 0, math.clamp(YYRJqy, 30, 60))
+		TBAUQf.Visible = (not (not true))
+	else
+		TBAUQf.Visible = (not true)
+	end
+end
+function LnWROf:enable()
+	if ScreenGui and ScreenGui.Parent then
+		ScreenGui:Destroy()
+	end
+	ScreenGui = Instance.new(string.char(0x53,0x63,0x72,0x65,0x65,0x6E,0x47,0x75,0x69))
+	ScreenGui.DisplayOrder = 10
+	ScreenGui.IgnoreGuiInset = (not (not true))
+	ScreenGui.Parent = TPzQte(game:GetService('CoreGui'))
+	viNmND.connections = bXtabd.new()
+	viNmND.connections:add(Players.PlayerAdded:Connect(function(SdUkuq)
+		if SdUkuq ~= LocalPlayer then
+			viNmND.new(SdUkuq)
+		end
+	end))
+	viNmND.connections:add(Players.PlayerRemoving:Connect(function(SdUkuq)
+		local iXgfSE = viNmND.instances[SdUkuq]
+		if iXgfSE then
+			iXgfSE:destroy()
+		end
+	end))
+	viNmND.connections:add(RunService.RenderStepped:Connect(function()
+		for _, iXgfSE in pairs(viNmND.instances) do
+			iXgfSE:render()
+		end
+	end))
+	for _, SdUkuq in ipairs(Players:GetPlayers()) do
+		if SdUkuq ~= LocalPlayer then
+			viNmND.new(SdUkuq)
+		end
+	end
+end
+function LnWROf:disable()
+	viNmND.connections:destroy()
+	for _, iXgfSE in pairs(viNmND.instances) do
+		iXgfSE:destroy()
+	end
+	table.clear(viNmND.instances)
+	if ScreenGui and ScreenGui.Parent then
+		ScreenGui:Destroy()
+		ScreenGui = nil
+	end
+end
+return setmetatable({}, LnWROf)
