@@ -39,7 +39,7 @@
 
 ## Changelog
 ## v0.183 ⚔️🐇 (LATEST; BETA, 04/29/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
-![Image](https://github.com/user-attachments/assets/debee80b-943c-44d3-9e05-3a085866b21e)
+![Image](https://github.com/user-attachments/assets/8c44d733-606c-4e0d-8a98-659f34cdfe73)
   - Fixed CHAIN warning for bm 🔧
   - Bug fix ✅
     - #idk 😔
