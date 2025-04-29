@@ -1,64 +1,62 @@
-print("TEST!4")
+print("TEST!5")
 
-local Module = {}
-Module.__index = Module
-
+local xWdwqf = {}
+xWdwqf.__index = xWdwqf
 local Workspace = game:GetService(string.char(87,111,114,107,115,112,97,99,101))
 local RunService = game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))
 local UserInputService = game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))
-local phPgVE = Workspace:WaitForChild(string.char(77,105,115,99))
-local cGPnAH = phPgVE:WaitForChild(string.char(65,73))
+local cJtrWT = Workspace:WaitForChild(string.char(77,105,115,99))
+local cuNfvS = cJtrWT:WaitForChild(string.char(65,73))
 local Camera = Workspace.CurrentCamera
-local eRIgEy = (not true)
-local RaUcJK
-local rgPpQO
-local jHvivq
-local function LGVmCX(OjSpSR)
- local zZtZBS = CFrame.new(Camera.CFrame.Position, OjSpSR.Position)
- Camera.CFrame = zZtZBS
+local mFDsTl = (not true)
+local jzswlT
+local ruyHAt
+local UqXMZC
+local function oyTaoF(KoAOKc)
+ local qAEmhK = CFrame.new(Camera.CFrame.Position, KoAOKc.Position)
+ Camera.CFrame = qAEmhK
 end
-local function JtDBYb()
- for _, child in ipairs(cGPnAH:GetChildren()) do
+local function uAZbZe()
+ for _, child in ipairs(cuNfvS:GetChildren()) do
  if child:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116)) then
  return child
  end
  end
 end
-function Module:enable()
+function xWdwqf:enable()
  self.enabled = (not (not true))
- RaUcJK = RunService.RenderStepped:Connect(function()
+ jzswlT = RunService.RenderStepped:Connect(function()
  if not self.enabled then return end
- if not eRIgEy then return end
- local tAUciE = JtDBYb()
- if tAUciE then
- LGVmCX(tAUciE:GetPivot())
+ if not mFDsTl then return end
+ local WCqKKU = uAZbZe()
+ if WCqKKU then
+ oyTaoF(WCqKKU:GetPivot())
  end
  end)
- rgPpQO = UserInputService.InputBegan:Connect(function(BogMru)
- if BogMru.UserInputType == Enum.UserInputType.MouseButton2 then
- eRIgEy = (not (not true))
+ ruyHAt = UserInputService.InputBegan:Connect(function(lheOQj)
+ if lheOQj.UserInputType == Enum.UserInputType.MouseButton2 then
+ mFDsTl = (not (not true))
  end
  end)
- jHvivq = UserInputService.InputEnded:Connect(function(BogMru)
- if BogMru.UserInputType == Enum.UserInputType.MouseButton2 then
- eRIgEy = (not true)
+ UqXMZC = UserInputService.InputEnded:Connect(function(lheOQj)
+ if lheOQj.UserInputType == Enum.UserInputType.MouseButton2 then
+ mFDsTl = (not true)
  end
  end)
 end
-function Module:disable()
+function xWdwqf:disable()
  self.enabled = (not true)
- if RaUcJK then
- RaUcJK:Disconnect()
- RaUcJK = nil
+ if jzswlT then
+ jzswlT:Disconnect()
+ jzswlT = nil
  end
- if rgPpQO then
- rgPpQO:Disconnect()
- rgPpQO = nil
+ if ruyHAt then
+ ruyHAt:Disconnect()
+ ruyHAt = nil
  end
- if jHvivq then
- jHvivq:Disconnect()
- jHvivq = nil
+ if UqXMZC then
+ UqXMZC:Disconnect()
+ UqXMZC = nil
  end
 end
-
-return setmetatable({}, Module)
+return setmetatable({}, xWdwqf)
