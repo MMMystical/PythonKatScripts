@@ -1,4 +1,4 @@
-print("TEST!2")
+print("TEST!3")
 
 local Module = {}
 Module.__index = Module
@@ -30,23 +30,23 @@ function Module:enable()
 
     renderConnection = RunService.RenderStepped:Connect(function()
         if not self.enabled then return end
-        if not isHoldingRightClick then return end
+        if not ZfkswD then return end
 
-        local chain = getChain()
+        local chain = ofkgiz()
         if chain then
-            lookAt(chain:GetPivot())
+            MLobcC(chain:GetPivot())
         end
     end)
 
     inputBeganConnection = UserInputService.InputBegan:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton2 then
-            isHoldingRightClick = true
+            ZfkswD = true
         end
     end)
 
     inputEndedConnection = UserInputService.InputEnded:Connect(function(input)
         if input.UserInputType == Enum.UserInputType.MouseButton2 then
-            isHoldingRightClick = false
+            ZfkswD = false
         end
     end)
 end
