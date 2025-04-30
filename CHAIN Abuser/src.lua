@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 04/29
+edited: 04/30
 developers:
 v3rm: AbstractPoo	 	discord: Abstract#8007
 v3rm: 0xDEITY		 	discord: Deity#0228
@@ -36,10 +36,10 @@ if getgenv then
 end
 
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.183 ⚔️🐇 (BETA) | PythonKat v0.23 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.184 ⚔️🐇 (BETA) | PythonKat v0.231 🩸")
 
 gui:notification({
-	Title = "Loading CHAIN Abuser v0.183 ⚔️🐇 (BETA) ...",
+	Title = "Loading CHAIN Abuser v0.184 ⚔️🐇 (BETA) ...",
 	Text = "CHAIN when you inf stamina: 💀",
 	Duration = 7.5,
 	Callback = function() end
@@ -48,7 +48,7 @@ gui:notification({
 task.wait(2)
 
 gui:notification({
-	Title = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
+	Title = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
@@ -87,11 +87,11 @@ local tab6 = gui:tab({
 })
 
 tab6:button({
-	Name = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
+	Name = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
 	Description = "Information about this script",
 	Callback = function()
 		tab:prompt{
-			Title = "CHAIN Abuser v0.183 ⚔️🐇 (BETA)",
+			Title = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
 			Text = "some cheats against CHAIN! now you won't get yo ahh smacked easily!",
 			Buttons = {
 				Cool = function()
@@ -110,6 +110,21 @@ tab6:button({
 			Text = "You may get kicked sometimes from the game's anti cheat! (but VERY rare)",
 			Buttons = {
 				Alright = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.184 ⚔️🐇 (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.184 ⚔️🐇 (BETA)",
+			Text = "-theme no longer foced 🔧ℹ️\n-support for PythonKat v0.231 🩸✅",
+			Buttons = {
+				Ok = function()
 				end
 			}
 		}
