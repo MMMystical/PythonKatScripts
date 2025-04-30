@@ -1,4 +1,4 @@
-<h1 align="center">CHAIN Abuser v0.184 ⚔️🐇 (BETA, 04/29/2025)</h1>
+<h1 align="center">CHAIN Abuser v0.184 ⚔️🐇 (BETA, 04/30/2025)</h1>
 
 ```
     ____        __  __                __ __      __ 
