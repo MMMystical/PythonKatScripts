@@ -57,7 +57,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 
 # Updates are discontinued on this script.
 
-# CHAIN Abuser v0.184 ⚔️🐇 (BETA, 04/30/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
+# CHAIN Abuser v0.185 ⚔️🐇 (BETA, 05/02/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
 ![Image](https://github.com/user-attachments/assets/8c44d733-606c-4e0d-8a98-659f34cdfe73)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
@@ -106,7 +106,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 * Github: [@Kevinjky7555](https://github.com/Kevinjky7555)
 * Discord: kevinjky7555
 
-### CHAIN Abuser v0.184 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
+### CHAIN Abuser v0.185 ⚔️🐇 (BETA) uses a slick and nice browser-like ui for a cool experience. ( [PythonKat Lib](https://github.com/MMMystical/PythonKat-Lib/tree/main) )
 
 ## Loadstring
 ```lua
