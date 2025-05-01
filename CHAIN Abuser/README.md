@@ -39,7 +39,7 @@
 
 ## Changelog
 ## v0.185 ⚔️🐇 (LATEST; BETA, 05/02/2025) ![Easter Badge](https://img.shields.io/badge/Event-EASTER-pink?style=plastic&logo=googleearth&logoColor=white&labelColor=black) ![Latest Badge](https://img.shields.io/badge/The-LATEST-green?style=plastic&logo=steemit&logoColor=white&labelColor=black) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
-![image](https://github.com/user-attachments/assets/cf0e5172-a210-4150-97aa-be327cd35857)
+![image](https://github.com/user-attachments/assets/ada1b4c5-968a-4f8f-9b8d-0ba55631aaa7)
   - Added new teleport ✅
   - Special user warnings ⚠️ℹ️
     - hi
