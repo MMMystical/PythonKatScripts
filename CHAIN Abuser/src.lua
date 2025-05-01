@@ -7,7 +7,7 @@
 /_/    \__, /\__/_/ /_/\____/_/ /_/_/ |_\__,_/\__/  
       /____/                                        
 
-edited: 04/30
+edited: 05/02
 developers:
 v3rm: AbstractPoo	 	discord: Abstract#8007
 v3rm: 0xDEITY		 	discord: Deity#0228
@@ -36,19 +36,21 @@ if getgenv then
 end
 
 gui:set_status("Status | Abusing CHAIN... LoL")
-gui:set_scriptdisplay("CHAIN Abuser v0.184 ⚔️🐇 (BETA) | PythonKat v0.231 🩸")
+gui:set_scriptdisplay("CHAIN Abuser v0.185 ⚔️🐇 (BETA) | PythonKat v0.231 🩸")
 
 gui:notification({
-	Title = "Loading CHAIN Abuser v0.184 ⚔️🐇 (BETA) ...",
+	Title = "Loading CHAIN Abuser v0.185 ⚔️🐇 (BETA) ...",
 	Text = "CHAIN when you inf stamina: 💀",
 	Duration = 7.5,
 	Callback = function() end
 })
 
+print("Running CHAIN Abuser v0.185 ⚔️🐇 (BETA)")
+
 task.wait(2)
 
 gui:notification({
-	Title = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
+	Title = "CHAIN Abuser v0.185 ⚔️🐇 (BETA)",
 	Text = "Script has been loaded. ✅\nThanks for using PythonKat! 😸",
 	Duration = 7.5,
 	Callback = function() end
@@ -87,11 +89,11 @@ local tab6 = gui:tab({
 })
 
 tab6:button({
-	Name = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
+	Name = "CHAIN Abuser v0.185 ⚔️🐇 (BETA)",
 	Description = "Information about this script",
 	Callback = function()
 		tab:prompt{
-			Title = "CHAIN Abuser v0.184 ⚔️🐇 (BETA)",
+			Title = "CHAIN Abuser v0.185 ⚔️🐇 (BETA)",
 			Text = "some cheats against CHAIN! now you won't get yo ahh smacked easily!",
 			Buttons = {
 				Cool = function()
@@ -110,6 +112,21 @@ tab6:button({
 			Text = "You may get kicked sometimes from the game's anti cheat! (but VERY rare)",
 			Buttons = {
 				Alright = function()
+				end
+			}
+		}
+	end
+})
+
+tab6:button({
+	Name = "Changelog v0.185 ⚔️🐇 (BETA)",
+	Description = "See version changes",
+	Callback = function()
+		tab:prompt{
+			Title = "v0.185 ⚔️🐇 (BETA)",
+			Text = "-added new teleport ✅\n-special user warnings ⚠️ℹ️\nhi",
+			Buttons = {
+				Ok = function()
 				end
 			}
 		}
@@ -1761,6 +1778,21 @@ tab4:button({
 })
 
 tab4:button({
+	Name = "Cutscene Location",
+	Description = "Teleports you to the Cutscene (SAFE SPOT)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(39.0608749, -99.1718979, 574.259521, 0.907835662, 7.08418568e-08, -0.419326216, -3.53907694e-08, 1, 9.23215708e-08, 0.419326216, -6.89725326e-08, 0.907835662)
+
+		gui:notification{
+			Title = "CHAIN ⚔️ | Cutscene Location",
+			Text = "Teleported you to Cutscene ✅",
+			Duration = 3,
+			Callback = function() end
+		}
+	end
+})
+
+tab4:button({
 	Name = "Warning",
 	Description = "Read me",
 	Callback = function()
@@ -2198,6 +2230,44 @@ task.spawn(function()
 			Duration = 12.5,
 			Callback = function() end
 		}
+	end
+end)
+
+task.spawn(function()
+	while gui do
+		task.wait(0.015)
+
+		if not gui then break end
+		local devUsers = {"Yurixzaaa", "SSpreezzy", "fraudTheSecond", "IAmUnderAMask", "As3tra1", "GetRightDawg", "N0XMANIAC", "Benthesoccerone", "Megamind184", "OrekLus1", "maravilye2312", "euphoria4830", "XHttpkeVin", "ddelus1", "Chromixx_WasTaken", "MikoSfx", "Lgl_frijol", "xF_alse", "FluxedThoughts", "Blackcoolia", "Crinsikle", "HolyBlanks", "mightyasher", "ROV3RRO", "Oce1rosTheConsum3d", "Tsunantt", "Shark_bossx007", "AgentCatto", "ashinvy", "roblox_user_841257226", "JankCorp", "JakeDravioli", "1Boomah", "Mylezeezz", "Sir_Mason13", "jasper_creations", "ItzRoboMaggot", "CyroTr00per"}
+		local devs = {}
+
+		for _, user in ipairs(devUsers) do
+			devs[user] = true
+		end
+
+		local function onPlayerAdded(player)
+			if devs[player.Name] then
+				gui:notification{
+					Title = "CHAIN ⚔️ | Special User Warnings",
+					Text = "Special user joined the game ⚠️ Username: " .. player.Name .. ", be careful, you might get reported and banned if caught! (This special user is either a developer, manager, mod, admin, tester, or a contributor!)",
+					Duration = 30,
+					Callback = function() end
+				}
+			end
+		end
+
+		game.Players.PlayerAdded:Connect(onPlayerAdded)
+
+		for _, player in game.Players:GetPlayers() do
+			if devs[player.Name] then
+				gui:notification{
+					Title = "CHAIN ⚔️ | Special User Warnings",
+					Text = "Special user is in the game ⚠️ Username: " .. player.Name .. ", be careful, you might get reported and banned if caught! (This special user is either a developer, manager, mod, admin, tester, or a contributor!)",
+					Duration = 30,
+					Callback = function() end
+				}
+			end
+		end
 	end
 end)
 
