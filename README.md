@@ -58,7 +58,7 @@ Copy the loadstring and enjoy using the Chat Bypasser!
 # Updates are discontinued on this script.
 
 # CHAIN Abuser v0.185 ⚔️🐇 (BETA, 05/02/2025) ![Beta Badge](https://img.shields.io/badge/Status-BETA-red?style=plastic&logo=session&logoColor=white&labelColor=black)
-![Image](https://github.com/user-attachments/assets/8c44d733-606c-4e0d-8a98-659f34cdfe73)
+![image](https://github.com/user-attachments/assets/ada1b4c5-968a-4f8f-9b8d-0ba55631aaa7)
 
 ## WARNING: This script is in BETA. Expect bugs to occur! (very likely) 🔨
 
